@@ -1,0 +1,6 @@
+*.dxf
+tmp*
+*.log
+*.gds
+*.mgn
+*.v30
