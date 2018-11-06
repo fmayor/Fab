@@ -1,0 +1,60 @@
+  ----------------------------------------------------------------------------
+  
+  Layout ENGINE x64 Revision Number 5.06.001 , Jul 31 2018
+  BEAMER Revision Number 5.6.1 (28103), Jul 31 2018
+     Session started on Thu Oct 18 23:44:19 2018
+  
+     4 processors, 16292 MB memory
+  
+  Read JEOL52 started on Thu Oct 18 23:44:19 2018
+  
+     Read JEOL52 input file: \\diskstation\user_data\fmayor\fabrication\Fab\20181016_LNPEZ03\JEOL_M2\WJ_PEZ03M2_181018BB.v30
+     Unit of Chip Size [um]    0.001000
+     Unit of Position Set [um] 0.001000
+     Unit of Pattern Data [um] 0.001000
+     Chip Size (X, Y)[um]         (7532.000000, 4180.000000)
+     Field Size (X, Y)[um]        (500.000000, 500.000000)
+     Position Set Size (X, Y)[um] (500.000000, 500.000000)
+  
+     Maximum Number of Shot Ranks 0
+     Number of CM Records 0
+     Number of MP Records 0
+     Number of LB Records 0
+     Number of TX Records 33
+     Number of Rectangles 3092
+     Number of Trapezoids 4545
+     Number of SingleLines 0
+     Number of decompacted Rectangles 3092
+     Number of decompacted Trapezoids 4545
+     Number of decompacted SingleLines 0
+     Number of Map Library Blocks 0
+     Number of Library Blocks 0
+     Number of Text Blocks 121
+  
+     Pattern units in [um] 0.001000
+
+     Number of main structures: 1
+     Layer Set           : 0(0)
+  
+     Geometry Count: 7637 definitions, 7637 instances
+     Cell Count    : 122 definitions, 122 instances
+  
+     Geometry Compaction Factor: 1.0
+     Cell Compaction Factor: 1.0
+     Hierarchy Compaction Factor: 1.0
+  
+     Hierarchy Tree Depth: 2
+  
+     Area (in um2): 8.7249948637e+06
+     Bbox (in um) : (0, 413.48), (7532, 3766.52)
+     Coverage : 34.5 %
+  
+     Extent (in um) : (0, 0), (7532, 4180)
+     Extent related Cov. : 27.7 %
+  
+     CPU time: 0.0 seconds, Elapsed time: 0.0 seconds
+     Memory usage: 804.000 kB additional, 26.805 MB total
+  
+  Read JEOL52 completed on Thu Oct 18 23:44:19 2018
+  ----------------------------------------------------------------------------
+  

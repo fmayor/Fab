@@ -1,0 +1,27 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+EOFishbone_v3_subchip	EOFishbone_v3_subchip.m	/^function out = EOFishbone_v3_subchip(B, electrode_gap, chip_tag)$/;"	f
+QuarterWaveQEOM_v1_subchip	QuarterWaveQEOM_v1_subchip.m	/^function out = QuarterWaveQEOM_v1_subchip(B, L_coupler, chip_tag)$/;"	f
+makeAsymFishboneCavityDevice	EOFishbone_v3_subchip.m	/^function strip_wg = makeAsymFishboneCavityDevice(curr_x, curr_y, GC_fn, device, P, L, B)$/;"	f
+makeAsymFishboneCavityDevice	makePhotonDevice.m	/^function strip_wg = makeAsymFishboneCavityDevice(curr_x, curr_y, GC_fn, device, P, L, B)$/;"	f
+makeAsymFishboneCavityDevice	makeSidePhotonDevices.m	/^function strip_wg = makeAsymFishboneCavityDevice(curr_x, curr_y, GC_fn, device, P, L, B)$/;"	f
+makeDoubleWaveguideRingDevice	EOFishbone_v3_subchip.m	/^function wg2_ring = makeDoubleWaveguideRingDevice( curr_x, curr_y, GC_fn1, GC_fn2, device, P, L, B)$/;"	f
+makeDoubleWaveguideRingDevice	makePhotonDevice.m	/^function wg2_ring = makeDoubleWaveguideRingDevice( curr_x, curr_y, GC_fn1, GC_fn2, device, P, L, B)$/;"	f
+makeDoubleWaveguideRingDevice	makeSidePhotonDevices.m	/^function wg2_ring = makeDoubleWaveguideRingDevice( curr_x, curr_y, GC_fn1, GC_fn2, device, P, L, B)$/;"	f
+makeFishboneCavityDevice	EOFishbone_v3_subchip.m	/^function strip_wg = makeFishboneCavityDevice(curr_x, curr_y, GC_fn, device, P, L, B)$/;"	f
+makeFishboneCavityDevice	makePhotonDevice.m	/^function strip_wg = makeFishboneCavityDevice(curr_x, curr_y, GC_fn, device, P, L, B)$/;"	f
+makeFishboneCavityDevice	makeSidePhotonDevices.m	/^function strip_wg = makeFishboneCavityDevice(curr_x, curr_y, GC_fn, device, P, L, B)$/;"	f
+makePhotonDevice	makePhotonDevice.m	/^function photon_dev = makePhotonDevice(ii, chip_tag, hide_GC_holes)$/;"	f
+makeProtectedAlignmentMarks	EOFishbone_v3_subchip.m	/^function align_mark_grp = makeProtectedAlignmentMarks(centerX, centerY, P, L)$/;"	f
+makeProtectedAlignmentMarks	QuarterWaveQEOM_v1_subchip.m	/^function align_mark_grp = makeProtectedAlignmentMarks(centerX, centerY, P, L)$/;"	f
+makeReflFishboneCavityDevice	EOFishbone_v3_subchip.m	/^function strip_wg = makeReflFishboneCavityDevice(curr_x, curr_y, GC_fn, device, P, L, B)$/;"	f
+makeReflFishboneCavityDevice	makePhotonDevice.m	/^function strip_wg = makeReflFishboneCavityDevice(curr_x, curr_y, GC_fn, device, P, L, B)$/;"	f
+makeReflFishboneCavityDevice	makeSidePhotonDevices.m	/^function strip_wg = makeReflFishboneCavityDevice(curr_x, curr_y, GC_fn, device, P, L, B)$/;"	f
+makeSidePhotonDevices	makeSidePhotonDevices.m	/^function photon_dev_group = makeSidePhotonDevices(chip_tag, hide_GC_holes)$/;"	f
+makeStripWaveguideDevice	EOFishbone_v3_subchip.m	/^function thru_wg = makeStripWaveguideDevice( curr_x, curr_y, GC_fn, device, P, L, B)$/;"	f
+makeStripWaveguideDevice	makePhotonDevice.m	/^function thru_wg = makeStripWaveguideDevice( curr_x, curr_y, GC_fn, device, P, L, B)$/;"	f
+makeStripWaveguideDevice	makeSidePhotonDevices.m	/^function thru_wg = makeStripWaveguideDevice( curr_x, curr_y, GC_fn, device, P, L, B)$/;"	f

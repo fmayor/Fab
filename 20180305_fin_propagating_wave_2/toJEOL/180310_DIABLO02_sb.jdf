@@ -1,0 +1,71 @@
+JOB/W	,2,0				; 4 Inch DUMMY Wafer
+
+; ======== PQRS  GLOBAL MARK POSITION OPTIONS ============   
+ GLMPOS	  P=(-3410.092,-1050),Q=(3410,1050.2),R=(0,2250),S=(0,-2250)  ; 4 inch Wafer with  3um Mark
+ GLMP	  2.0,40.0,0,0		; P   Mark  width = 3um   Length = 3000um 
+ GLMQRS	  2.0,40.0,0,0		; QRS Mark  width = 3um   Length = 3000um
+						;
+PATH  ; Auto CALIB Menu File(CALIB.MEN)      ; Initial Check (CURRNT,INITBE,PDEFBE,SUBDEFBE)
+
+; Outer array
+;       Xpos  #X   dX    Ypos  #Y  dY	
+ ARRAY   (0,1,10000)/(0,1,5000) ;    << IMPORTANT OUTER ARRAY	 Cycle Check   (CURRNT,DRIFT 5min) define the array size and interval
+
+ASSIGN A(1) -> ((*,1))         ;<< IMPORTANT OUTER ARRAY, Define which dies you are writing
+
+;               Xpos  #X   dX        Ypos  #Y  dY
+;  Inner array
+1:ARRAY  (0,1,1000)/(0,1,1000)  ;   <<<< define die array size      (POSITIVE Y IS MOVING DOWN 
+
+CHMPOS	M1=(0,0)
+;CHMPOS  M1=(400,-1350)      ;,M2=(100,100),M3=(100,-100),M4=(-100,-100)
+	; the (400,-1350) is an offset of the height measurement beam that centers it to the current location
+	; because the CHMPOS command is in the inner array, this does it every inner area location
+	; can see a 'v' on the patterns in A-Check program which indicates virtual measurement (height)
+;CHMPOS  M1=(-800,1800)      ;,M2=(100,100),M3=(100,-100),M4=(-100,-100)
+ CHMARK  3.0,20.0,0,0   ; Width = 3um , Length = 20um   				;DO NOT EXCEED 6 CHA
+
+;;; ?????RICH?????
+;;; CHMPOS - should this be zeroed? Why aren't the height measurements at the write locations
+
+;;; OMA01 - Optomechanical Antenna prototype 1
+
+; Dose 9 - 320
+ ASSIGN P(1) -> ((1,1),DS09)
+
+AEND
+	
+PEND	
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;       Layer1 Definition	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;		
+LAYER  1
+
+;; Pattern consists of two rows of devices.  Top is focusing IDT's.  Bottom are rectangular IDT's.
+
+P(1)	'180310_DIABLO02_sb.v30'
+
+
+;;; Dose table - based on a nominal dose of 100 uC/cm^2 
+; The base dose is typically 200 uC/cm^2 for CSAR, but
+; these patterns are 2x multipass.
+ DS01:	MODULAT	 ((0,-20),(1,-20))		; 160  total dose
+ DS02:	MODULAT	 ((0,-10),(1,-10))		; 180  "
+ DS03:	MODULAT	 ((0,0),(1,0))			; 200  "
+ DS04:	MODULAT	 ((0,10),(1,10))		; 220  etc.
+ DS05:  MODULAT  ((0,20),(1,20))		; 240
+ DS06:	MODULAT	 ((0,30),(1,30))		; 260
+ DS07:	MODULAT	 ((0,40),(1,40))		; 280
+ DS08:	MODULAT	 ((0,50),(1,50))		; 300
+ DS09:	MODULAT	 ((0,60),(1,60))		; 320
+ DS10:	MODULAT	 ((0,70),(1,70))		; 340
+ DS11:	MODULAT	 ((0,80),(1,80))		; 360
+ DS12:	MODULAT	 ((0,90),(1,90))		; 380
+ DS13:	MODULAT	 ((0,100),(1,100))		; 400
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ RESTYP	POSI,'PMMA'					; ZEP-520A  50nm
+ OBJAPT	3  				; 1=0um 2=2000um 3,4=25um 5,6=60um 7=130um 8=300um
+;STDCUR	1.95
+ STDCUR 0.5
+
+
+END

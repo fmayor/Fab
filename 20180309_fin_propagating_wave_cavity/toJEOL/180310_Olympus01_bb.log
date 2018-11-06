@@ -1,0 +1,60 @@
+  ----------------------------------------------------------------------------
+  
+  Layout ENGINE x64 Revision Number 5.05.002 , Feb 19 2018
+  BEAMER Revision Number 5.5.2 (26078), Feb 19 2018
+     Session started on Sat Mar 10 06:35:05 2018
+  
+     4 processors, 16292 MB memory
+  
+  Read JEOL52 started on Sat Mar 10 06:35:05 2018
+  
+     Read JEOL52 input file: \\DiskStation\user_data\fmayor\fabrication\Fab\20180309_fin_propagating_wave_cavity\toJEOL\180310_Olympus01_bb.v30
+     Unit of Chip Size [um]    0.000125
+     Unit of Position Set [um] 0.000125
+     Unit of Pattern Data [um] 0.000125
+     Chip Size (X, Y)[um]         (10000.000000, 5000.000000)
+     Field Size (X, Y)[um]        (62.500000, 62.500000)
+     Position Set Size (X, Y)[um] (62.500000, 62.500000)
+  
+     Maximum Number of Shot Ranks 0
+     Number of CM Records 0
+     Number of MP Records 0
+     Number of LB Records 0
+     Number of TX Records 88
+     Number of Rectangles 9823
+     Number of Trapezoids 0
+     Number of SingleLines 0
+     Number of decompacted Rectangles 9823
+     Number of decompacted Trapezoids 0
+     Number of decompacted SingleLines 0
+     Number of Map Library Blocks 0
+     Number of Library Blocks 0
+     Number of Text Blocks 6641
+  
+     Pattern units in [um] 0.000125
+
+     Number of main structures: 1
+     Layer Set           : 0(0)
+  
+     Geometry Count: 9823 definitions, 9823 instances
+     Cell Count    : 6642 definitions, 6642 instances
+  
+     Geometry Compaction Factor: 1.0
+     Cell Compaction Factor: 1.0
+     Hierarchy Compaction Factor: 1.0
+  
+     Hierarchy Tree Depth: 2
+  
+     Area (in um2): 1.9466540659e+07
+     Bbox (in um) : (498, 290), (9502, 4710)
+     Coverage : 48.9 %
+  
+     Extent (in um) : (0, 0), (10000, 5000)
+     Extent related Cov. : 38.9 %
+  
+     CPU time: 0.1 seconds, Elapsed time: 0.0 seconds
+     Memory usage: 0.000 B additional, 334.941 MB total
+  
+  Read JEOL52 completed on Sat Mar 10 06:35:05 2018
+  ----------------------------------------------------------------------------
+  

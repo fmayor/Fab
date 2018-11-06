@@ -1,0 +1,537 @@
+  ----------------------------------------------------------------------------
+  
+  Layout ENGINE x64 Revision Number 5.05.002 , Feb 19 2018
+  BEAMER Revision Number 5.5.2 (26078), Feb 19 2018
+     Session started on Sat Mar 10 01:54:27 2018
+  
+     4 processors, 16292 MB memory
+  
+  Read DXF started on Sat Mar 10 01:54:27 2018
+  
+     Read DXF input file: \\DiskStation\user_data\fmayor\fabrication\Fab\20180305_fin_propagating_wave_2\Diablo_shrink.dxf
+  
+     number of insert commands: 0
+     number of polylines:   73038
+     number of traces:      0
+     number of solid traces:      0
+     number of circles:    120
+     number of ellipse:    0
+     number of arcs:    0
+     number of splines:    0
+     number of skipped entities: 0
+  
+     Number of main structures: 1
+     Layer Set           : SiLayer, NegLayer, HBSiProtectLayer, HoleLayer, InnerPosLayer, HBMetalPosLayer, SpiralLayer, HBMetalGapLayer
+  
+     Geometry Count: 73190 definitions, 73190 instances
+     Cell Count    : 1 definitions, 1 instances
+  
+     Geometry Compaction Factor: 1.0
+     Cell Compaction Factor: 1.0
+     Hierarchy Compaction Factor: 1.0
+  
+     Hierarchy Tree Depth: 1
+  
+     Area (in um2): 6.0142081780e+07
+     Bbox (in um) : (-5002, -2502), (5002, 2502)
+     Coverage : 120 %
+  
+     Extent (in um) : (-5002, -2502), (5002, 2502)
+     Extent related Cov. : 120 %
+  
+     CPU time: 2.0 seconds, Elapsed time: 2.0 seconds
+     Memory usage: 1008.000 kB additional, 188.965 MB total
+  
+  Read DXF completed on Sat Mar 10 01:54:29 2018
+  ----------------------------------------------------------------------------
+  
+  Extract started on Sat Mar 10 01:54:29 2018
+  
+     Extract cell instances: 
+     Layers(s): HBSiProtectLayer
+     Maintain extent
+     Maintain extent
+  
+     Number of main structures: 1
+     Layer Set           : HBSiProtectLayer
+  
+     Geometry Count: 17143 definitions, 17143 instances
+     Cell Count    : 1 definitions, 1 instances
+  
+     Geometry Compaction Factor: 1.0
+     Cell Compaction Factor: 1.0
+     Hierarchy Compaction Factor: 1.0
+  
+     Hierarchy Tree Depth: 1
+  
+     Area (in um2): 4.1286366479e+05
+     Bbox (in um) : (-4850, -2350), (4850, 2350)
+     Coverage : 0.906 %
+  
+     Extent (in um) : (-5002, -2502), (5002, 2502)
+     Extent related Cov. : 0.825 %
+  
+     CPU time: 0.0 seconds, Elapsed time: 0.0 seconds
+     Memory usage: 0.000 B additional, 188.965 MB total
+  
+  Extract completed on Sat Mar 10 01:54:29 2018
+  ----------------------------------------------------------------------------
+  
+  Tone Reversal started on Sat Mar 10 01:54:29 2018
+  
+  
+     Softframe: 0.300 um
+  
+     Hierarchic Processing
+     Target Layer Assignment: AllLayer
+     Target Layer/Datatype: 6(0)
+     Selected Layer Set: *
+  
+     Operation Executed with 4 Threads
+  
+     Number of main structures: 2
+     Layer Set           : 6(0)
+  
+     Geometry Count: 158 definitions, 158 instances
+     Cell Count    : 2 definitions, 2 instances
+  
+     Geometry Compaction Factor: 1.0
+     Cell Compaction Factor: 1.0
+     Hierarchy Compaction Factor: 1.0
+  
+     Hierarchy Tree Depth: 1
+  
+     Area (in um2): 4.9653872632e+07
+     Bbox (in um) : (-5002, -2502), (5002, 2502)
+     Coverage : 99.2 %
+  
+     Extent (in um) : (-5002, -2502), (5002, 2502)
+     Extent related Cov. : 99.2 %
+  
+     CPU time: 5.7 seconds, Elapsed time: 2.0 seconds
+     Memory usage: 12.473 MB additional, 201.438 MB total
+  
+  Tone Reversal completed on Sat Mar 10 01:54:31 2018
+  ----------------------------------------------------------------------------
+  
+  Extract started on Sat Mar 10 01:57:17 2018
+  
+     Extract cell instances: 
+     Layers(s): HBMetalPosLayer
+     Maintain extent
+     Maintain extent
+  
+     Number of main structures: 1
+     Layer Set           : HBMetalPosLayer
+  
+     Geometry Count: 2 definitions, 2 instances
+     Cell Count    : 1 definitions, 1 instances
+  
+     Geometry Compaction Factor: 1.0
+     Cell Compaction Factor: 1.0
+     Hierarchy Compaction Factor: 1.0
+  
+     Hierarchy Tree Depth: 1
+  
+     Area (in um2): 9.0086720000e+06
+     Bbox (in um) : (-4552, -2102), (4552, 2102)
+     Coverage : 23.5 %
+  
+     Extent (in um) : (-5002, -2502), (5002, 2502)
+     Extent related Cov. : 18 %
+  
+     CPU time: 0.0 seconds, Elapsed time: 0.0 seconds
+     Memory usage: 4.000 kB additional, 200.758 MB total
+  
+  Extract completed on Sat Mar 10 01:57:17 2018
+  ----------------------------------------------------------------------------
+  
+  Extract started on Sat Mar 10 01:57:17 2018
+  
+     Extract cell instances: 
+     Layers(s): SpiralLayer
+     Maintain extent
+     Maintain extent
+  
+     Number of main structures: 1
+     Layer Set           : SpiralLayer
+  
+     Geometry Count: 32 definitions, 32 instances
+     Cell Count    : 1 definitions, 1 instances
+  
+     Geometry Compaction Factor: 1.0
+     Cell Compaction Factor: 1.0
+     Hierarchy Compaction Factor: 1.0
+  
+     Hierarchy Tree Depth: 1
+  
+     Area (in um2): 1.6141832835e+05
+     Bbox (in um) : (-3516.44, -2260), (3516.35, 2260)
+     Coverage : 0.508 %
+  
+     Extent (in um) : (-5002, -2502), (5002, 2502)
+     Extent related Cov. : 0.322 %
+  
+     CPU time: 0.0 seconds, Elapsed time: 0.0 seconds
+     Memory usage: 0.000 B additional, 200.758 MB total
+  
+  Extract completed on Sat Mar 10 01:57:17 2018
+  ----------------------------------------------------------------------------
+  
+  OR started on Sat Mar 10 01:57:17 2018
+  
+  
+     Target Layer/Datatype: 3(0)
+     Softframe: 0.000 um
+     Flat Processing
+  
+     Operation Executed with 4 Threads
+     Number of main structures: 1
+     Layer Set           : 3(0)
+  
+     Geometry Count: 3 definitions, 3 instances
+     Cell Count    : 1 definitions, 1 instances
+  
+     Geometry Compaction Factor: 1.0
+     Cell Compaction Factor: 1.0
+     Hierarchy Compaction Factor: 1.0
+  
+     Hierarchy Tree Depth: 1
+  
+     Area (in um2): 9.1067114469e+06
+     Bbox (in um) : (-4552, -2260), (4552, 2260)
+     Coverage : 22.1 %
+  
+     Extent (in um) : (-5002, -2502), (5002, 2502)
+     Extent related Cov. : 18.2 %
+  
+     CPU time: 0.0 seconds, Elapsed time: 0.0 seconds
+     Memory usage: 12.000 kB additional, 200.773 MB total
+  
+  OR completed on Sat Mar 10 01:57:17 2018
+  ----------------------------------------------------------------------------
+  
+  Extract started on Sat Mar 10 01:57:33 2018
+  
+     Extract cell instances: 
+     Layers(s): NegLayer
+     Maintain extent
+     Maintain extent
+  
+     Number of main structures: 1
+     Layer Set           : NegLayer
+  
+     Geometry Count: 50 definitions, 50 instances
+     Cell Count    : 1 definitions, 1 instances
+  
+     Geometry Compaction Factor: 1.0
+     Cell Compaction Factor: 1.0
+     Hierarchy Compaction Factor: 1.0
+  
+     Hierarchy Tree Depth: 1
+  
+     Area (in um2): 2.8830690278e+05
+     Bbox (in um) : (-4848.5, -2348.5), (4848.5, 2348.5)
+     Coverage : 0.633 %
+  
+     Extent (in um) : (-5002, -2502), (5002, 2502)
+     Extent related Cov. : 0.576 %
+  
+     CPU time: 0.0 seconds, Elapsed time: 0.0 seconds
+     Memory usage: 4.000 kB additional, 200.809 MB total
+  
+  Extract completed on Sat Mar 10 01:57:33 2018
+  ----------------------------------------------------------------------------
+  
+  Minus started on Sat Mar 10 01:57:33 2018
+  
+  
+     Target Layer/Datatype: maintain existing layer/datatype information
+  
+     Operation Executed with 4 Threads
+     Number of main structures: 1
+     Layer Set           : 3(0)
+  
+     Geometry Count: 34 definitions, 34 instances
+     Cell Count    : 1 definitions, 1 instances
+  
+     Geometry Compaction Factor: 1.0
+     Cell Compaction Factor: 1.0
+     Hierarchy Compaction Factor: 1.0
+  
+     Hierarchy Tree Depth: 1
+  
+     Area (in um2): 9.0927924210e+06
+     Bbox (in um) : (-4552, -2260), (4552, 2260)
+     Coverage : 22.1 %
+  
+     Extent (in um) : (-5002, -2502), (5002, 2502)
+     Extent related Cov. : 18.2 %
+  
+     CPU time: 0.8 seconds, Elapsed time: 0.0 seconds
+     Memory usage: 9.836 MB additional, 210.648 MB total
+  
+  Minus completed on Sat Mar 10 01:57:33 2018
+  ----------------------------------------------------------------------------
+  
+  Extract started on Sat Mar 10 02:04:37 2018
+  
+     Extract cell instances: 
+     Layers(s): HBSiProtectLayer
+     Maintain extent
+     Maintain extent
+  
+     Number of main structures: 1
+     Layer Set           : HBSiProtectLayer
+  
+     Geometry Count: 17143 definitions, 17143 instances
+     Cell Count    : 1 definitions, 1 instances
+  
+     Geometry Compaction Factor: 1.0
+     Cell Compaction Factor: 1.0
+     Hierarchy Compaction Factor: 1.0
+  
+     Hierarchy Tree Depth: 1
+  
+     Area (in um2): 4.1286366479e+05
+     Bbox (in um) : (-4850, -2350), (4850, 2350)
+     Coverage : 0.906 %
+  
+     Extent (in um) : (-5002, -2502), (5002, 2502)
+     Extent related Cov. : 0.825 %
+  
+     CPU time: 0.1 seconds, Elapsed time: 0.0 seconds
+     Memory usage: 4.000 kB additional, 210.637 MB total
+  
+  Extract completed on Sat Mar 10 02:04:37 2018
+  ----------------------------------------------------------------------------
+  
+  Minus started on Sat Mar 10 02:04:54 2018
+  
+  
+     Target Layer/Datatype: maintain existing layer/datatype information
+  
+     Operation Executed with 4 Threads
+     Number of main structures: 1
+     Layer Set           : 3(0)
+  
+     Geometry Count: 32 definitions, 32 instances
+     Cell Count    : 1 definitions, 1 instances
+  
+     Geometry Compaction Factor: 1.0
+     Cell Compaction Factor: 1.0
+     Hierarchy Compaction Factor: 1.0
+  
+     Hierarchy Tree Depth: 1
+  
+     Area (in um2): 9.0925049210e+06
+     Bbox (in um) : (-4552, -2102), (4552, 2102)
+     Coverage : 23.8 %
+  
+     Extent (in um) : (-5002, -2502), (5002, 2502)
+     Extent related Cov. : 18.2 %
+  
+     CPU time: 0.9 seconds, Elapsed time: 1.0 seconds
+     Memory usage: 40.000 kB additional, 210.859 MB total
+  
+  Minus completed on Sat Mar 10 02:04:55 2018
+  ----------------------------------------------------------------------------
+  
+  Minus started on Sat Mar 10 02:06:57 2018
+  
+  
+     Target Layer/Datatype: maintain existing layer/datatype information
+  
+     Operation Executed with 4 Threads
+     Number of main structures: 1
+     Layer Set           : 3(0)
+  
+     Geometry Count: 34 definitions, 34 instances
+     Cell Count    : 1 definitions, 1 instances
+  
+     Geometry Compaction Factor: 1.0
+     Cell Compaction Factor: 1.0
+     Hierarchy Compaction Factor: 1.0
+  
+     Hierarchy Tree Depth: 1
+  
+     Area (in um2): 9.0927924210e+06
+     Bbox (in um) : (-4552, -2260), (4552, 2260)
+     Coverage : 22.1 %
+  
+     Extent (in um) : (-5002, -2502), (5002, 2502)
+     Extent related Cov. : 18.2 %
+  
+     CPU time: 0.9 seconds, Elapsed time: 0.0 seconds
+     Memory usage: 32.000 kB additional, 210.777 MB total
+  
+  Minus completed on Sat Mar 10 02:06:57 2018
+  ----------------------------------------------------------------------------
+  
+  Read DXF started on Sat Mar 10 02:40:14 2018
+  
+     Read DXF input file: \\171.64.87.147\user_data\ydahmani\Fab\180309_SAW2FIN02\CAD\180309_SAW2FIN_SEM02.dxf
+  
+     number of insert commands: 0
+     number of polylines:   5251
+     number of traces:      0
+     number of solid traces:      0
+     number of circles:    0
+     number of ellipse:    0
+     number of arcs:    0
+     number of splines:    0
+     number of skipped entities: 0
+  
+     Number of main structures: 1
+     Layer Set           : silicon, sem_dose_01_high, sem_dose_01_low, smallBeam, sem_dose_02_high, sem_dose_02_low, sem_dose_03_high, sem_dose_03_low, sem_dose_04_high, sem_dose_04_low, sem_dose_05_high, sem_dose_05_low, sem_dose_06_high, sem_dose_06_low, sem_dose_07_high, sem_dose_07_low, sem_dose_08_high, sem_dose_08_low, sem_dose_09_high, sem_dose_09_low, sem_dose_10_high, sem_dose_10_low, sem_dose_11_high, sem_dose_11_low, bigBeam, labels
+  
+     Geometry Count: 5251 definitions, 5251 instances
+     Cell Count    : 1 definitions, 1 instances
+  
+     Geometry Compaction Factor: 1.0
+     Cell Compaction Factor: 1.0
+     Hierarchy Compaction Factor: 1.0
+  
+     Hierarchy Tree Depth: 1
+  
+     Area (in um2): 1.1846901606e+05
+     Bbox (in um) : (1000, -1893.22), (1600, -1700)
+     Coverage : 102 %
+  
+     Extent (in um) : (1000, -1893.22), (1600, -1700)
+     Extent related Cov. : 102 %
+  
+     CPU time: 0.1 seconds, Elapsed time: 0.0 seconds
+     Memory usage: 12.000 kB additional, 538.449 MB total
+  
+  Read DXF completed on Sat Mar 10 02:40:14 2018
+  ----------------------------------------------------------------------------
+  
+  Extract started on Sat Mar 10 02:40:30 2018
+  
+     Extract cell instances: 
+     Layers(s): smallBeam
+     Maintain extent
+     Maintain extent
+  
+     Number of main structures: 1
+     Layer Set           : smallBeam
+  
+     Geometry Count: 119 definitions, 119 instances
+     Cell Count    : 1 definitions, 1 instances
+  
+     Geometry Compaction Factor: 1.0
+     Cell Compaction Factor: 1.0
+     Hierarchy Compaction Factor: 1.0
+  
+     Hierarchy Tree Depth: 1
+  
+     Area (in um2): 9.8256374000e+03
+     Bbox (in um) : (1030.3, -1875.7), (1569.71, -1730.74)
+     Coverage : 12.6 %
+  
+     Extent (in um) : (1000, -1893.22), (1600, -1700)
+     Extent related Cov. : 8.48 %
+  
+     CPU time: 0.0 seconds, Elapsed time: 0.0 seconds
+     Memory usage: 8.000 kB additional, 538.410 MB total
+  
+  Extract completed on Sat Mar 10 02:40:30 2018
+  ----------------------------------------------------------------------------
+  
+  Extract started on Sat Mar 10 02:40:36 2018
+  
+     Extract cell instances: 
+     Layers(s): bigBeam
+     Maintain extent
+     Maintain extent
+  
+     Number of main structures: 1
+     Layer Set           : bigBeam
+  
+     Geometry Count: 1 definitions, 1 instances
+     Cell Count    : 1 definitions, 1 instances
+  
+     Geometry Compaction Factor: 1.0
+     Cell Compaction Factor: 1.0
+     Hierarchy Compaction Factor: 1.0
+  
+     Hierarchy Tree Depth: 1
+  
+     Area (in um2): 1.0800000000e+05
+     Bbox (in um) : (1000, -1893.22), (1600, -1713.22)
+     Coverage : 100 %
+  
+     Extent (in um) : (1000, -1893.22), (1600, -1700)
+     Extent related Cov. : 93.2 %
+  
+     CPU time: 0.0 seconds, Elapsed time: 0.0 seconds
+     Memory usage: 4.000 kB additional, 538.406 MB total
+  
+  Extract completed on Sat Mar 10 02:40:36 2018
+  ----------------------------------------------------------------------------
+  
+  Minus started on Sat Mar 10 02:40:51 2018
+  
+  
+     Target Layer/Datatype: maintain existing layer/datatype information
+  
+     Operation Executed with 4 Threads
+     Number of main structures: 1
+     Layer Set           : bigBeam
+  
+     Geometry Count: 1 definitions, 1 instances
+     Cell Count    : 1 definitions, 1 instances
+  
+     Geometry Compaction Factor: 1.0
+     Cell Compaction Factor: 1.0
+     Hierarchy Compaction Factor: 1.0
+  
+     Hierarchy Tree Depth: 1
+  
+     Area (in um2): 9.8174362600e+04
+     Bbox (in um) : (1000, -1893.22), (1600, -1713.22)
+     Coverage : 90.9 %
+  
+     Extent (in um) : (1000, -1893.22), (1600, -1700)
+     Extent related Cov. : 84.7 %
+  
+     CPU time: 0.0 seconds, Elapsed time: 0.0 seconds
+     Memory usage: 12.000 kB additional, 538.480 MB total
+  
+  Minus completed on Sat Mar 10 02:40:51 2018
+  ----------------------------------------------------------------------------
+  
+  OR started on Sat Mar 10 02:41:23 2018
+  
+  
+     Target Layer/Datatype: 3(0)
+     Softframe: 0.000 um
+     Flat Processing
+  
+     Operation Executed with 4 Threads
+     Number of main structures: 1
+     Layer Set           : 3(0)
+  
+     Geometry Count: 5 definitions, 5 instances
+     Cell Count    : 1 definitions, 1 instances
+  
+     Geometry Compaction Factor: 1.0
+     Cell Compaction Factor: 1.0
+     Hierarchy Compaction Factor: 1.0
+  
+     Hierarchy Tree Depth: 1
+  
+     Area (in um2): 9.1909667836e+06
+     Bbox (in um) : (-4552, -2260), (4552, 2260)
+     Coverage : 22.3 %
+  
+     Extent (in um) : (-5002, -2502), (5002, 2502)
+     Extent related Cov. : 18.4 %
+  
+     CPU time: 0.0 seconds, Elapsed time: 0.0 seconds
+     Memory usage: 12.000 kB additional, 538.539 MB total
+  
+  OR completed on Sat Mar 10 02:41:23 2018
+  ----------------------------------------------------------------------------
+  

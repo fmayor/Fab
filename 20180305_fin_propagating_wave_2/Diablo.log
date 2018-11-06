@@ -1,0 +1,1040 @@
+  ----------------------------------------------------------------------------
+  
+  Layout ENGINE x64 Revision Number 5.05.002 , Feb 19 2018
+  BEAMER Revision Number 5.5.2 (26078), Feb 19 2018
+     Session started on Tue Mar  6 22:06:16 2018
+  
+     4 processors, 16292 MB memory
+  
+  Read DXF started on Tue Mar  6 22:06:16 2018
+  
+     Read DXF input file: \\DiskStation\user_data\fmayor\fabrication\Fab\20180305_fin_propagating_wave_2\Diablo.dxf
+     at line 2889818 in DXF file: skipped entity SEQEND
+     at line 2889830 in DXF file: skipped entity SEQEND
+     at line 2889842 in DXF file: skipped entity SEQEND
+     at line 2889854 in DXF file: skipped entity SEQEND
+     at line 2889866 in DXF file: skipped entity SEQEND
+     at line 2889878 in DXF file: skipped entity SEQEND
+     at line 2889890 in DXF file: skipped entity SEQEND
+     at line 2889902 in DXF file: skipped entity SEQEND
+     at line 2889914 in DXF file: skipped entity SEQEND
+     at line 2889926 in DXF file: skipped entity SEQEND
+     at line 2889938 in DXF file: skipped entity SEQEND
+     at line 2889950 in DXF file: skipped entity SEQEND
+     at line 2889962 in DXF file: skipped entity SEQEND
+     at line 2889974 in DXF file: skipped entity SEQEND
+     at line 2889986 in DXF file: skipped entity SEQEND
+     at line 2889998 in DXF file: skipped entity SEQEND
+     at line 2890010 in DXF file: skipped entity SEQEND
+     at line 2890022 in DXF file: skipped entity SEQEND
+     at line 2890034 in DXF file: skipped entity SEQEND
+     at line 2890046 in DXF file: skipped entity SEQEND
+     at line 2890058 in DXF file: skipped entity SEQEND
+     at line 2890070 in DXF file: skipped entity SEQEND
+     at line 2890082 in DXF file: skipped entity SEQEND
+     at line 2890094 in DXF file: skipped entity SEQEND
+     at line 2890106 in DXF file: skipped entity SEQEND
+     at line 2890118 in DXF file: skipped entity SEQEND
+     at line 2890130 in DXF file: skipped entity SEQEND
+     at line 2890142 in DXF file: skipped entity SEQEND
+     at line 2890154 in DXF file: skipped entity SEQEND
+     at line 2890166 in DXF file: skipped entity SEQEND
+     at line 2890178 in DXF file: skipped entity SEQEND
+     at line 2890190 in DXF file: skipped entity SEQEND
+     at line 2890202 in DXF file: skipped entity SEQEND
+     at line 2890214 in DXF file: skipped entity SEQEND
+     at line 2890226 in DXF file: skipped entity SEQEND
+     at line 2890238 in DXF file: skipped entity SEQEND
+     at line 2890250 in DXF file: skipped entity SEQEND
+     at line 2890262 in DXF file: skipped entity SEQEND
+     at line 2890274 in DXF file: skipped entity SEQEND
+     at line 2890286 in DXF file: skipped entity SEQEND
+     at line 2890298 in DXF file: skipped entity SEQEND
+     at line 2890310 in DXF file: skipped entity SEQEND
+     at line 2890322 in DXF file: skipped entity SEQEND
+     at line 2890334 in DXF file: skipped entity SEQEND
+     at line 2890346 in DXF file: skipped entity SEQEND
+     at line 2890358 in DXF file: skipped entity SEQEND
+     at line 2890370 in DXF file: skipped entity SEQEND
+     at line 2890382 in DXF file: skipped entity SEQEND
+     at line 2890394 in DXF file: skipped entity SEQEND
+     at line 2890406 in DXF file: skipped entity SEQEND
+     at line 2890418 in DXF file: skipped entity SEQEND
+     at line 2890430 in DXF file: skipped entity SEQEND
+     at line 2890442 in DXF file: skipped entity SEQEND
+     at line 2890454 in DXF file: skipped entity SEQEND
+     at line 2890466 in DXF file: skipped entity SEQEND
+     at line 2890478 in DXF file: skipped entity SEQEND
+     at line 2890490 in DXF file: skipped entity SEQEND
+     at line 2890502 in DXF file: skipped entity SEQEND
+     at line 2890514 in DXF file: skipped entity SEQEND
+     at line 2890526 in DXF file: skipped entity SEQEND
+     at line 2890538 in DXF file: skipped entity SEQEND
+     at line 2890550 in DXF file: skipped entity SEQEND
+     at line 2890562 in DXF file: skipped entity SEQEND
+     at line 2890574 in DXF file: skipped entity SEQEND
+     at line 2890586 in DXF file: skipped entity SEQEND
+     at line 2890598 in DXF file: skipped entity SEQEND
+     at line 2890610 in DXF file: skipped entity SEQEND
+     at line 2890622 in DXF file: skipped entity SEQEND
+     at line 2890634 in DXF file: skipped entity SEQEND
+     at line 2890646 in DXF file: skipped entity SEQEND
+     at line 2890658 in DXF file: skipped entity SEQEND
+     at line 2890670 in DXF file: skipped entity SEQEND
+     at line 2890682 in DXF file: skipped entity SEQEND
+     at line 2890694 in DXF file: skipped entity SEQEND
+     at line 2890706 in DXF file: skipped entity SEQEND
+     at line 2890718 in DXF file: skipped entity SEQEND
+     at line 2890730 in DXF file: skipped entity SEQEND
+     at line 2890742 in DXF file: skipped entity SEQEND
+     at line 2890754 in DXF file: skipped entity SEQEND
+     at line 2890766 in DXF file: skipped entity SEQEND
+     at line 2890778 in DXF file: skipped entity SEQEND
+     at line 2890790 in DXF file: skipped entity SEQEND
+     at line 2890802 in DXF file: skipped entity SEQEND
+     at line 2890814 in DXF file: skipped entity SEQEND
+     at line 2890826 in DXF file: skipped entity SEQEND
+     at line 2890838 in DXF file: skipped entity SEQEND
+     at line 2890850 in DXF file: skipped entity SEQEND
+     at line 2890862 in DXF file: skipped entity SEQEND
+     at line 2890874 in DXF file: skipped entity SEQEND
+     at line 2890886 in DXF file: skipped entity SEQEND
+     at line 2890898 in DXF file: skipped entity SEQEND
+     at line 2890910 in DXF file: skipped entity SEQEND
+     at line 2890922 in DXF file: skipped entity SEQEND
+     at line 2890934 in DXF file: skipped entity SEQEND
+     at line 2890946 in DXF file: skipped entity SEQEND
+     at line 2890958 in DXF file: skipped entity SEQEND
+     at line 2890970 in DXF file: skipped entity SEQEND
+     at line 2890982 in DXF file: skipped entity SEQEND
+     at line 2890994 in DXF file: skipped entity SEQEND
+     at line 2891006 in DXF file: skipped entity SEQEND
+     at line 2891018 in DXF file: skipped entity SEQEND
+     at line 2891030 in DXF file: skipped entity SEQEND
+     at line 2891042 in DXF file: skipped entity SEQEND
+     at line 2891054 in DXF file: skipped entity SEQEND
+     at line 2891066 in DXF file: skipped entity SEQEND
+     at line 2891078 in DXF file: skipped entity SEQEND
+     at line 2891090 in DXF file: skipped entity SEQEND
+     at line 2891102 in DXF file: skipped entity SEQEND
+     at line 2891114 in DXF file: skipped entity SEQEND
+     at line 2891126 in DXF file: skipped entity SEQEND
+     at line 2891138 in DXF file: skipped entity SEQEND
+     at line 2891150 in DXF file: skipped entity SEQEND
+     at line 2891162 in DXF file: skipped entity SEQEND
+     at line 2891174 in DXF file: skipped entity SEQEND
+     at line 2891186 in DXF file: skipped entity SEQEND
+     at line 2891198 in DXF file: skipped entity SEQEND
+     at line 2891210 in DXF file: skipped entity SEQEND
+     at line 2891222 in DXF file: skipped entity SEQEND
+     at line 2891234 in DXF file: skipped entity SEQEND
+     at line 2891246 in DXF file: skipped entity SEQEND
+     at line 8470042 in DXF file: skipped entity SEQEND
+     at line 8470054 in DXF file: skipped entity SEQEND
+     at line 8470066 in DXF file: skipped entity SEQEND
+     at line 8470078 in DXF file: skipped entity SEQEND
+     at line 8470090 in DXF file: skipped entity SEQEND
+     at line 8683638 in DXF file: skipped entity SEQEND
+     at line 8683650 in DXF file: skipped entity SEQEND
+     at line 8683662 in DXF file: skipped entity SEQEND
+     at line 8683674 in DXF file: skipped entity SEQEND
+     at line 8683686 in DXF file: skipped entity SEQEND
+     at line 8896114 in DXF file: skipped entity SEQEND
+     at line 8896126 in DXF file: skipped entity SEQEND
+     at line 8896138 in DXF file: skipped entity SEQEND
+     at line 8896150 in DXF file: skipped entity SEQEND
+     at line 8896162 in DXF file: skipped entity SEQEND
+     at line 9109518 in DXF file: skipped entity SEQEND
+     at line 9109530 in DXF file: skipped entity SEQEND
+     at line 9109542 in DXF file: skipped entity SEQEND
+     at line 9109554 in DXF file: skipped entity SEQEND
+     at line 9109566 in DXF file: skipped entity SEQEND
+     at line 9323722 in DXF file: skipped entity SEQEND
+     at line 9323734 in DXF file: skipped entity SEQEND
+     at line 9323746 in DXF file: skipped entity SEQEND
+     at line 9323758 in DXF file: skipped entity SEQEND
+     at line 9323770 in DXF file: skipped entity SEQEND
+     at line 9536806 in DXF file: skipped entity SEQEND
+     at line 9536818 in DXF file: skipped entity SEQEND
+     at line 9536830 in DXF file: skipped entity SEQEND
+     at line 9536842 in DXF file: skipped entity SEQEND
+     at line 9536854 in DXF file: skipped entity SEQEND
+  
+     number of insert commands: 0
+     number of polylines:   89598
+     number of traces:      0
+     number of solid traces:      0
+     number of circles:    150
+     number of ellipse:    0
+     number of arcs:    0
+     number of splines:    0
+     number of skipped entities: 150
+  
+     Number of main structures: 1
+     Layer Set           : SiLayer, NegLayer, HBSiProtectLayer, HoleLayer, InnerPosLayer, HBMetalPosLayer, SpiralLayer, HBMetalGapLayer
+  
+     Geometry Count: 89768 definitions, 89768 instances
+     Cell Count    : 1 definitions, 1 instances
+  
+     Geometry Compaction Factor: 1.0
+     Cell Compaction Factor: 1.0
+     Hierarchy Compaction Factor: 1.0
+  
+     Hierarchy Tree Depth: 1
+  
+     Area (in um2): 5.9946347474e+07
+     Bbox (in um) : (-5000, -2500), (5000, 2500)
+     Coverage : 120 %
+  
+     Extent (in um) : (-5000, -2500), (5000, 2500)
+     Extent related Cov. : 120 %
+  
+     CPU time: 2.2 seconds, Elapsed time: 4.0 seconds
+     Memory usage: 4.031 MB additional, 4.031 MB total
+  
+  Read DXF completed on Tue Mar  6 22:06:20 2018
+  ----------------------------------------------------------------------------
+  
+  Extract started on Tue Mar  6 22:10:15 2018
+  
+     Extract cell instances: 
+     Layers(s): SiLayer
+     Maintain extent
+     Maintain extent
+  
+     Number of main structures: 1
+     Layer Set           : SiLayer
+  
+     Geometry Count: 462 definitions, 462 instances
+     Cell Count    : 1 definitions, 1 instances
+  
+     Geometry Compaction Factor: 1.0
+     Cell Compaction Factor: 1.0
+     Hierarchy Compaction Factor: 1.0
+  
+     Hierarchy Tree Depth: 1
+  
+     Area (in um2): 1.0559105424e+05
+     Bbox (in um) : (-4309.02, -1129.89), (4459.02, 1050.5)
+     Coverage : 0.552 %
+  
+     Extent (in um) : (-5000, -2500), (5000, 2500)
+     Extent related Cov. : 0.211 %
+  
+     CPU time: 0.0 seconds, Elapsed time: 0.0 seconds
+     Memory usage: 1.527 MB additional, 10.352 MB total
+  
+  Extract completed on Tue Mar  6 22:10:15 2018
+  ----------------------------------------------------------------------------
+  
+  Extract started on Tue Mar  6 22:10:17 2018
+  
+     Extract cell instances: 
+     Layers(s): NegLayer
+     Maintain extent
+     Maintain extent
+  
+     Number of main structures: 1
+     Layer Set           : NegLayer
+  
+     Geometry Count: 8179 definitions, 8179 instances
+     Cell Count    : 1 definitions, 1 instances
+  
+     Geometry Compaction Factor: 1.0
+     Cell Compaction Factor: 1.0
+     Hierarchy Compaction Factor: 1.0
+  
+     Hierarchy Tree Depth: 1
+  
+     Area (in um2): 4.8582961567e+05
+     Bbox (in um) : (-4850, -2350), (4850, 2350)
+     Coverage : 1.07 %
+  
+     Extent (in um) : (-5000, -2500), (5000, 2500)
+     Extent related Cov. : 0.972 %
+  
+     CPU time: 0.0 seconds, Elapsed time: 0.0 seconds
+     Memory usage: 1.113 MB additional, 9.137 MB total
+  
+  Extract completed on Tue Mar  6 22:10:17 2018
+  ----------------------------------------------------------------------------
+  
+  Minus started on Tue Mar  6 22:11:14 2018
+  
+  
+     Target Layer/Datatype: maintain existing layer/datatype information
+  
+     Operation Executed with 4 Threads
+     Number of main structures: 1
+     Layer Set           : NegLayer
+  
+     Geometry Count: 304 definitions, 304 instances
+     Cell Count    : 1 definitions, 1 instances
+  
+     Geometry Compaction Factor: 1.0
+     Cell Compaction Factor: 1.0
+     Hierarchy Compaction Factor: 1.0
+  
+     Hierarchy Tree Depth: 1
+  
+     Area (in um2): 3.6847885221e+05
+     Bbox (in um) : (-4850, -2350), (4850, 2350)
+     Coverage : 0.808 %
+  
+     Extent (in um) : (-5000, -2500), (5000, 2500)
+     Extent related Cov. : 0.737 %
+  
+     CPU time: 13.6 seconds, Elapsed time: 4.0 seconds
+     Memory usage: 9.176 MB additional, 19.406 MB total
+  
+  Minus completed on Tue Mar  6 22:11:18 2018
+  ----------------------------------------------------------------------------
+  
+  Extract started on Tue Mar  6 22:12:39 2018
+  
+     Extract cell instances: 
+     Layers(s): HoleLayer
+     Maintain extent
+     Maintain extent
+  
+     Number of main structures: 1
+     Layer Set           : HoleLayer
+  
+     Geometry Count: 55470 definitions, 55470 instances
+     Cell Count    : 1 definitions, 1 instances
+  
+     Geometry Compaction Factor: 1.0
+     Cell Compaction Factor: 1.0
+     Hierarchy Compaction Factor: 1.0
+  
+     Hierarchy Tree Depth: 1
+  
+     Area (in um2): 6.0582323399e+04
+     Bbox (in um) : (-4309.81, -661.708), (4459.81, 621.708)
+     Coverage : 0.538 %
+  
+     Extent (in um) : (-5000, -2500), (5000, 2500)
+     Extent related Cov. : 0.121 %
+  
+     CPU time: 0.1 seconds, Elapsed time: 0.0 seconds
+     Memory usage: 356.000 kB additional, 23.602 MB total
+  
+  Extract completed on Tue Mar  6 22:12:39 2018
+  ----------------------------------------------------------------------------
+  
+  Extract started on Tue Mar  6 22:12:54 2018
+  
+     Extract cell instances: 
+     Layers(s): InnerPosLayer
+     Maintain extent
+     Maintain extent
+  
+     Number of main structures: 1
+     Layer Set           : InnerPosLayer
+  
+     Geometry Count: 30 definitions, 30 instances
+     Cell Count    : 1 definitions, 1 instances
+  
+     Geometry Compaction Factor: 1.0
+     Cell Compaction Factor: 1.0
+     Hierarchy Compaction Factor: 1.0
+  
+     Hierarchy Tree Depth: 1
+  
+     Area (in um2): 4.4631524530e+04
+     Bbox (in um) : (-4247.49, -451.762), (4397.56, 411.762)
+     Coverage : 0.598 %
+  
+     Extent (in um) : (-5000, -2500), (5000, 2500)
+     Extent related Cov. : 0.0893 %
+  
+     CPU time: 0.1 seconds, Elapsed time: 0.0 seconds
+     Memory usage: 48.000 kB additional, 23.805 MB total
+  
+  Extract completed on Tue Mar  6 22:12:54 2018
+  ----------------------------------------------------------------------------
+  
+  OR started on Tue Mar  6 22:13:24 2018
+  
+  
+     Target Layer/Datatype: 3(0)
+     Softframe: 0.000 um
+     Flat Processing
+  
+     Operation Executed with 4 Threads
+     Number of main structures: 1
+     Layer Set           : 3(0)
+  
+     Geometry Count: 42782 definitions, 42782 instances
+     Cell Count    : 1 definitions, 1 instances
+  
+     Geometry Compaction Factor: 1.0
+     Cell Compaction Factor: 1.0
+     Hierarchy Compaction Factor: 1.0
+  
+     Hierarchy Tree Depth: 1
+  
+     Area (in um2): 4.2843985453e+05
+     Bbox (in um) : (-4850, -2350), (4850, 2350)
+     Coverage : 0.94 %
+  
+     Extent (in um) : (-5000, -2500), (5000, 2500)
+     Extent related Cov. : 0.857 %
+  
+     CPU time: 11.3 seconds, Elapsed time: 3.0 seconds
+     Memory usage: 7.813 MB additional, 32.020 MB total
+  
+  OR completed on Tue Mar  6 22:13:27 2018
+  ----------------------------------------------------------------------------
+  
+  Minus started on Tue Mar  6 22:14:02 2018
+  
+  
+     Target Layer/Datatype: maintain existing layer/datatype information
+  
+     Operation Executed with 4 Threads
+     Number of main structures: 1
+     Layer Set           : 3(0)
+  
+     Geometry Count: 42782 definitions, 42782 instances
+     Cell Count    : 1 definitions, 1 instances
+  
+     Geometry Compaction Factor: 1.0
+     Cell Compaction Factor: 1.0
+     Hierarchy Compaction Factor: 1.0
+  
+     Hierarchy Tree Depth: 1
+  
+     Area (in um2): 3.8380832345e+05
+     Bbox (in um) : (-4850, -2350), (4850, 2350)
+     Coverage : 0.842 %
+  
+     Extent (in um) : (-5000, -2500), (5000, 2500)
+     Extent related Cov. : 0.768 %
+  
+     CPU time: 10.9 seconds, Elapsed time: 4.0 seconds
+     Memory usage: 6.914 MB additional, 39.590 MB total
+  
+  Minus completed on Tue Mar  6 22:14:06 2018
+  ----------------------------------------------------------------------------
+  
+  Healing started on Tue Mar  6 22:15:10 2018
+  
+  
+     Softframe: 0.300 um
+     Processing Mode: Healing
+
+     Hierarchic Processing
+     Target Layer Assignment: AllLayer
+     Target Layer/Datatype: 1(0)
+     Selected Layer Set: *
+  
+     Operation Executed with 4 Threads
+  
+     Number of main structures: 1
+     Layer Set           : 1(0)
+  
+     Geometry Count: 42782 definitions, 42782 instances
+     Cell Count    : 1 definitions, 1 instances
+  
+     Geometry Compaction Factor: 1.0
+     Cell Compaction Factor: 1.0
+     Hierarchy Compaction Factor: 1.0
+  
+     Hierarchy Tree Depth: 1
+  
+     Area (in um2): 3.8380832212e+05
+     Bbox (in um) : (-4850, -2350), (4850, 2350)
+     Coverage : 0.842 %
+  
+     Extent (in um) : (-5000, -2500), (5000, 2500)
+     Extent related Cov. : 0.768 %
+  
+     CPU time: 10.7 seconds, Elapsed time: 3.0 seconds
+     Memory usage: 0.000 B additional, 40.652 MB total
+  
+  Healing completed on Tue Mar  6 22:15:13 2018
+  ----------------------------------------------------------------------------
+  
+  Format JEOL52 started on Tue Mar  6 22:20:11 2018
+  
+     Export started on Tue Mar  6 22:20:11
+     Pattern Filename: \\DiskStation\user_data\fmayor\fabrication\Fab\20180305_fin_propagating_wave_2\toJEOL\180306_DIABLO01.v30
+  
+     Resolution [um] = 0.000125
+   Beam Step Size [Res] = 32
+   Fracture Mode = Conventional
+   Trapezoids = X and Y
+   Beam Step Size Fracturing = True
+   Fracturing Angle = AnyAngle
+   Fracturing Tolerance [Res] = 1.000000
+   Fracturing Type = FlatWithFields
+   Symmetric Fracturing = False
+   Field Size X [um] = 62.500000
+   Field Size Y [um] = 62.500000
+   Subfield Size X [um] = 0.000000
+   Subfield Size Y [um] = 0.000000
+   Traversal Direction = TopDown
+   Perform Distortion Correction = False
+   Integrate Fields into previous Pass = False
+   Field Overlap X [um] = 0.000000
+   Field Overlap Y [um] = 0.000000
+   Overlap Method = Share between Fields
+   Interleaving Size [um] = 0.000000
+   Interlock Layer = *
+   Multipass Mode = Two Passes
+   Multipass Field Arrangement = Shortest Path
+   Mainfield Offset X [-] = 0.500000
+   Mainfield Offset Y [-] = 0.500000
+   Subfield Offset X [-] = 0.500000
+   Subfield Offset Y [-] = 0.500000
+   Layer for Multipass = *
+   Userdefined Dosepasses = 
+
+     Number of main structures: 1
+     Layer Set           : 1(0)
+  
+     Geometry Count: 42782 definitions, 42782 instances
+     Cell Count    : 1 definitions, 1 instances
+  
+     Geometry Compaction Factor: 1.0
+     Cell Compaction Factor: 1.0
+     Hierarchy Compaction Factor: 1.0
+  
+     Hierarchy Tree Depth: 1
+  
+     Area (in um2): 3.8380832212e+05
+     Bbox (in um) : (-4850, -2350), (4850, 2350)
+     Coverage : 0.842 %
+  
+     Extent (in um) : (-5000, -2500), (5000, 2500)
+     Extent related Cov. : 0.768 %
+  
+     CPU time: 33.5 seconds, Elapsed time: 34.0 seconds
+     Memory usage: 9.762 MB additional, 59.777 MB total
+  
+  Format JEOL52 failed on Tue Mar  6 22:20:45 2018
+  ----------------------------------------------------------------------------
+  
+  Error: The resulting extent exceeds the selected user extent.
+Please enlarge the extent to (-2531.250,-2500.000) / (4881.250,2500.000).
+  Format JEOL52 started on Tue Mar  6 23:33:28 2018
+  
+     Export started on Tue Mar  6 23:33:28
+     Pattern Filename: \\DiskStation\user_data\fmayor\fabrication\Fab\20180305_fin_propagating_wave_2\toJEOL\180306_DIABLO01.v30
+  
+     Resolution [um] = 0.000125
+   Beam Step Size [Res] = 32
+   Fracture Mode = Conventional
+   Trapezoids = X and Y
+   Beam Step Size Fracturing = True
+   Fracturing Angle = AnyAngle
+   Fracturing Tolerance [Res] = 1.000000
+   Fracturing Type = FlatWithFields
+   Symmetric Fracturing = False
+   Field Size X [um] = 62.500000
+   Field Size Y [um] = 62.500000
+   Subfield Size X [um] = 0.000000
+   Subfield Size Y [um] = 0.000000
+   Traversal Direction = TopDown
+   Perform Distortion Correction = False
+   Integrate Fields into previous Pass = False
+   Field Overlap X [um] = 0.000000
+   Field Overlap Y [um] = 0.000000
+   Overlap Method = Share between Fields
+   Interleaving Size [um] = 0.000000
+   Interlock Layer = *
+   Multipass Mode = Two Passes
+   Multipass Field Arrangement = Shortest Path
+   Mainfield Offset X [-] = 0.500000
+   Mainfield Offset Y [-] = 0.500000
+   Subfield Offset X [-] = 0.500000
+   Subfield Offset Y [-] = 0.500000
+   Layer for Multipass = *
+   Userdefined Dosepasses = 
+
+     Machine Type: JBX-6300FS
+     Unit of Chip Size [um]: 0.000125
+     Unit of Pattern Data [um]: 0.000125
+     Unit of Position Set [um]: 0.000125
+     Shot Pitch: 32
+     Shot Pitch [um]: 0.004000
+     Field Size (x/y)[um]: 62.500000/62.500000
+     Field Overlap (x/y)[um]: 0.000000/0.000000
+     Job Frame Lower Left (x/y)[um]: -5000.000000/-2500.000000
+     Job Frame Upper Right (x/y)[um]: 5000.000000/2500.000000
+     Normalize Dose: False
+     Feature Ordering: FollowGeometry
+     Subfield Optimization Layer: *
+     Center To Field: False
+     Field Memory Size (MB): 256
+     Single Line Shot Ranks: 0
+     Dose Mapping: Relative
+     Shot Time Modulation Table Name: MOD001
+     Fracture Mode: Conventional
+     Curve Tolerance Factor [Res]: 1.000000
+     Traversal Mode: CellToField
+     Floating Subfield Fracturing: False
+     Floating Subfield Size [um]: 0.512
+     Field Overlap X [um] = 0.000000
+   Field Overlap Y [um] = 0.000000
+   Overlap Method = Share between Fields
+   Interleaving Size [um] = 0.000000
+   Interlock Layer = *
+   Multipass Mode = Two Passes
+   Multipass Field Arrangement = Shortest Path
+   Mainfield Offset X [-] = 0.500000
+   Mainfield Offset Y [-] = 0.500000
+   Subfield Offset X [-] = 0.500000
+   Subfield Offset Y [-] = 0.500000
+   Layer for Multipass = *
+   Userdefined Dosepasses = 
+
+  
+     Fracturing Executed with 4 Threads 
+     Number of Fields 2324
+     Number of decompacted Rectangles 61305
+     Number of decompacted Trapezoids 1477413
+     Number of decompacted SingleLines 0
+     Total number of decompacted Features 1538718
+     Number of main structures: 1
+     Layer Set           : 1(0)
+  
+     Geometry Count: 42782 definitions, 42782 instances
+     Cell Count    : 1 definitions, 1 instances
+  
+     Geometry Compaction Factor: 1.0
+     Cell Compaction Factor: 1.0
+     Hierarchy Compaction Factor: 1.0
+  
+     Hierarchy Tree Depth: 1
+  
+     Area (in um2): 3.8380832212e+05
+     Bbox (in um) : (-4850, -2350), (4850, 2350)
+     Coverage : 0.842 %
+  
+     Extent (in um) : (-5000, -2500), (5000, 2500)
+     Extent related Cov. : 0.768 %
+  
+     CPU time: 101.9 seconds, Elapsed time: 120.0 seconds
+     Memory usage: 0.000 B additional, 53.652 MB total
+  
+  Format JEOL52 completed on Tue Mar  6 23:35:28 2018
+  ----------------------------------------------------------------------------
+  
+  Format JEOL52 started on Tue Mar  6 23:36:47 2018
+  
+     Export started on Tue Mar  6 23:36:47
+     Pattern Filename: \\DiskStation\user_data\fmayor\fabrication\Fab\20180305_fin_propagating_wave_2\toJEOL\180306_DIABLO01.v30
+  
+     Resolution [um] = 0.000125
+   Beam Step Size [Res] = 32
+   Fracture Mode = LRFT
+   Trapezoids = X and Y
+   Beam Step Size Fracturing = True
+   Fracturing Angle = AnyAngle
+   Fracturing Tolerance [Res] = 1.000000
+   Fracturing Type = FlatWithFields
+   Symmetric Fracturing = False
+   Field Size X [um] = 62.500000
+   Field Size Y [um] = 62.500000
+   Subfield Size X [um] = 0.000000
+   Subfield Size Y [um] = 0.000000
+   Traversal Direction = TopDown
+   Perform Distortion Correction = False
+   Integrate Fields into previous Pass = False
+   Field Overlap X [um] = 0.000000
+   Field Overlap Y [um] = 0.000000
+   Overlap Method = Share between Fields
+   Interleaving Size [um] = 0.000000
+   Interlock Layer = *
+   Multipass Mode = Two Passes
+   Multipass Field Arrangement = Shortest Path
+   Mainfield Offset X [-] = 0.500000
+   Mainfield Offset Y [-] = 0.500000
+   Subfield Offset X [-] = 0.500000
+   Subfield Offset Y [-] = 0.500000
+   Layer for Multipass = *
+   Userdefined Dosepasses = 
+
+     Machine Type: JBX-6300FS
+     Unit of Chip Size [um]: 0.000125
+     Unit of Pattern Data [um]: 0.000125
+     Unit of Position Set [um]: 0.000125
+     Shot Pitch: 32
+     Shot Pitch [um]: 0.004000
+     Field Size (x/y)[um]: 62.500000/62.500000
+     Field Overlap (x/y)[um]: 0.000000/0.000000
+     Job Frame Lower Left (x/y)[um]: -5000.000000/-2500.000000
+     Job Frame Upper Right (x/y)[um]: 5000.000000/2500.000000
+     Normalize Dose: False
+     Feature Ordering: FollowGeometry
+     Subfield Optimization Layer: *
+     Center To Field: False
+     Field Memory Size (MB): 256
+     Single Line Shot Ranks: 0
+     Dose Mapping: Relative
+     Shot Time Modulation Table Name: MOD001
+     Fracture Mode: LRFT
+     Curve Tolerance Factor [Res]: 1.000000
+     Traversal Mode: CellToField
+     Floating Subfield Fracturing: False
+     Floating Subfield Size [um]: 0.512
+     Field Overlap X [um] = 0.000000
+   Field Overlap Y [um] = 0.000000
+   Overlap Method = Share between Fields
+   Interleaving Size [um] = 0.000000
+   Interlock Layer = *
+   Multipass Mode = Two Passes
+   Multipass Field Arrangement = Shortest Path
+   Mainfield Offset X [-] = 0.500000
+   Mainfield Offset Y [-] = 0.500000
+   Subfield Offset X [-] = 0.500000
+   Subfield Offset Y [-] = 0.500000
+   Layer for Multipass = *
+   Userdefined Dosepasses = 
+
+  
+     Fracturing Executed with 4 Threads 
+     Number of Fields 2324
+     Number of decompacted Rectangles 148377
+     Number of decompacted Trapezoids 1545113
+     Number of decompacted SingleLines 0
+     Total number of decompacted Features 1693490
+     Number of main structures: 1
+     Layer Set           : 1(0)
+  
+     Geometry Count: 42782 definitions, 42782 instances
+     Cell Count    : 1 definitions, 1 instances
+  
+     Geometry Compaction Factor: 1.0
+     Cell Compaction Factor: 1.0
+     Hierarchy Compaction Factor: 1.0
+  
+     Hierarchy Tree Depth: 1
+  
+     Area (in um2): 3.8380832212e+05
+     Bbox (in um) : (-4850, -2350), (4850, 2350)
+     Coverage : 0.842 %
+  
+     Extent (in um) : (-5000, -2500), (5000, 2500)
+     Extent related Cov. : 0.768 %
+  
+     CPU time: 166.6 seconds, Elapsed time: 188.0 seconds
+     Memory usage: 0.000 B additional, 85.379 MB total
+  
+  Format JEOL52 completed on Tue Mar  6 23:39:55 2018
+  ----------------------------------------------------------------------------
+  
+  Format JEOL52 started on Wed Mar  7 01:58:54 2018
+  
+     Export started on Wed Mar  7 01:58:54
+     Pattern Filename: \\DiskStation\user_data\fmayor\fabrication\Fab\20180305_fin_propagating_wave_2\toJEOL\180306_DIABLO01.v30
+  
+     Resolution [um] = 0.000125
+   Beam Step Size [Res] = 32
+   Fracture Mode = LRFT
+   Trapezoids = X and Y
+   Beam Step Size Fracturing = True
+   Fracturing Angle = AnyAngle
+   Fracturing Tolerance [Res] = 1.000000
+   Fracturing Type = FlatWithFields
+   Symmetric Fracturing = False
+   Field Size X [um] = 62.500000
+   Field Size Y [um] = 62.500000
+   Subfield Size X [um] = 0.000000
+   Subfield Size Y [um] = 0.000000
+   Traversal Direction = TopDown
+   Perform Distortion Correction = False
+   Integrate Fields into previous Pass = False
+   Field Overlap X [um] = 0.000000
+   Field Overlap Y [um] = 0.000000
+   Overlap Method = Share between Fields
+   Interleaving Size [um] = 0.000000
+   Interlock Layer = *
+   Multipass Mode = Two Passes
+   Multipass Field Arrangement = Shortest Path
+   Mainfield Offset X [-] = 0.000000
+   Mainfield Offset Y [-] = 0.500000
+   Subfield Offset X [-] = 0.500000
+   Subfield Offset Y [-] = 0.500000
+   Layer for Multipass = *
+   Userdefined Dosepasses = 
+
+     Machine Type: JBX-6300FS
+     Unit of Chip Size [um]: 0.000125
+     Unit of Pattern Data [um]: 0.000125
+     Unit of Position Set [um]: 0.000125
+     Shot Pitch: 32
+     Shot Pitch [um]: 0.004000
+     Field Size (x/y)[um]: 62.500000/62.500000
+     Field Overlap (x/y)[um]: 0.000000/0.000000
+     Job Frame Lower Left (x/y)[um]: -5000.000000/-2500.000000
+     Job Frame Upper Right (x/y)[um]: 5000.000000/2500.000000
+     Normalize Dose: False
+     Feature Ordering: FollowGeometry
+     Subfield Optimization Layer: *
+     Center To Field: False
+     Field Memory Size (MB): 256
+     Single Line Shot Ranks: 0
+     Dose Mapping: Relative
+     Shot Time Modulation Table Name: MOD001
+     Fracture Mode: LRFT
+     Curve Tolerance Factor [Res]: 1.000000
+     Traversal Mode: CellToField
+     Floating Subfield Fracturing: False
+     Floating Subfield Size [um]: 0.512
+     Field Overlap X [um] = 0.000000
+   Field Overlap Y [um] = 0.000000
+   Overlap Method = Share between Fields
+   Interleaving Size [um] = 0.000000
+   Interlock Layer = *
+   Multipass Mode = Two Passes
+   Multipass Field Arrangement = Shortest Path
+   Mainfield Offset X [-] = 0.000000
+   Mainfield Offset Y [-] = 0.500000
+   Subfield Offset X [-] = 0.500000
+   Subfield Offset Y [-] = 0.500000
+   Layer for Multipass = *
+   Userdefined Dosepasses = 
+
+  
+     Fracturing Executed with 4 Threads 
+     Number of Fields 2426
+     Number of decompacted Rectangles 149037
+     Number of decompacted Trapezoids 1545818
+     Number of decompacted SingleLines 0
+     Total number of decompacted Features 1694855
+     Number of main structures: 1
+     Layer Set           : 1(0)
+  
+     Geometry Count: 42782 definitions, 42782 instances
+     Cell Count    : 1 definitions, 1 instances
+  
+     Geometry Compaction Factor: 1.0
+     Cell Compaction Factor: 1.0
+     Hierarchy Compaction Factor: 1.0
+  
+     Hierarchy Tree Depth: 1
+  
+     Area (in um2): 3.8380832212e+05
+     Bbox (in um) : (-4850, -2350), (4850, 2350)
+     Coverage : 0.842 %
+  
+     Extent (in um) : (-5000, -2500), (5000, 2500)
+     Extent related Cov. : 0.768 %
+  
+     CPU time: 562.4 seconds, Elapsed time: 471.0 seconds
+     Memory usage: 37.809 MB additional, 238.391 MB total
+  
+  Format JEOL52 completed on Wed Mar  7 02:06:45 2018
+  ----------------------------------------------------------------------------
+  
+  Format JEOL52 started on Wed Mar  7 02:11:25 2018
+  
+     Export started on Wed Mar  7 02:11:25
+     Pattern Filename: \\DiskStation\user_data\fmayor\fabrication\Fab\20180305_fin_propagating_wave_2\toJEOL\180306_DIABLO01.v30
+  
+     Resolution [um] = 0.000125
+   Beam Step Size [Res] = 32
+   Fracture Mode = LRFT
+   Trapezoids = X and Y
+   Beam Step Size Fracturing = True
+   Fracturing Angle = AnyAngle
+   Fracturing Tolerance [Res] = 1.000000
+   Fracturing Type = FlatWithFields
+   Symmetric Fracturing = False
+   Field Size X [um] = 62.500000
+   Field Size Y [um] = 62.500000
+   Subfield Size X [um] = 0.000000
+   Subfield Size Y [um] = 0.000000
+   Traversal Direction = TopDown
+   Perform Distortion Correction = False
+   Integrate Fields into previous Pass = False
+   Field Overlap X [um] = 0.000000
+   Field Overlap Y [um] = 0.000000
+   Overlap Method = Share between Fields
+   Interleaving Size [um] = 0.000000
+   Interlock Layer = *
+   Multipass Mode = Two Passes
+   Multipass Field Arrangement = Shortest Path
+   Mainfield Offset X [-] = 0.000000
+   Mainfield Offset Y [-] = 0.500000
+   Subfield Offset X [-] = 0.500000
+   Subfield Offset Y [-] = 0.500000
+   Layer for Multipass = *
+   Userdefined Dosepasses = 
+
+     Machine Type: JBX-6300FS
+     Unit of Chip Size [um]: 0.000125
+     Unit of Pattern Data [um]: 0.000125
+     Unit of Position Set [um]: 0.000125
+     Shot Pitch: 32
+     Shot Pitch [um]: 0.004000
+     Field Size (x/y)[um]: 62.500000/62.500000
+     Field Overlap (x/y)[um]: 0.000000/0.000000
+     Job Frame Lower Left (x/y)[um]: -5000.000000/-2500.000000
+     Job Frame Upper Right (x/y)[um]: 5000.000000/2500.000000
+     Normalize Dose: False
+     Feature Ordering: FollowGeometry
+     Subfield Optimization Layer: *
+     Center To Field: False
+     Field Memory Size (MB): 256
+     Single Line Shot Ranks: 0
+     Dose Mapping: Relative
+     Shot Time Modulation Table Name: MOD001
+     Fracture Mode: LRFT
+     Curve Tolerance Factor [Res]: 1.000000
+     Traversal Mode: CellToField
+     Floating Subfield Fracturing: False
+     Floating Subfield Size [um]: 0.512
+     Field Overlap X [um] = 0.000000
+   Field Overlap Y [um] = 0.000000
+   Overlap Method = Share between Fields
+   Interleaving Size [um] = 0.000000
+   Interlock Layer = *
+   Multipass Mode = Two Passes
+   Multipass Field Arrangement = Shortest Path
+   Mainfield Offset X [-] = 0.000000
+   Mainfield Offset Y [-] = 0.500000
+   Subfield Offset X [-] = 0.500000
+   Subfield Offset Y [-] = 0.500000
+   Layer for Multipass = *
+   Userdefined Dosepasses = 
+
+  
+     Fracturing Executed with 4 Threads 
+     Number of Fields 2426
+     Number of decompacted Rectangles 149037
+     Number of decompacted Trapezoids 1545818
+     Number of decompacted SingleLines 0
+     Total number of decompacted Features 1694855
+     Number of main structures: 1
+     Layer Set           : 1(0)
+  
+     Geometry Count: 42782 definitions, 42782 instances
+     Cell Count    : 1 definitions, 1 instances
+  
+     Geometry Compaction Factor: 1.0
+     Cell Compaction Factor: 1.0
+     Hierarchy Compaction Factor: 1.0
+  
+     Hierarchy Tree Depth: 1
+  
+     Area (in um2): 3.8380832212e+05
+     Bbox (in um) : (-4850, -2350), (4850, 2350)
+     Coverage : 0.842 %
+  
+     Extent (in um) : (-5000, -2500), (5000, 2500)
+     Extent related Cov. : 0.768 %
+  
+     CPU time: 520.2 seconds, Elapsed time: 422.0 seconds
+     Memory usage: 0.000 B additional, 277.109 MB total
+  
+  Format JEOL52 completed on Wed Mar  7 02:18:27 2018
+  ----------------------------------------------------------------------------
+  
+  Format JEOL52 started on Wed Mar  7 02:21:11 2018
+  
+     Export started on Wed Mar  7 02:21:11
+     Pattern Filename: \\DiskStation\user_data\fmayor\fabrication\Fab\20180305_fin_propagating_wave_2\toJEOL\180306_DIABLO01.v30
+  
+     Resolution [um] = 0.000125
+   Beam Step Size [Res] = 32
+   Fracture Mode = LRFT
+   Trapezoids = X and Y
+   Beam Step Size Fracturing = True
+   Fracturing Angle = AnyAngle
+   Fracturing Tolerance [Res] = 1.000000
+   Fracturing Type = FlatWithFields
+   Symmetric Fracturing = False
+   Field Size X [um] = 62.500000
+   Field Size Y [um] = 62.500000
+   Subfield Size X [um] = 0.000000
+   Subfield Size Y [um] = 0.000000
+   Traversal Direction = TopDown
+   Perform Distortion Correction = False
+   Integrate Fields into previous Pass = False
+   Field Overlap X [um] = 0.000000
+   Field Overlap Y [um] = 0.000000
+   Overlap Method = Share between Fields
+   Interleaving Size [um] = 0.000000
+   Interlock Layer = *
+   Multipass Mode = Two Passes
+   Multipass Field Arrangement = Line By Line
+   Mainfield Offset X [-] = 0.000000
+   Mainfield Offset Y [-] = 0.500000
+   Subfield Offset X [-] = 0.500000
+   Subfield Offset Y [-] = 0.500000
+   Layer for Multipass = *
+   Userdefined Dosepasses = 
+
+     Machine Type: JBX-6300FS
+     Unit of Chip Size [um]: 0.000125
+     Unit of Pattern Data [um]: 0.000125
+     Unit of Position Set [um]: 0.000125
+     Shot Pitch: 32
+     Shot Pitch [um]: 0.004000
+     Field Size (x/y)[um]: 62.500000/62.500000
+     Field Overlap (x/y)[um]: 0.000000/0.000000
+     Job Frame Lower Left (x/y)[um]: -5000.000000/-2500.000000
+     Job Frame Upper Right (x/y)[um]: 5000.000000/2500.000000
+     Normalize Dose: False
+     Feature Ordering: FollowGeometry
+     Subfield Optimization Layer: *
+     Center To Field: False
+     Field Memory Size (MB): 256
+     Single Line Shot Ranks: 0
+     Dose Mapping: Relative
+     Shot Time Modulation Table Name: MOD001
+     Fracture Mode: LRFT
+     Curve Tolerance Factor [Res]: 1.000000
+     Traversal Mode: CellToField
+     Floating Subfield Fracturing: False
+     Floating Subfield Size [um]: 0.512
+     Field Overlap X [um] = 0.000000
+   Field Overlap Y [um] = 0.000000
+   Overlap Method = Share between Fields
+   Interleaving Size [um] = 0.000000
+   Interlock Layer = *
+   Multipass Mode = Two Passes
+   Multipass Field Arrangement = Line By Line
+   Mainfield Offset X [-] = 0.000000
+   Mainfield Offset Y [-] = 0.500000
+   Subfield Offset X [-] = 0.500000
+   Subfield Offset Y [-] = 0.500000
+   Layer for Multipass = *
+   Userdefined Dosepasses = 
+
+  
+     Fracturing Executed with 4 Threads 
+     Number of Fields 2426
+     Number of decompacted Rectangles 149037
+     Number of decompacted Trapezoids 1545818
+     Number of decompacted SingleLines 0
+     Total number of decompacted Features 1694855
+     Number of main structures: 1
+     Layer Set           : 1(0)
+  
+     Geometry Count: 42782 definitions, 42782 instances
+     Cell Count    : 1 definitions, 1 instances
+  
+     Geometry Compaction Factor: 1.0
+     Cell Compaction Factor: 1.0
+     Hierarchy Compaction Factor: 1.0
+  
+     Hierarchy Tree Depth: 1
+  
+     Area (in um2): 3.8380832212e+05
+     Bbox (in um) : (-4850, -2350), (4850, 2350)
+     Coverage : 0.842 %
+  
+     Extent (in um) : (-5000, -2500), (5000, 2500)
+     Extent related Cov. : 0.768 %
+  
+     CPU time: 237.6 seconds, Elapsed time: 263.0 seconds
+     Memory usage: 0.000 B additional, 232.359 MB total
+  
+  Format JEOL52 completed on Wed Mar  7 02:25:34 2018
+  ----------------------------------------------------------------------------
+  

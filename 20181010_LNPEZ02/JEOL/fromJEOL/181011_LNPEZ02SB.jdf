@@ -1,0 +1,63 @@
+JOB/W	,2,0				; 4 Inch DUMMY Wafer
+
+; ======== PQRS  GLOBAL MARK POSITION OPTIONS ============   
+ GLMPOS	  P=(-3500,0),Q=(3500,0),R=(0,2000),S=(0,-2000)  ; 4 inch Wafer with  3um Mark
+ GLMP	  3.0,300.0,0,0		; P   Mark  width = 3um   Length = 3000um  GLMQRS	  3.0,300.0,0,0		; QRS Mark  width = 3um   Length = 3000um
+						;
+PATH  ; Auto CALIB Menu File(CALIB.MEN)      ; Initial Check (CURRNT,INITBE,PDEFBE,SUBDEFBE)
+
+;         Xpos  #X   dX  Ypos  #Y  dY	
+ARRAY   (-770,1,15000)/(2680,2,4880) ;    << IMPORTANT OUTER ARRAY	 Cycle Check   (CURRNT,DRIFT 5min) define the array size and interval
+
+ASSIGN A(1) -> ((*,*))         ;<< IMPORTANT OUTER ARRAY, Define which dies you are writing
+
+;               Xpos  #X   dX        Ypos  #Y  dY
+;  IDEAL ARRAY
+1:ARRAY  (0,1,5100)/(0,1,5000)  ;   <<<< define die array size      (POSITIVE Y IS MOVING DOWN 
+
+CHMPOS	M1=(0,0)
+ ;CHMPOS  M1=(400,-1350)      ;,M2=(100,100),M3=(100,-100),M4=(-100,-100)
+	; the (400,-1350) is an offset of the height measurement beam that centers it to the current location
+	; because the CHMPOS command is in the inner array, this does it every inner area location
+	; can see a 'v' on the patterns in A-Check program which indicates virtual measurement (height)
+;CHMPOS  M1=(-800,1800)      ;,M2=(100,100),M3=(100,-100),M4=(-100,-100)
+CHMARK  3.0,20.0,0,0   ; Width = 3um , Length = 20um   				;DO NOT EXCEED 6 CHA
+
+;;; ?????RICH?????
+;;; CHMPOS - should this be zeroed? Why aren't the height measurements at the write locations
+
+
+ASSIGN P(1) -> ((1,1), MOD001)   ;
+ 
+AEND
+	
+PEND	
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;       Layer1 Definition	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;		
+LAYER  1
+
+;;; Patterns
+P(1)	'WTJ_LNPEZ02_181011SB.v30'
+;SRTPRM 0                             ;  NO SORT ,  FOLLOW THE GEOMETRY
+   
+
+
+;;; Modulation Tables
+;WTJ_LNPEZ02_181011SB.jdi
+MOD001: MODULAT (( 0, -66.7 ) , ( 1, -33.3 ) , ( 2,  0.0 ))
+
+; SCAN_STEP = 0.004000
+; MINIMAL_RESOLUTION = 0.000125
+; MACHINE_TYPE = JBX-6300FS
+; DIGITAL_SCALING = 1.000000
+; MAXIMUM_BEAMSIZE = 2000
+; SHOT_SHIFT_COUNT = 1
+; OVERLAP_COUNT = 1
+; INCREMENT_SCANNER_DATA_UNIT = 1
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ RESTYP	POSI,'PMMA'					; ZEP-520A  50nm
+ OBJAPT	3  				; 1=0um 2=2000um 3,4=25um 5,6=60um 7=130um 8=300um
+; STDCUR	1.95
+ STDCUR 1 				; used for dwell time simulation (WTJ, 20180316)
+
+END

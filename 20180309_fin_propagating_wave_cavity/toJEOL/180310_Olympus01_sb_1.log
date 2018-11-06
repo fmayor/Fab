@@ -1,0 +1,60 @@
+  ----------------------------------------------------------------------------
+  
+  Layout ENGINE x64 Revision Number 5.05.002 , Feb 19 2018
+  BEAMER Revision Number 5.5.2 (26078), Feb 19 2018
+     Session started on Sat Mar 10 06:36:50 2018
+  
+     4 processors, 16292 MB memory
+  
+  Read JEOL52 started on Sat Mar 10 06:36:50 2018
+  
+     Read JEOL52 input file: \\171.64.87.147\user_data\fmayor\fabrication\Fab\20180309_fin_propagating_wave_cavity\toJEOL\180310_Olympus01_sb.v30
+     Unit of Chip Size [um]    0.000125
+     Unit of Position Set [um] 0.000125
+     Unit of Pattern Data [um] 0.000125
+     Chip Size (X, Y)[um]         (10700.000000, 5000.000000)
+     Field Size (X, Y)[um]        (62.500000, 62.500000)
+     Position Set Size (X, Y)[um] (62.500000, 62.500000)
+  
+     Maximum Number of Shot Ranks 2
+     Number of CM Records 0
+     Number of MP Records 0
+     Number of LB Records 0
+     Number of TX Records 5811
+     Number of Rectangles 362949
+     Number of Trapezoids 730488
+     Number of SingleLines 0
+     Number of decompacted Rectangles 362949
+     Number of decompacted Trapezoids 730488
+     Number of decompacted SingleLines 0
+     Number of Map Library Blocks 0
+     Number of Library Blocks 0
+     Number of Text Blocks 414
+  
+     Pattern units in [um] 0.000125
+
+     Number of main structures: 1
+     Layer Set           : 0(1), 0(2)
+  
+     Geometry Count: 1093437 definitions, 1093437 instances
+     Cell Count    : 415 definitions, 415 instances
+  
+     Geometry Compaction Factor: 1.0
+     Cell Compaction Factor: 1.0
+     Hierarchy Compaction Factor: 1.0
+  
+     Hierarchy Tree Depth: 2
+  
+     Area (in um2): 1.0969118981e+05
+     Bbox (in um) : (1100, 200), (8900, 4800)
+     Coverage : 0.306 %
+  
+     Extent (in um) : (0, 0), (10700, 5000)
+     Extent related Cov. : 0.205 %
+  
+     CPU time: 0.5 seconds, Elapsed time: 0.0 seconds
+     Memory usage: 0.000 B additional, 334.824 MB total
+  
+  Read JEOL52 completed on Sat Mar 10 06:36:50 2018
+  ----------------------------------------------------------------------------
+  

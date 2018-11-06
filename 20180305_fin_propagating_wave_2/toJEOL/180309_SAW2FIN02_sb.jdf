@@ -1,0 +1,82 @@
+JOB/W	,2,0				; 4 Inch DUMMY Wafer
+
+; ======== PQRS  GLOBAL MARK POSITION OPTIONS ============   
+ GLMPOS	  P=(-3410.092,-1050),Q=(3410,1050.2),R=(0,2250),S=(0,-2250)  ; 4 inch Wafer with  3um Mark
+ GLMP	  2.0,40.0,0,0		; P   Mark  width = 3um   Length = 3000um 
+ GLMQRS	  2.0,40.0,0,0		; QRS Mark  width = 3um   Length = 3000um
+						;
+PATH  ; Auto CALIB Menu File(CALIB.MEN)      ; Initial Check (CURRNT,INITBE,PDEFBE,SUBDEFBE)
+
+; Outer array
+;       Xpos  #X   dX    Ypos  #Y  dY	
+ ARRAY   (0,1,10000)/(0,1,5000) ;    << IMPORTANT OUTER ARRAY	 Cycle Check   (CURRNT,DRIFT 5min) define the array size and interval
+
+ASSIGN A(1) -> ((*,1))         ;<< IMPORTANT OUTER ARRAY, Define which dies you are writing
+
+;               Xpos  #X   dX        Ypos  #Y  dY
+;  Inner array
+1:ARRAY  (0,1,1000)/(0,1,1000)  ;   <<<< define die array size      (POSITIVE Y IS MOVING DOWN 
+
+CHMPOS	M1=(0,0)
+;CHMPOS  M1=(400,-1350)      ;,M2=(100,100),M3=(100,-100),M4=(-100,-100)
+	; the (400,-1350) is an offset of the height measurement beam that centers it to the current location
+	; because the CHMPOS command is in the inner array, this does it every inner area location
+	; can see a 'v' on the patterns in A-Check program which indicates virtual measurement (height)
+;CHMPOS  M1=(-800,1800)      ;,M2=(100,100),M3=(100,-100),M4=(-100,-100)
+ CHMARK  3.0,20.0,0,0   ; Width = 3um , Length = 20um   				;DO NOT EXCEED 6 CHA
+
+;;; ?????RICH?????
+;;; CHMPOS - should this be zeroed? Why aren't the height measurements at the write locations
+
+;;; FIN2SAW01
+
+ ASSIGN P(1) -> ((1,1),MOD001)
+
+AEND
+	
+PEND	
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;       Layer1 Definition	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;		
+LAYER  1
+
+;; Pattern consists of two rows of devices.  Top is focusing IDT's.  Bottom are rectangular IDT's.
+
+P(1)	'180309_SAW2FIN02_sb.v30'
+
+MOD001: MODULAT (( 0, -30.0 ) , ( 1, -28.0 ) , ( 2, -27.5 )
+-     , ( 3, -26.0 ) , ( 4, -25.0 ) , ( 5, -24.0 )
+-     , ( 6, -22.5 ) , ( 7, -22.0 ) , ( 8, -20.0 )
+-     , ( 9, -18.0 ) , ( 10, -17.5 ) , ( 11, -16.0 )
+-     , ( 12, -15.0 ) , ( 13, -14.0 ) , ( 14, -12.5 )
+-     , ( 15, -12.0 ) , ( 16, -10.0 ) , ( 17, -9.0 )
+-     , ( 18, -8.0 ) , ( 19, -7.5 ) , ( 20, -7.0 )
+-     , ( 21, -6.0 ) , ( 22, -5.0 ) , ( 23, -4.0 )
+-     , ( 24, -3.0 ) , ( 25, -2.5 ) , ( 26, -2.0 )
+-     , ( 27, -1.0 ) , ( 28,  0.0 ) , ( 29,  1.0 )
+-     , ( 30,  2.0 ) , ( 31,  2.5 ) , ( 32,  3.0 )
+-     , ( 33,  4.0 ) , ( 34,  5.0 ) , ( 35,  6.0 )
+-     , ( 36,  7.0 ) , ( 37,  7.5 ) , ( 38,  8.0 )
+-     , ( 39,  9.0 ) , ( 40, 10.0 ) , ( 41, 12.0 )
+-     , ( 42, 12.5 ) , ( 43, 14.0 ) , ( 44, 15.0 )
+-     , ( 45, 16.0 ) , ( 46, 17.5 ) , ( 47, 18.0 )
+-     , ( 48, 20.0 ) , ( 49, 22.0 ) , ( 50, 22.5 )
+-     , ( 51, 24.0 ) , ( 52, 25.0 ) , ( 53, 26.0 )
+-     , ( 54, 27.5 ) , ( 55, 28.0 ) , ( 56, 30.0 ))
+
+; SCAN_STEP = 0.004000
+; MINIMAL_RESOLUTION = 0.000125
+; MACHINE_TYPE = JBX-6300FS
+; DIGITAL_SCALING = 1.000000
+; MAXIMUM_BEAMSIZE = 2000
+; SHOT_SHIFT_COUNT = 1
+; OVERLAP_COUNT = 1
+; INCREMENT_SCANNER_DATA_UNIT = 1
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ RESTYP	POSI,'PMMA'					; ZEP-520A  50nm
+ OBJAPT	3  				; 1=0um 2=2000um 3,4=25um 5,6=60um 7=130um 8=300um
+;STDCUR	1.95
+ STDCUR 0.5
+
+
+END

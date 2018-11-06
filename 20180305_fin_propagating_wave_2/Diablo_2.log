@@ -1,0 +1,543 @@
+  ----------------------------------------------------------------------------
+  
+  Layout ENGINE x64 Revision Number 5.05.002 , Feb 19 2018
+  BEAMER Revision Number 5.5.2 (26078), Feb 19 2018
+     Session started on Sat Mar 10 01:40:05 2018
+  
+     4 processors, 16292 MB memory
+  
+  Read DXF started on Sat Mar 10 01:40:05 2018
+  
+     Read DXF input file: \\DiskStation\user_data\fmayor\fabrication\Fab\20180305_fin_propagating_wave_2\Diablo.dxf
+     at line 2889818 in DXF file: skipped entity SEQEND
+     at line 2889830 in DXF file: skipped entity SEQEND
+     at line 2889842 in DXF file: skipped entity SEQEND
+     at line 2889854 in DXF file: skipped entity SEQEND
+     at line 2889866 in DXF file: skipped entity SEQEND
+     at line 2889878 in DXF file: skipped entity SEQEND
+     at line 2889890 in DXF file: skipped entity SEQEND
+     at line 2889902 in DXF file: skipped entity SEQEND
+     at line 2889914 in DXF file: skipped entity SEQEND
+     at line 2889926 in DXF file: skipped entity SEQEND
+     at line 2889938 in DXF file: skipped entity SEQEND
+     at line 2889950 in DXF file: skipped entity SEQEND
+     at line 2889962 in DXF file: skipped entity SEQEND
+     at line 2889974 in DXF file: skipped entity SEQEND
+     at line 2889986 in DXF file: skipped entity SEQEND
+     at line 2889998 in DXF file: skipped entity SEQEND
+     at line 2890010 in DXF file: skipped entity SEQEND
+     at line 2890022 in DXF file: skipped entity SEQEND
+     at line 2890034 in DXF file: skipped entity SEQEND
+     at line 2890046 in DXF file: skipped entity SEQEND
+     at line 2890058 in DXF file: skipped entity SEQEND
+     at line 2890070 in DXF file: skipped entity SEQEND
+     at line 2890082 in DXF file: skipped entity SEQEND
+     at line 2890094 in DXF file: skipped entity SEQEND
+     at line 2890106 in DXF file: skipped entity SEQEND
+     at line 2890118 in DXF file: skipped entity SEQEND
+     at line 2890130 in DXF file: skipped entity SEQEND
+     at line 2890142 in DXF file: skipped entity SEQEND
+     at line 2890154 in DXF file: skipped entity SEQEND
+     at line 2890166 in DXF file: skipped entity SEQEND
+     at line 2890178 in DXF file: skipped entity SEQEND
+     at line 2890190 in DXF file: skipped entity SEQEND
+     at line 2890202 in DXF file: skipped entity SEQEND
+     at line 2890214 in DXF file: skipped entity SEQEND
+     at line 2890226 in DXF file: skipped entity SEQEND
+     at line 2890238 in DXF file: skipped entity SEQEND
+     at line 2890250 in DXF file: skipped entity SEQEND
+     at line 2890262 in DXF file: skipped entity SEQEND
+     at line 2890274 in DXF file: skipped entity SEQEND
+     at line 2890286 in DXF file: skipped entity SEQEND
+     at line 2890298 in DXF file: skipped entity SEQEND
+     at line 2890310 in DXF file: skipped entity SEQEND
+     at line 2890322 in DXF file: skipped entity SEQEND
+     at line 2890334 in DXF file: skipped entity SEQEND
+     at line 2890346 in DXF file: skipped entity SEQEND
+     at line 2890358 in DXF file: skipped entity SEQEND
+     at line 2890370 in DXF file: skipped entity SEQEND
+     at line 2890382 in DXF file: skipped entity SEQEND
+     at line 2890394 in DXF file: skipped entity SEQEND
+     at line 2890406 in DXF file: skipped entity SEQEND
+     at line 2890418 in DXF file: skipped entity SEQEND
+     at line 2890430 in DXF file: skipped entity SEQEND
+     at line 2890442 in DXF file: skipped entity SEQEND
+     at line 2890454 in DXF file: skipped entity SEQEND
+     at line 2890466 in DXF file: skipped entity SEQEND
+     at line 2890478 in DXF file: skipped entity SEQEND
+     at line 2890490 in DXF file: skipped entity SEQEND
+     at line 2890502 in DXF file: skipped entity SEQEND
+     at line 2890514 in DXF file: skipped entity SEQEND
+     at line 2890526 in DXF file: skipped entity SEQEND
+     at line 2890538 in DXF file: skipped entity SEQEND
+     at line 2890550 in DXF file: skipped entity SEQEND
+     at line 2890562 in DXF file: skipped entity SEQEND
+     at line 2890574 in DXF file: skipped entity SEQEND
+     at line 2890586 in DXF file: skipped entity SEQEND
+     at line 2890598 in DXF file: skipped entity SEQEND
+     at line 2890610 in DXF file: skipped entity SEQEND
+     at line 2890622 in DXF file: skipped entity SEQEND
+     at line 2890634 in DXF file: skipped entity SEQEND
+     at line 2890646 in DXF file: skipped entity SEQEND
+     at line 2890658 in DXF file: skipped entity SEQEND
+     at line 2890670 in DXF file: skipped entity SEQEND
+     at line 2890682 in DXF file: skipped entity SEQEND
+     at line 2890694 in DXF file: skipped entity SEQEND
+     at line 2890706 in DXF file: skipped entity SEQEND
+     at line 2890718 in DXF file: skipped entity SEQEND
+     at line 2890730 in DXF file: skipped entity SEQEND
+     at line 2890742 in DXF file: skipped entity SEQEND
+     at line 2890754 in DXF file: skipped entity SEQEND
+     at line 2890766 in DXF file: skipped entity SEQEND
+     at line 2890778 in DXF file: skipped entity SEQEND
+     at line 2890790 in DXF file: skipped entity SEQEND
+     at line 2890802 in DXF file: skipped entity SEQEND
+     at line 2890814 in DXF file: skipped entity SEQEND
+     at line 2890826 in DXF file: skipped entity SEQEND
+     at line 2890838 in DXF file: skipped entity SEQEND
+     at line 2890850 in DXF file: skipped entity SEQEND
+     at line 2890862 in DXF file: skipped entity SEQEND
+     at line 2890874 in DXF file: skipped entity SEQEND
+     at line 2890886 in DXF file: skipped entity SEQEND
+     at line 2890898 in DXF file: skipped entity SEQEND
+     at line 2890910 in DXF file: skipped entity SEQEND
+     at line 2890922 in DXF file: skipped entity SEQEND
+     at line 2890934 in DXF file: skipped entity SEQEND
+     at line 2890946 in DXF file: skipped entity SEQEND
+     at line 2890958 in DXF file: skipped entity SEQEND
+     at line 2890970 in DXF file: skipped entity SEQEND
+     at line 2890982 in DXF file: skipped entity SEQEND
+     at line 2890994 in DXF file: skipped entity SEQEND
+     at line 2891006 in DXF file: skipped entity SEQEND
+     at line 2891018 in DXF file: skipped entity SEQEND
+     at line 2891030 in DXF file: skipped entity SEQEND
+     at line 2891042 in DXF file: skipped entity SEQEND
+     at line 2891054 in DXF file: skipped entity SEQEND
+     at line 2891066 in DXF file: skipped entity SEQEND
+     at line 2891078 in DXF file: skipped entity SEQEND
+     at line 2891090 in DXF file: skipped entity SEQEND
+     at line 2891102 in DXF file: skipped entity SEQEND
+     at line 2891114 in DXF file: skipped entity SEQEND
+     at line 2891126 in DXF file: skipped entity SEQEND
+     at line 2891138 in DXF file: skipped entity SEQEND
+     at line 2891150 in DXF file: skipped entity SEQEND
+     at line 2891162 in DXF file: skipped entity SEQEND
+     at line 2891174 in DXF file: skipped entity SEQEND
+     at line 2891186 in DXF file: skipped entity SEQEND
+     at line 2891198 in DXF file: skipped entity SEQEND
+     at line 2891210 in DXF file: skipped entity SEQEND
+     at line 2891222 in DXF file: skipped entity SEQEND
+     at line 2891234 in DXF file: skipped entity SEQEND
+     at line 2891246 in DXF file: skipped entity SEQEND
+     at line 8470842 in DXF file: skipped entity SEQEND
+     at line 8470854 in DXF file: skipped entity SEQEND
+     at line 8470866 in DXF file: skipped entity SEQEND
+     at line 8470878 in DXF file: skipped entity SEQEND
+     at line 8470890 in DXF file: skipped entity SEQEND
+     at line 8684470 in DXF file: skipped entity SEQEND
+     at line 8684482 in DXF file: skipped entity SEQEND
+     at line 8684494 in DXF file: skipped entity SEQEND
+     at line 8684506 in DXF file: skipped entity SEQEND
+     at line 8684518 in DXF file: skipped entity SEQEND
+     at line 8896978 in DXF file: skipped entity SEQEND
+     at line 8896990 in DXF file: skipped entity SEQEND
+     at line 8897002 in DXF file: skipped entity SEQEND
+     at line 8897014 in DXF file: skipped entity SEQEND
+     at line 8897026 in DXF file: skipped entity SEQEND
+     at line 9110414 in DXF file: skipped entity SEQEND
+     at line 9110426 in DXF file: skipped entity SEQEND
+     at line 9110438 in DXF file: skipped entity SEQEND
+     at line 9110450 in DXF file: skipped entity SEQEND
+     at line 9110462 in DXF file: skipped entity SEQEND
+     at line 9324650 in DXF file: skipped entity SEQEND
+     at line 9324662 in DXF file: skipped entity SEQEND
+     at line 9324674 in DXF file: skipped entity SEQEND
+     at line 9324686 in DXF file: skipped entity SEQEND
+     at line 9324698 in DXF file: skipped entity SEQEND
+     at line 9537766 in DXF file: skipped entity SEQEND
+     at line 9537778 in DXF file: skipped entity SEQEND
+     at line 9537790 in DXF file: skipped entity SEQEND
+     at line 9537802 in DXF file: skipped entity SEQEND
+     at line 9537814 in DXF file: skipped entity SEQEND
+  
+     number of insert commands: 0
+     number of polylines:   89643
+     number of traces:      0
+     number of solid traces:      0
+     number of circles:    150
+     number of ellipse:    0
+     number of arcs:    0
+     number of splines:    0
+     number of skipped entities: 150
+  
+     Number of main structures: 1
+     Layer Set           : SiLayer, NegLayer, HBSiProtectLayer, HoleLayer, InnerPosLayer, HBMetalPosLayer, SpiralLayer, HBMetalGapLayer
+  
+     Geometry Count: 89825 definitions, 89825 instances
+     Cell Count    : 1 definitions, 1 instances
+  
+     Geometry Compaction Factor: 1.0
+     Cell Compaction Factor: 1.0
+     Hierarchy Compaction Factor: 1.0
+  
+     Hierarchy Tree Depth: 1
+  
+     Area (in um2): 5.9988011489e+07
+     Bbox (in um) : (-5000, -2500), (5000, 2500)
+     Coverage : 120 %
+  
+     Extent (in um) : (-5000, -2500), (5000, 2500)
+     Extent related Cov. : 120 %
+  
+     CPU time: 2.0 seconds, Elapsed time: 2.0 seconds
+     Memory usage: 16.000 kB additional, 187.375 MB total
+  
+  Read DXF completed on Sat Mar 10 01:40:07 2018
+  ----------------------------------------------------------------------------
+  
+  Extract started on Sat Mar 10 01:40:07 2018
+  
+     Extract cell instances: 
+     Layers(s): *
+     Maintain extent
+     Maintain extent
+  
+     Number of main structures: 1
+     Layer Set           : SiLayer, NegLayer, HBSiProtectLayer, HoleLayer, InnerPosLayer, HBMetalPosLayer, SpiralLayer, HBMetalGapLayer
+  
+     Geometry Count: 89825 definitions, 89825 instances
+     Cell Count    : 1 definitions, 1 instances
+  
+     Geometry Compaction Factor: 1.0
+     Cell Compaction Factor: 1.0
+     Hierarchy Compaction Factor: 1.0
+  
+     Hierarchy Tree Depth: 1
+  
+     Area (in um2): 5.9988011489e+07
+     Bbox (in um) : (-5000, -2500), (5000, 2500)
+     Coverage : 120 %
+  
+     Extent (in um) : (-5000, -2500), (5000, 2500)
+     Extent related Cov. : 120 %
+  
+     CPU time: 0.0 seconds, Elapsed time: 0.0 seconds
+     Memory usage: 4.000 kB additional, 187.367 MB total
+  
+  Extract completed on Sat Mar 10 01:40:07 2018
+  ----------------------------------------------------------------------------
+  
+  Extract started on Sat Mar 10 01:41:34 2018
+  
+     Extract cell instances: 
+     Layers(s): *
+     Maintain extent
+     Maintain extent
+  
+     Number of main structures: 1
+     Layer Set           : SiLayer, NegLayer, HBSiProtectLayer, HoleLayer, InnerPosLayer, HBMetalPosLayer, SpiralLayer, HBMetalGapLayer
+  
+     Geometry Count: 89825 definitions, 89825 instances
+     Cell Count    : 1 definitions, 1 instances
+  
+     Geometry Compaction Factor: 1.0
+     Cell Compaction Factor: 1.0
+     Hierarchy Compaction Factor: 1.0
+  
+     Hierarchy Tree Depth: 1
+  
+     Area (in um2): 5.9988011489e+07
+     Bbox (in um) : (-5000, -2500), (5000, 2500)
+     Coverage : 120 %
+  
+     Extent (in um) : (-5000, -2500), (5000, 2500)
+     Extent related Cov. : 120 %
+  
+     CPU time: 0.1 seconds, Elapsed time: 0.0 seconds
+     Memory usage: 4.000 kB additional, 187.715 MB total
+  
+  Extract completed on Sat Mar 10 01:41:34 2018
+  ----------------------------------------------------------------------------
+  
+  Merge started on Sat Mar 10 01:41:35 2018
+  
+     Number of main structures: 2
+     Layer Set           : SiLayer, NegLayer, HBSiProtectLayer, HoleLayer, InnerPosLayer, HBMetalPosLayer, SpiralLayer, HBMetalGapLayer
+  
+     Geometry Count: 179650 definitions, 179650 instances
+     Cell Count    : 2 definitions, 2 instances
+  
+     Geometry Compaction Factor: 1.0
+     Cell Compaction Factor: 1.0
+     Hierarchy Compaction Factor: 1.0
+  
+     Hierarchy Tree Depth: 1
+  
+     Area (in um2): 1.1997602298e+08
+     Bbox (in um) : (-5000, -2500), (5000, 2500)
+     Coverage : 240 %
+  
+     Extent (in um) : (-5000, -2500), (5000, 2500)
+     Extent related Cov. : 240 %
+  
+     CPU time: 0.1 seconds, Elapsed time: 0.0 seconds
+     Memory usage: 0.000 B additional, 187.730 MB total
+  
+  Merge completed on Sat Mar 10 01:41:35 2018
+  ----------------------------------------------------------------------------
+  
+  Extract started on Sat Mar 10 01:41:49 2018
+  
+     Extract cell instances: 
+     Layers(s): SpiralLayer
+     Maintain extent
+     Maintain extent
+  
+     Number of main structures: 1
+     Layer Set           : SpiralLayer
+  
+     Geometry Count: 8512 definitions, 8512 instances
+     Cell Count    : 1 definitions, 1 instances
+  
+     Geometry Compaction Factor: 1.0
+     Cell Compaction Factor: 1.0
+     Hierarchy Compaction Factor: 1.0
+  
+     Hierarchy Tree Depth: 1
+  
+     Area (in um2): 8.5313340000e+04
+     Bbox (in um) : (-3514.44, -2258), (3514.35, 2258)
+     Coverage : 0.269 %
+  
+     Extent (in um) : (-5000, -2500), (5000, 2500)
+     Extent related Cov. : 0.171 %
+  
+     CPU time: 0.0 seconds, Elapsed time: 1.0 seconds
+     Memory usage: 4.000 kB additional, 187.746 MB total
+  
+  Extract completed on Sat Mar 10 01:41:50 2018
+  ----------------------------------------------------------------------------
+  
+  Merge started on Sat Mar 10 01:41:50 2018
+  
+     Number of main structures: 2
+     Layer Set           : HBMetalPosLayer, SiLayer, NegLayer, HBSiProtectLayer, HoleLayer, InnerPosLayer, SpiralLayer, HBMetalGapLayer
+  
+     Geometry Count: 98337 definitions, 98337 instances
+     Cell Count    : 2 definitions, 2 instances
+  
+     Geometry Compaction Factor: 1.0
+     Cell Compaction Factor: 1.0
+     Hierarchy Compaction Factor: 1.0
+  
+     Hierarchy Tree Depth: 1
+  
+     Area (in um2): 6.0073324829e+07
+     Bbox (in um) : (-5000, -2500), (5000, 2500)
+     Coverage : 120 %
+  
+     Extent (in um) : (-5000, -2500), (5000, 2500)
+     Extent related Cov. : 120 %
+  
+     CPU time: 0.1 seconds, Elapsed time: 0.0 seconds
+     Memory usage: 0.000 B additional, 187.750 MB total
+  
+  Merge completed on Sat Mar 10 01:41:50 2018
+  ----------------------------------------------------------------------------
+  
+  Extract started on Sat Mar 10 01:42:03 2018
+  
+     Extract cell instances: 
+     Layers(s): HBMetalPosLayer
+     Maintain extent
+     Maintain extent
+  
+     Number of main structures: 1
+     Layer Set           : HBMetalPosLayer
+  
+     Geometry Count: 28 definitions, 28 instances
+     Cell Count    : 1 definitions, 1 instances
+  
+     Geometry Compaction Factor: 1.0
+     Cell Compaction Factor: 1.0
+     Hierarchy Compaction Factor: 1.0
+  
+     Hierarchy Tree Depth: 1
+  
+     Area (in um2): 8.7932000000e+06
+     Bbox (in um) : (-4550, -2100), (4550, 2100)
+     Coverage : 23 %
+  
+     Extent (in um) : (-5000, -2500), (5000, 2500)
+     Extent related Cov. : 17.6 %
+  
+     CPU time: 0.0 seconds, Elapsed time: 0.0 seconds
+     Memory usage: 4.000 kB additional, 187.445 MB total
+  
+  Extract completed on Sat Mar 10 01:42:03 2018
+  ----------------------------------------------------------------------------
+  
+  Merge started on Sat Mar 10 01:42:03 2018
+  
+     Number of main structures: 2
+     Layer Set           : HBMetalPosLayer, SpiralLayer
+  
+     Geometry Count: 8540 definitions, 8540 instances
+     Cell Count    : 2 definitions, 2 instances
+  
+     Geometry Compaction Factor: 1.0
+     Cell Compaction Factor: 1.0
+     Hierarchy Compaction Factor: 1.0
+  
+     Hierarchy Tree Depth: 1
+  
+     Area (in um2): 8.8785133400e+06
+     Bbox (in um) : (-4550, -2258), (4550, 2258)
+     Coverage : 21.6 %
+  
+     Extent (in um) : (-5000, -2500), (5000, 2500)
+     Extent related Cov. : 17.8 %
+  
+     CPU time: 0.0 seconds, Elapsed time: 0.0 seconds
+     Memory usage: 0.000 B additional, 187.449 MB total
+  
+  Merge completed on Sat Mar 10 01:42:03 2018
+  ----------------------------------------------------------------------------
+  
+  Symmetry Transformation started on Sat Mar 10 01:42:03 2018
+  
+     Coordinate System Shift x,y: 0.000000, 0.000000
+     Scale x,y: 1.100000, 1.100000
+     Shift x,y (um): 0.000000, 0.000000
+     Rotate (deg): 0.000000
+     Reflect x,y: False, False
+  
+     Number of main structures: 2
+     Layer Set           : HBMetalPosLayer, SpiralLayer
+  
+     Geometry Count: 8540 definitions, 8540 instances
+     Cell Count    : 2 definitions, 2 instances
+  
+     Geometry Compaction Factor: 1.0
+     Cell Compaction Factor: 1.0
+     Hierarchy Compaction Factor: 1.2
+  
+     Hierarchy Tree Depth: 1
+  
+     Area (in um2): 1.0743001141e+07
+     Bbox (in um) : (-5005, -2483.8), (5005, 2483.8)
+     Coverage : 21.6 %
+  
+     Extent (in um) : (-5500, -2750), (5500, 2750)
+     Extent related Cov. : 17.8 %
+  
+     CPU time: 0.0 seconds, Elapsed time: 0.0 seconds
+     Memory usage: 0.000 B additional, 187.449 MB total
+  
+  Symmetry Transformation completed on Sat Mar 10 01:42:03 2018
+  ----------------------------------------------------------------------------
+  
+  Healing started on Sat Mar 10 01:42:19 2018
+  
+  
+     Softframe: 0.300 um
+     Processing Mode: Healing
+
+     Hierarchic Processing
+     Target Layer Assignment: AllLayer
+     Target Layer/Datatype: 1(0)
+     Selected Layer Set: *
+  
+     Operation Executed with 4 Threads
+  
+     Number of main structures: 1
+     Layer Set           : 1(0)
+  
+     Geometry Count: 414 definitions, 414 instances
+     Cell Count    : 1 definitions, 1 instances
+  
+     Geometry Compaction Factor: 1.0
+     Cell Compaction Factor: 1.0
+     Hierarchy Compaction Factor: 1.0
+  
+     Hierarchy Tree Depth: 1
+  
+     Area (in um2): 8.8527901850e+06
+     Bbox (in um) : (-4550, -2258), (4550, 2258)
+     Coverage : 21.5 %
+  
+     Extent (in um) : (-5000, -2500), (5000, 2500)
+     Extent related Cov. : 17.7 %
+  
+     CPU time: 0.3 seconds, Elapsed time: 1.0 seconds
+     Memory usage: 36.000 kB additional, 187.508 MB total
+  
+  Healing completed on Sat Mar 10 01:42:20 2018
+  ----------------------------------------------------------------------------
+  
+  Symmetry Transformation started on Sat Mar 10 01:42:20 2018
+  
+     Coordinate System Shift x,y: 0.000000, 0.000000
+     Scale x,y: 1.100000, 1.100000
+     Shift x,y (um): 0.000000, 0.000000
+     Rotate (deg): 0.000000
+     Reflect x,y: False, False
+  
+     Number of main structures: 1
+     Layer Set           : 1(0)
+  
+     Geometry Count: 414 definitions, 414 instances
+     Cell Count    : 1 definitions, 1 instances
+  
+     Geometry Compaction Factor: 1.0
+     Cell Compaction Factor: 1.0
+     Hierarchy Compaction Factor: 1.2
+  
+     Hierarchy Tree Depth: 1
+  
+     Area (in um2): 1.0711876124e+07
+     Bbox (in um) : (-5005, -2483.8), (5005, 2483.8)
+     Coverage : 21.5 %
+  
+     Extent (in um) : (-5500, -2750), (5500, 2750)
+     Extent related Cov. : 17.7 %
+  
+     CPU time: 0.0 seconds, Elapsed time: 0.0 seconds
+     Memory usage: 0.000 B additional, 187.508 MB total
+  
+  Symmetry Transformation completed on Sat Mar 10 01:42:20 2018
+  ----------------------------------------------------------------------------
+  
+  Symmetry Transformation started on Sat Mar 10 01:42:54 2018
+  
+     Coordinate System Shift x,y: 0.000000, 0.000000
+     Scale x,y: 1.200000, 1.200000
+     Shift x,y (um): 0.000000, 0.000000
+     Rotate (deg): 0.000000
+     Reflect x,y: False, False
+  
+     Number of main structures: 1
+     Layer Set           : 1(0)
+  
+     Geometry Count: 414 definitions, 414 instances
+     Cell Count    : 1 definitions, 1 instances
+  
+     Geometry Compaction Factor: 1.0
+     Cell Compaction Factor: 1.0
+     Hierarchy Compaction Factor: 1.4
+  
+     Hierarchy Tree Depth: 1
+  
+     Area (in um2): 1.2748017866e+07
+     Bbox (in um) : (-5460, -2709.6), (5460, 2709.6)
+     Coverage : 21.5 %
+  
+     Extent (in um) : (-6000, -3000), (6000, 3000)
+     Extent related Cov. : 17.7 %
+  
+     CPU time: 0.0 seconds, Elapsed time: 0.0 seconds
+     Memory usage: 4.000 kB additional, 187.594 MB total
+  
+  Symmetry Transformation completed on Sat Mar 10 01:42:54 2018
+  ----------------------------------------------------------------------------
+  
