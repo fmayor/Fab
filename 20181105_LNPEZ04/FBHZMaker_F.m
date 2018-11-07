@@ -23,13 +23,14 @@ else
     b = P.hx/2; 
     theta = 90; 
 end
-gap = P.gap;
+gap = P.gap;       % original gap, used for shifting the ellipse
+gap_c = P.gap_c;   % corrected gap
 %         slab = Rect(0,0,P.a,P.w,'base','center');
 hole1 = Ellipse('rx',a,'ry',b,'theta',theta);
 hole1.translate([0;gap/2]);
 hole2 = Ellipse('rx',a,'ry',b,'theta',theta);
 hole2.translate([0;-gap/2]);
-w_slot = gap; h_slot = P.a;
+w_slot = gap_c; h_slot = P.a;
 rect_slot = Rect(0,0,h_slot,w_slot, 'base','center');
 hole = gpack.Group(0,0,{hole1,hole2,rect_slot});
 s = linspace(-pi, pi, N);

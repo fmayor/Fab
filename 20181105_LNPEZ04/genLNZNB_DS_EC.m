@@ -1,6 +1,10 @@
 
 function dev = genLNZNB_DS_EC(param)
-% generate single LNNB double-sided edge coupling device
+% generate single LN zipper NB double-sided edge coupling device
+% 
+% WTJ, FMM, 20181106
+
+
 global config;
 w_end = param.w_end;
 d_nb2refl = param.d_nb2refl;
@@ -9,6 +13,7 @@ ind = param.ind;
 tether_w2 = param.tether_w2;
 tether_L = param.tether_L;
 tether_w_tether = param.tether_w_tether;
+gap = param.gap;
 
 
 theta = 22/180*pi;
@@ -19,9 +24,15 @@ P_mirror = struct('a', 650e-3, 'w', 1351e-3, 'amp', 97.1e-3, 'isFBH',true,...
     'hx', 480.8e-3, 'hy', 1102.6e-3,'theta',theta, 'theta_out',theta_out,...
     'gap', 150e-3);
 % ind = 12 from GA 181103
-P_defect = struct('a', 543.9e-3, 'w', 1460e-3, 'amp', 42.7e-3, 'isFBH',true,...
-    'hx', 289.3e-3, 'hy', 934.6e-3,'theta',theta, 'theta_out',theta_out,...
+% P_defect = struct('a', 543.9e-3, 'w', 1460e-3, 'amp', 42.7e-3, 'isFBH',true,...
+%     'hx', 289.3e-3, 'hy', 934.6e-3,'theta',theta, 'theta_out',theta_out,...
+%     'gap', 150e-3);
+% ind = 68 from GA 181103
+P_defect = struct('a', 546.9e-3, 'w', 1512e-3, 'amp', 16.6e-3, 'isFBH',true,...
+    'hx', 381e-3, 'hy', 843e-3,'theta',theta, 'theta_out',theta_out,...
     'gap', 150e-3);
+P_mirror.gap = gap;
+P_defect.gap = gap;
 
 dev = nanobeam_DS_EC_SR;
 dev.P_defect = P_defect;
@@ -46,6 +57,7 @@ dev.P_undercutMsk.d = 4.5;
 dev.P_tether.w2 = tether_w2;
 dev.P_tether.L = tether_L;
 dev.P_tether.w_tether = tether_w_tether;
+dev.P_tether.w_tetherArm = 10;
 
 dev.layer_anchor = 'M1_LD';
 if param.isGenPS
@@ -60,11 +72,14 @@ dev.maker = @FBHZMaker_F;
 dev.P_coupler.maker = @FBHZMaker_F;
 
 % apply correction
-correct_LNNB16(dev);
+correct_LNZNB(dev);
 dev.run(config.isfast);
 % add index
 g_ind = genLNNB_DS_EC_ind(ind);
 dev.addelement(g_ind);
+
+% make M1_LD within M1_Field
+dev.elements{dev.ind_expoBox}.translate(0,-2);
 
 end
 
