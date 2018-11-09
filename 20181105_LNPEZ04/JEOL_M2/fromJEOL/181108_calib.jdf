@@ -1,0 +1,2048 @@
+Parameter editing window
+	    Subprogram: eosset
+	      EOS mode: 3
+	Condition name: EOS3_2000pA_060uM
+
+
+========= EOSSET intermediate result ==================
+
+*************** EOS setting waiting *************** 
+ Start time                                = Thu Nov  8 15:28:55 2018
+ Waiting time                    [sec]     =           5 
+*** DEMAG under execution (LENS 2) ***
+*** DEMAG under execution (LENS 3) ***
+*** DEMAG under execution (LENS 5) ***
+%warning-clbd-0e230059, Failed to read the calibration (DISTBE) results.
+%warning-clbd-0e23005a, Failed to read the calibration (DFOCUS) results.
+%warning-clbd-0e23005b, Failed to read the calibration (DSTIGX) results.
+%warning-clbd-0e23005c, Failed to read the calibration (DSTIGY) results.
+
+========= EOSSET Final result ==================
+
+[Measurement information]
+	Linear scaling value X, Y = 1.000000, 1.000000
+	Start time                = Thu Nov  8 15:28:55 2018
+	End time                  = Thu Nov  8 15:29:53 2018
+	EOS Mode                  = 3 Accelerating voltage 100kV Lens 4
+
+ Old EOS mode                              =           3 
+ New EOS mode                              =           6 
+ Condition file name                       = EOS6_1000pA_025u 
+ RESTOR execution                          = Exist 
+
+ High-pressure voltage value           [V] =  100000.000 
+ High-pressure current value          [uA] =      91.200 
+ Filament current value               [mA] =    2317.000 
+ A1 voltage value                      [V] =    4524.000 
+ A1 current value                     [uA] =     218.200 
+ A2 voltage value                      [V] =    5890.000 
+ SP voltage value                      [V] =     298.400 
+ Electron gun file meter               [H] =        6947 
+
+EOS DAC value
+Lens 2                 = 16351
+Lens 3                 = 44199
+Lens 4                 = 31190
+Lens 5                 = 40272
+1st alignment value TX = 4495
+1st alignment value TY = -7525
+2nd alignment value TX = 1124
+2nd alignment value TY = -2097
+2nd alignment value SX = -3836
+2nd alignment value SY = 6375
+3rd alignment value  X = 0
+3rd alignment value  Y = 0
+Stigmatism X           = 147
+Stigmatism Y           = -1163
+Lens 4 offset          = 27750
+Lens 5 offset          = 53900
+Ratio X H = -49
+Ratio X V = -279
+Ratio Y H = -200
+Ratio Y V = 55
+Aperture position X,Y [um] = 733.725, 8883.050
+ Calib common memory 
+ Linear scaling value                    X   Y           =    1.000000    1.000000 
+ AE top plane mark position              X   Y [nm]      =     3465073   131153728 
+ AE bottom plane mark position           X   Y [nm]      =     3306067   112246163 
+ Faraday cup position                    X   Y [nm]      =     3355903    61937567 
+ BE top plane mark position              X   Y [nm]      =     4371936    46202650 
+ BE bottom plane mark position           X   Y [nm]      =     1853948    20807161 
+ RG mark position                        X   Y [nm]      =   140892389    40955171 
+ Reference height offset position        X   Y [nm]      =           0           0 
+ Reference height measurement position   X   Y [nm]      =     1853948    20807161 
+ DRIFT average position shift            X   Y [nm]      =         5.3       -12.3 
+ Total value of CHIPAL and DRIFT         X   Y [nm]      =           0           0 
+ Mask center offset position             X   Y [nm]      =           0           0 
+ PDEF DAC value Gain                     X   Y [point]   =        2629        2517 
+ PDEF DAC value Rotation                 X   Y [point]   =        4330       -4263 
+ SUBDEF DAC value Shift                 X   Y [point]   =          -1           1 
+ SUBDEF DAC value Gain                  X   Y [point]   =         309         322 
+ SUBDEF dac value rotation              X   Y [point]   =         -67         143 
+ LBC dac value gain                     X   Y [point]   =        2629        2517 
+ LBC dac value rotation                 X   Y [point]   =        4330       -4263 
+ DF OFFSET                                    [point]   =           0 
+ PDEF weighting coefficient 
+   Gain                    X   Y [1/point] =  3.9615e-06  3.9569e-06 
+   Rotation                X   Y [1/point] = -2.0038e-06  1.9946e-06 
+ SUBDEF weighting coefficient 
+   Shift                   X   Y [1/point] =  1.0000e+00  1.0000e+00 
+   Gain                    X   Y [1/point] =  6.2500e-05  6.2500e-05 
+   Rotation                X   Y [1/point] =  2.3438e-05 -3.9063e-05 
+ PDEF Fine Gain            X   Y [1/point] =  6.4700e-08  6.4100e-08 
+ PDEFBE reference height                   =       2.481 
+ PDEFBE height difference between bottom BE mark and the reference plane        =      -0.037 
+ PDEFBE height difference between top plane BE mark and bottom plane BE mark    =      53.559 
+ PDEF   height difference between bottom plane BE mark and bottom plane AE mark =       3.028 
+
+========= PDEFBE Final result ==================
+
+	Field size                [nm] =      55,000
+	Number of bottom plane retries = 1
+
+	               Previous DAC[point]             Shift value[nm]           Corrected DAC[point]
+	GAIN (X  Y) =   2,567    2,476                 0.8         -0.4           2,629    2,517
+	ROT  (X  Y) =   4,260   -4,165                -1.3         -0.1           4,330   -4,263
+
+
+	Height cirrection coefficient   = 0.000000
+	Height offset value        [um] = 0.000000
+	Height correction coefficient                   X            Y
+		GAIN  X,Y                     = 2.371226e+00  2.091160e+00
+		ROT   X,Y                     = 2.595279e+00  -2.427239e+00
+	Distortion conversion coefficient               X            Y
+		GAIN  X,Y                     = 0.000000e+00  0.000000e+00
+		ROT   X,Y                     = 0.000000e+00  0.000000e+00
+
+	height of the reference face mark [um] =       2.545
+	difference between the lower face mark and the reference face mark [um] =      -0.037
+	difference between the upper face mark and the reference face mark [um] =      53.559
+
+======================================================
+
+========= SUBDEFBE Final result ==================
+
+	Retry count                           =           0
+	Maximum field of sub-deflector   [nm] =         500
+	                      Previous DAC[point]   Error value[nm]   Corrected DAC[point]
+	SUBDEF SHIFT (X  Y) =       -1       0        -0.7     0.7          -1       1
+	SUBDEF GAIN  (X  Y) =      309     322         0.6     1.5         309     322
+	SUBDEF ROT   (X  Y) =      -67     143        -1.6     0.3         -67     143
+
+	Height cirrection coefficient   = 0.000000
+	Height offset value        [um] = 0.000000
+	Reference height                      =    2.480515
+	Top plane height measurement value    =   56.063763
+	Bottom plane height measurement value =    2.532726
+	Height correction coefficient                   X            Y
+	         SHIFT                        =    0.037362     0.000000
+	         GAIN                         =   -0.616465    -1.363695
+	         ROT                          =    1.326333     0.373615
+
+======================================================
+
+========= DISTBE Final result ==================
+
+DISTBE measurement condition information 
+	Memory clear mode                  = On
+	Field size                   [nm]  =      53,000
+	Zigzag                             = X -> Y
+	Measurement starting point         = Top left
+	Number of to-and-fro measurements  =           0
+	Number of measurement points in the 1st quadrant =           2
+
+Correction memory after measurement [point]
+     X     |    -26500 |         0 |     26500 |
+-----------+------------------------------------
+     26500 |         0           0           0  
+         0 |         0           0           0  
+    -26500 |         0           0           0  
+
+
+     Y     |    -26500 |         0 |     26500 |
+-----------+------------------------------------
+     26500 |         0           0           0  
+         0 |         0           0           0  
+    -26500 |         0           0           0  
+
+
+
+	Mark detection point X  Y     [nm] =      -2,000       -2,000
+	Height cirrection coefficient   = 0.000000
+	Height offset value        [um] = 0.000000
+
+======================================================
+
+========= DFOCUS Final result ==================
+
+	Memory clear mode = no
+	Zigzag = X -> Y
+	Measurement start point = Top left
+	Measurement item = DSX | DSY | SF
+	Measurement field size = 53000
+[DF approximation coefficient]
+Number of approximation orders               = 2
+Number of terms of the approximation formula = 6
+  a[ 0] = 0.000000e+00  a[ 1] = 0.000000e+00  a[ 2] = 0.000000e+00  a[ 3] = 0.000000e+00
+  a[ 4] = 0.000000e+00  a[ 5] = 0.000000e+00  a[ 6] = 0.000000e+00  a[ 7] = 0.000000e+00
+  a[ 8] = 0.000000e+00  a[ 9] = 0.000000e+00
+[DSX/DSY approximation coefficient]
+Number of approximation orders               = 2
+Number of terms of the approximation formula = 6
+  a[ 0] = 0.000000e+00  a[ 1] = 0.000000e+00  a[ 2] = 0.000000e+00  a[ 3] = 0.000000e+00
+  a[ 4] = 0.000000e+00  a[ 5] = 0.000000e+00  a[ 6] = 0.000000e+00  a[ 7] = 0.000000e+00
+  a[ 8] = 0.000000e+00  a[ 9] = 0.000000e+00
+  b[ 0] = 0.000000e+00  b[ 1] = 0.000000e+00  b[ 2] = 0.000000e+00  b[ 3] = 0.000000e+00
+  b[ 4] = 0.000000e+00  b[ 5] = 0.000000e+00  b[ 6] = 0.000000e+00  b[ 7] = 0.000000e+00
+  b[ 8] = 0.000000e+00  b[ 9] = 0.000000e+00
+	Field center correction DF  [point] = 0
+	                        DSX [point] = 0
+	                        DSY [point] = 0
+Convergence result 
+Convergence flag (1:Convergence flag, 0:Nonconvergence)
+   Y / X   |    -26500 |         0 |     26500 |
+-----------+------------------------------------
+     26500 |         0           0           0  
+         0 |         0           0           0  
+    -26500 |         0           0           0  
+
+
+DF  DAC value  before measurement[point]
+   Y / X   |    -26500 |         0 |     26500 |
+-----------+------------------------------------
+     26500 |      -814       -1044       -1040  
+         0 |      -773       -1003       -1000  
+    -26500 |      -644        -875        -871  
+
+
+DSX DAC value  before measurement[point]
+   Y / X   |    -26500 |         0 |     26500 |
+-----------+------------------------------------
+     26500 |       -63         -23          21  
+         0 |       -17          11          45  
+    -26500 |        32          50          73  
+
+
+DSY DAC value before measurement [point]
+   Y / X   |    -26500 |         0 |     26500 |
+-----------+------------------------------------
+     26500 |         9          43          82  
+         0 |        -3          31          70  
+    -26500 |       -25          10          48  
+
+
+DF  DAC value after measurement [point]
+   Y / X   |    -26500 |         0 |     26500 |
+-----------+------------------------------------
+     26500 |         0           0           0  
+         0 |         0           0           0  
+    -26500 |         0           0           0  
+
+
+DSX DAC value after measurement [point]
+   Y / X   |    -26500 |         0 |     26500 |
+-----------+------------------------------------
+     26500 |         0           0           0  
+         0 |         0           0           0  
+    -26500 |         0           0           0  
+
+
+DSY DAC value after measurement [point]
+   Y / X   |    -26500 |         0 |     26500 |
+-----------+------------------------------------
+     26500 |         0           0           0  
+         0 |         0           0           0  
+    -26500 |         0           0           0  
+
+
+stigmatism [point]
+   Y / X   |    -26500 |         0 |     26500 |
+-----------+------------------------------------
+     26500 |         0           0           0  
+         0 |         0           0           0  
+    -26500 |         0           0           0  
+
+
+Beam size X [nm]
+   Y / X   |    -26500 |         0 |     26500 |
+-----------+------------------------------------
+     26500 |       0.0         0.0         0.0  
+         0 |       0.0         0.0         0.0  
+    -26500 |       0.0         0.0         0.0  
+
+
+Beam size Y [nm]
+   Y / X   |    -26500 |         0 |     26500 |
+-----------+------------------------------------
+     26500 |       0.0         0.0         0.0  
+         0 |       0.0         0.0         0.0  
+    -26500 |       0.0         0.0         0.0  
+
+
+
+======================================================
+
+========= HCOEFFI Final result ==================
+
+	[Objective lens variation coefficient measurement result]
+				                          Bottom plane                Top plane
+		Mark position X,Y           [nm] =   3,313,438   112,245,929      3,464,328   131,152,918
+		Focus value              [point] =       40201                       41749
+		PDEF   GAIN X,Y          [point] =        2653         2565           3160         3059
+		       ROT  X,Y          [point] =        4341        -4292           4962        -4902
+		SUBDEF GAIN X,Y          [point] =         324          336            366          380
+		       ROT  X,Y          [point] =        -168          131           -190          215
+
+		Objective lens value conversion coefficient [DAC/um] =   27.777777
+		PDEFBE   GAIN  coefficient X,Y   =   10.104580     9.845489
+		         ROT   coefficient X,Y   =   12.376616   -12.157385
+		SUBDEFBE GAIN  coefficient X,Y   =    0.837066     0.876926
+		         ROT   coefficient X,Y   =   -0.438463     1.674132
+		Beam shift value conversion coefficient      [um/um] =   -0.001185     0.000305
+
+
+======================================================
+
+========= EOSSET Final result ==================
+
+ Old EOS mode                              =           6 
+ New EOS mode                              =           6 
+ Condition file name                       = EOS6_1000pA_025u 
+ RESTOR execution                          = Exist 
+
+ High-pressure voltage value           [V] =  100000.000 
+ High-pressure current value          [uA] =      91.200 
+ Filament current value               [mA] =    2317.000 
+ A1 voltage value                      [V] =    4522.000 
+ A1 current value                     [uA] =     218.300 
+ A2 voltage value                      [V] =    5890.000 
+ SP voltage value                      [V] =     298.400 
+ Electron gun file meter               [H] =        6938 
+
+========= PRMINZ Final result ==================
+
+
+ Stage correction mode                        = MCOR | MIRROR BOW 
+ Movement in Faraday cup                      = None 
+ State of beam other than MD                  = OFF 
+
+======================================================
+
+========= TEMP Final result ==================
+
+	Measurement point                                Temperature
+	Temperature of the cassette on the stage            :22.483
+	Temperature of the stage top side                   :22.174
+	Temperature of the High-pressure tank top side      :24.360
+	Temperature of the LENS 2/3                         :23.661
+	Temperature of the LENS 4/5                         :23.202
+	Temperature in the vicinity of drawing chamber      :23.241
+	Temperature of the drawing chamber bottom side      :22.585
+	Temperature of the cassette in the ALD              : 0.000
+
+========= HEIMAP Final result ==================
+
+	Tertiary approximation coefficient a[ 1/10] =          -1.865414E+04
+	Tertiary approximation coefficient a[ 2/10] =           2.724592E-04
+	Tertiary approximation coefficient a[ 3/10] =           3.243914E-04
+	Tertiary approximation coefficient a[ 4/10] =          -1.591812E-12
+	Tertiary approximation coefficient a[ 5/10] =          -1.176135E-12
+	Tertiary approximation coefficient a[ 6/10] =          -5.544867E-12
+	Tertiary approximation coefficient a[ 7/10] =           3.466670E-21
+	Tertiary approximation coefficient a[ 8/10] =          -4.725176E-22
+	Tertiary approximation coefficient a[ 9/10] =           1.483132E-20
+	Tertiary approximation coefficient a[10/10] =           2.670848E-20
+	Plate inclination                     [rad] =            -0.000010
+	Average plate height                   [um] =           -10.753964
+	Stage center position         X  Y     [nm] =  150,300,000   40,900,000
+	Judgment flag                               = Nomal
+	Current result                 =   -1001.100
+
+========= SETWFR Final result ==================
+
+	Material type           = Wafer
+	Material size    [inch] = 2.00
+	Measurement mode        = Cancel
+	AGC execution           = No
+	Height measurement      = No
+		PDEF   GAIN  X,Y           =        2574         2480
+		       ROT   X,Y           =        4271        -4153
+		SUBDEF SHIFT X,Y           =           1           -1
+		       GAIN  X,Y           =         319          336
+		       ROT   X,Y           =         -67          143
+		The Objective lens         =       39996
+		DF offset                  =           0
+
+	Objective lens value Beam shift value after correction [nm] =         0.0          0.0
+	DFOCUS OFFSET value  Beam shift value after correction [nm] =         0.0          0.0
+	Height                        [um] =    0.000000
+
+	[Parameter for pattern writing height correction calculation]
+	PQ GAIN coefficient     [nm/100mm] = 0.000000e+00  0.000000e+00
+
+	[PDEF DAC value calculated from PQ GAIN/ROT]
+		PDEF   GAIN  X,Y           =           0            0
+		       ROT   X,Y           =           0            0
+
+	[SUBDEF DAC value calculated from PQ GAIN/ROT]
+		SUBDEF SHIFT X,Y           =           0            0
+		       GAIN  X,Y           =           0            0
+		       ROT   X,Y           =           0            0
+
+	[PDEF DAC value calculated from lens4 + height]
+		PDEF   GAIN  X,Y           =           0            0
+		       ROT   X,Y           =           0            0
+
+	[SUBDEF DAC value calculated from lens4 + height]
+		SUBDEF SHIFT X,Y           =           0            0
+		       GAIN  X,Y           =           0            0
+		       ROT   X,Y           =           0            0
+
+	[Total component DAC value of PQ correction]
+		PDEF   GAIN  X,Y           =           0            0
+		       ROT   X,Y           =           0            0
+		SUBDEF SHIFT X,Y           =           0            0
+		       GAIN  X,Y           =           0            0
+		       ROT   X,Y           =           0            0
+		The Objective lens         =           0
+		DF offset                  =           0
+
+	Material correction coefficient SHIFT X,Y        [nm] = -784000.000000  2606000.000000
+	                                GAIN  X,Y  [nm/100mm] =    0.000000     0.000000
+	                                ROT   X,Y       [rad] =   -0.000000     0.000000
+	Material center position X,Y                     [nm] =   151000000    129000000
+	Material rotation angle X,Y                   [degree] = -0.0000000000  0.0000000000
+	Reference plane height                                =    0.000000
+	Average height                                        =    0.000000
+	[P-point mark measurement result]
+		Design position (material coordinates)      X,Y[nm] =    -3000000           0
+		Observation position (material coordinates) X,Y[nm] =    -3784000     2606000
+		Offset                                      X,Y[nm] =     -784000     2606000
+		Mark rotation angle(+clockwise) [degree]            = 0.000000e+00
+		Height measurement                                  = No height measurement
+		Height                              [um]            = 0.000000e+00
+
+	[Q-point mark measurement result]
+		Design position (material coordinates)      X,Y[nm] =     3000000           0
+		Observation position (material coordinates) X,Y[nm] =     2216000     2606000
+		Offset                                      X,Y[nm] =     -784000     2606000
+		Mark rotation angle(+clockwise) [degree]            = 0.000000e+00
+		Height measurement                                  = No height measurement
+		Height                              [um]            = 0.000000e+00
+
+	[R-point mark measurement result]
+		Design position (material coordinates)      X,Y[nm] =           0     2000000
+		Observation position (material coordinates) X,Y[nm] =     -784000     4606000
+		Offset                                      X,Y[nm] =     -784000     2606000
+		Mark rotation angle(+clockwise) [degree]            = 0.000000e+00
+		Height measurement                                  = No height measurement
+		Height                              [um]            = 0.000000e+00
+
+	[S-point mark measurement result]
+		Design position (material coordinates)      X,Y[nm] =           0    -2000000
+		Observation position (material coordinates) X,Y[nm] =     -784000      606000
+		Offset                                      X,Y[nm] =     -784000     2606000
+		Mark rotation angle(+clockwise) [degree]            = 0.000000e+00
+		Height measurement                                  = No height measurement
+		Height                              [um]            = 0.000000e+00
+
+	[P-point correction data]
+		PDEF   GAIN  X,Y           =           0            0
+		       ROT   X,Y           =           0            0
+		SUBDEF SHIFT X,Y           =           0            0
+		       GAIN  X,Y           =           0            0
+		       ROT   X,Y           =           0            0
+		The Objective lens         =           0
+		DF offset                  =           0
+
+	Objective lens value Beam shift value after correction [nm] =         0.0          0.0
+	DFOCUS OFFSET value  Beam shift value after correction [nm] =         0.0          0.0
+	Height                        [um] =    0.000000
+
+	P-point mark shift [nm] = 0, 0
+
+======================================================
+
+========= CHIPAL Final result ==================
+
+	Measurement mode                   = Mode V1
+	AGC execution                      = No
+	Execution of height measurement    = Yes
+	DFOCUS height correction           = No
+
+	[Final correction data]
+		PDEF   GAIN  X,Y           =        2516         2423
+		       ROT   X,Y           =        4196        -4082
+		SUBDEF SHIFT X,Y           =           1           -1
+		       GAIN  X,Y           =         309          322
+		       ROT   X,Y           =         -56          133
+		The Objective lens         =       39804
+		DF offset                  =           0
+
+	Beam shift value after objective lens correction [nm] =         8.2         -2.1
+	Beam shift value after DFOCUS OFFSET correction  [nm] =         0.0          0.0
+	Height                        [um] =   -1.047958
+
+	[Parameter for pattern writing height correction calculation]
+	PQ GAIN coefficient     [nm/100mm] = 0.000000e+00  0.000000e+00
+
+	[PDEF DAC value calculated from PQ GAIN/ROT]
+		PDEF   GAIN  X,Y           =           0            0
+		       ROT   X,Y           =           0            0
+
+	[SUBDEF DAC value calculated from PQ GAIN/ROT]
+		SUBDEF SHIFT X,Y           =           0            0
+		       GAIN  X,Y           =           0            0
+		       ROT   X,Y           =           0            0
+
+	[PDEF DAC value calculated from lens4 + height]
+		PDEF   GAIN  X,Y           =         -58          -57
+		       ROT   X,Y           =         -75           71
+
+	[SUBDEF DAC value calculated from lens4 + height]
+		SUBDEF SHIFT X,Y           =           0            0
+		       GAIN  X,Y           =         -10          -14
+		       ROT   X,Y           =          11          -10
+
+	Pattern writing position conversion coefficient
+		Order number of approximation                = 1
+		Number of terms of the approximation formula = 4
+		Two dimensional primary approximation coefficient a, b [ 1/10] = 0.000000e+00  0.000000e+00
+		                                                       [ 2/10] = 1.000000e+00  0.000000e+00
+		                                                       [ 3/10] = 0.000000e+00  1.000000e+00
+		                                                       [ 4/10] = 0.000000e+00  0.000000e+00
+	Pattern writing height conversion coefficient
+		Order number of approximation                = 1
+		Number of terms of the approximation formula = 4
+		Two dimensional primary approximation coefficient a, b [ 1/10] = 0.000000e+00  0.000000e+00
+		                                                       [ 2/10] = 0.000000e+00  0.000000e+00
+		                                                       [ 3/10] = 0.000000e+00  0.000000e+00
+		                                                       [ 4/10] = 0.000000e+00  0.000000e+00
+	M1 - M4 Average shift value   [nm] =         0.0          0.0
+	Shift value at re-measurement [nm] =         0.0          0.0
+
+
+======================================================
+
+========= WFR3M Final result ==================
+
+ Correction infomation for drawing 
+ Measurement mode                               = No mark (Use SETWFR result) 
+ AGCRG execution                                = Exist 
+ HEIGHT measurement execution                   = None 
+ SUBDEF execution                               = None 
+		PDEF   GAIN  X,Y           =       -3321        -3298
+		       ROT   X,Y           =          -7         -107
+		SUBDEF SHIFT X,Y           =           2            1
+		       GAIN  X,Y           =         -73            9
+		       ROT   X,Y           =        -117          112
+		The Objective lens         =       31720
+		DF offset                  =           0
+
+	Objective lens value Beam shift value after correction [nm] =         0.0          0.0
+	DFOCUS OFFSET value  Beam shift value after correction [nm] =         0.0          0.0
+	Height                        [um] =    0.000000
+
+	[Parameter for pattern writing height correction calculation]
+	PQ GAIN coefficient     [nm/100mm] = 1.586433e+01  1.533346e+02
+
+	[PDEF DAC value calculated from PQ GAIN/ROT]
+		PDEF   GAIN  X,Y           =           0            0
+		       ROT   X,Y           =        -239          239
+
+	[SUBDEF DAC value calculated from PQ GAIN/ROT]
+		SUBDEF SHIFT X,Y           =           0            0
+		       GAIN  X,Y           =           0            0
+		       ROT   X,Y           =          15          -15
+
+	[PDEF DAC value calculated from lens4 + height]
+		PDEF   GAIN  X,Y           =           0            0
+		       ROT   X,Y           =           0            0
+
+	[SUBDEF DAC value calculated from lens4 + height]
+		SUBDEF SHIFT X,Y           =           0            0
+		       GAIN  X,Y           =           0            0
+		       ROT   X,Y           =           0            0
+
+ Material center position         X   Y [nm]      =   105000000    85000000 
+ Average shift amount             X   Y [nm]      =         0.0         0.0 
+ M1 position (stage coordinate)   X   Y [nm]      =    74657184    83970464 
+ Correction of gain and rotation for workpiece. 
+		PDEF   GAIN  X,Y           =           0            0
+		       ROT   X,Y           =           0            0
+		SUBDEF SHIFT X,Y           =           0            0
+		       GAIN  X,Y           =           0            0
+		       ROT   X,Y           =           0            0
+
+
+======================================================
+	[AGCAE result ]
+	Coarse Gain            [point] =         100
+	Middle Gain            [point] =           2
+	Fine Gain              [point] =         128
+	Wave Offset            [point] =         146
+	Current value             [pA] =   -1924.900
+	Number of retries              = 2
+	Amplitude adjustment range [%] = 61
+	Standard signal level adjustment range   [%] = 15
+
+	[AGCBE result ]
+	Coarse Gain            [point] =           1
+	Middle Gain            [point] =           5
+	Fine Gain              [point] =         115
+	Wave Offset            [point] =         128
+	BE Offset              [point] =        1843
+	Current value             [pA] =  -22553.000
+	Number of retries              = 5
+	Amplitude adjustment range [%] = 65
+	Standard signal level adjustment range   [%] = 14
+
+	[AGCRG result ]
+	Coarse Gain            [point] =          60
+	Middle Gain            [point] =           0
+	Fine Gain              [point] =         128
+	Wave Offset            [point] =         128
+	BE Offset              [point] =        2048
+	Current value             [pA] =    -884.700
+	Number of retries              = 4
+	Amplitude adjustment range [%] = 4
+	Standard signal level adjustment range   [%] = 58
+
+ Current change allowance value  [%]       =        10.0 
+ SAVE measurement current value  [pA]      =   -1001.200 
+
+
+======================================================
+Parameter editing window
+	    Subprogram: currnt
+	      EOS mode: 6
+	Condition name: EOS6_1000pA_025u
+
+
+========= CURRNT Final result ==================
+
+[Measurement information]
+	Linear scaling value X, Y = 1.000000, 1.000000
+	Start time                = Thu Nov  8 16:02:20 2018
+	End time                  = Thu Nov  8 16:02:37 2018
+	EOS Mode                  = 6 Accelerating voltage 100kV Lens 5
+
+Number of current measurements   = 30
+	Average current value       [pA] = -1005.700000
+current value [  0]         [pA] = -1005.800000
+current value [  1]         [pA] = -1005.700000
+current value [  2]         [pA] = -1005.700000
+current value [  3]         [pA] = -1005.700000
+current value [  4]         [pA] = -1005.700000
+current value [  5]         [pA] = -1005.700000
+current value [  6]         [pA] = -1005.700000
+current value [  7]         [pA] = -1005.700000
+current value [  8]         [pA] = -1005.600000
+current value [  9]         [pA] = -1005.800000
+current value [ 10]         [pA] = -1005.800000
+current value [ 11]         [pA] = -1005.700000
+current value [ 12]         [pA] = -1005.600000
+current value [ 13]         [pA] = -1005.600000
+current value [ 14]         [pA] = -1005.600000
+current value [ 15]         [pA] = -1005.700000
+current value [ 16]         [pA] = -1005.600000
+current value [ 17]         [pA] = -1005.600000
+current value [ 18]         [pA] = -1005.800000
+current value [ 19]         [pA] = -1005.700000
+current value [ 20]         [pA] = -1005.800000
+current value [ 21]         [pA] = -1005.800000
+current value [ 22]         [pA] = -1005.700000
+current value [ 23]         [pA] = -1005.500000
+current value [ 24]         [pA] = -1005.500000
+current value [ 25]         [pA] = -1005.800000
+current value [ 26]         [pA] = -1005.600000
+current value [ 27]         [pA] = -1005.700000
+current value [ 28]         [pA] = -1005.700000
+current value [ 29]         [pA] = -1005.800000
+
+======================================================
+Parameter editing window
+	    Subprogram: initae
+	      EOS mode: 6
+	Condition name: EOS6_1000pA_025u
+
+
+========= INITAE Final result ==================
+
+[Measurement information]
+	Linear scaling value X, Y = 1.000000, 1.000000
+	Start time                = Thu Nov  8 16:02:53 2018
+	End time                  = Thu Nov  8 16:02:59 2018
+	EOS Mode                  = 6 Accelerating voltage 100kV Lens 5
+
+
+AE bottom plane mark measurement
+AE Bottom plane mark stage coordinates position X,Y [nm] = 3305973, 112246987
+Beam position                                      [nm] = 32768, 32768
+Mark position shift                                [nm] = -94.1, 824.4
+Beam size                                          [nm] = 42.9, 43.2
+Number of convergence                     X, Y  [times] = 6, 6
+Remainder square sum                      X, Y  [point] = 0.0, 0.0
+
+======================================================
+
+========= INITAE Final result ==================
+
+[Measurement information]
+	Linear scaling value X, Y = 1.000000, 1.000000
+	Start time                = Thu Nov  8 16:03:08 2018
+	End time                  = Thu Nov  8 16:03:08 2018
+	EOS Mode                  = 6 Accelerating voltage 100kV Lens 5
+
+
+AE bottom plane mark measurement
+AE Bottom plane mark stage coordinates position X,Y [nm] = 3305865, 112246986
+Beam position                                      [nm] = 32768, 32768
+Mark position shift                                [nm] = -108.3, -1.2
+Beam size                                          [nm] = 43.5, 42.4
+Number of convergence                     X, Y  [times] = 6, 5
+Remainder square sum                      X, Y  [point] = 0.0, 0.0
+
+======================================================
+
+========= INITAE Final result ==================
+
+[Measurement information]
+	Linear scaling value X, Y = 1.000000, 1.000000
+	Start time                = Thu Nov  8 16:03:17 2018
+	End time                  = Thu Nov  8 16:03:18 2018
+	EOS Mode                  = 6 Accelerating voltage 100kV Lens 5
+
+
+AE bottom plane mark measurement
+AE Bottom plane mark stage coordinates position X,Y [nm] = 3305866, 112246984
+Beam position                                      [nm] = 32768, 32768
+Mark position shift                                [nm] = 0.7, -1.7
+Beam size                                          [nm] = 43.2, 43.2
+Number of convergence                     X, Y  [times] = 6, 5
+Remainder square sum                      X, Y  [point] = 0.0, 0.0
+
+======================================================
+Parameter editing window
+	    Subprogram: sfocus
+	      EOS mode: 6
+	Condition name: EOS6_1000pA_025u
+
+[SFOCUS one measurement point result]
+	Measurement item =             SF
+	Number of retries = 0
+	Success flag                  = 1
+	Number of actual measurement points = 21
+	DAC value at measurement FOCUS   = 39941
+	                         STIG  X = 147
+	                         STIG  Y = -1163
+                                                                                       Peak X  Y      Root of square mean [nm]
+    DAC value corresponding to the minimum beam size            [point] =      39,943       39,939       39,941
+    The minimum beam size                                          [nm] =        18.7         16.4         17.2
+
+   Measurement point    Result      SF DAC value       beam size X  Y[nm]       Root of square mean [nm]
+    [ 0]               [Succeeded]       39,772             33.4         19.9         27.5
+    [ 1]               [Succeeded]       39,822             23.9         18.5         21.4
+    [ 2]               [Succeeded]       39,872             19.7         17.3         18.5
+    [ 3]               [Succeeded]       39,922             20.0         15.9         18.1
+    [ 4]               [Succeeded]       39,972             20.2         15.7         18.1
+    [ 5]               [Succeeded]       40,022             23.0         17.5         20.5
+    [ 6]               [Succeeded]       40,072             23.9         20.8         22.4
+    [ 7]               [Succeeded]       40,122             27.6         25.5         26.6
+    [ 8]               [Succeeded]       40,172             29.6         26.0         27.8
+    [ 9]               [Succeeded]       40,222             33.1         31.1         32.2
+    [10]               [Succeeded]       40,272             35.5         33.3         34.4
+    [11]               [Succeeded]       40,322             38.8         36.9         37.9
+    [12]               [Succeeded]       40,372             41.4         40.9         41.1
+    [13]               [Succeeded]       40,422             44.5         43.3         43.9
+    [14]               [Succeeded]       40,472             47.5         48.2         47.9
+    [15]               [Succeeded]       40,522             51.3         50.9         51.1
+    [16]               [Succeeded]       40,572             53.2         53.6         53.4
+    [17]               [Succeeded]       40,622             55.7         57.2         56.4
+    [18]               [Succeeded]       40,672             58.9         59.1         59.0
+    [19]               [Succeeded]       40,722             61.8         62.6         62.2
+    [20]               [Succeeded]       40,772             68.2         65.3         66.7
+[SFOCUS retry result]
+    Measurement item           = SFOCUS
+    Number of retries  [times] = 0
+    Convergence flag           = Yes
+
+    FOCUS DAC value            Before measurement  After measurement
+            Focus      [point] =      40,272              39,941
+            Stig. X    [point] =         147                 147
+            Stig. Y    [point] =      -1,163              -1,163
+
+    STIG               [point] =           4
+    Beam size X  Y        [nm] =        18.7                16.4
+
+[Measurement information]
+	Linear scaling value X, Y = 1.000000, 1.000000
+	Start time                = Thu Nov  8 16:03:35 2018
+	End time                  = Thu Nov  8 16:03:53 2018
+	EOS Mode                  = 6 Accelerating voltage 100kV Lens 5
+
+    Measurement item           = SFOCUS
+
+    Number of retries  [times] = 0
+    Convergence flag           = Yes
+
+    FOCUS DAC value            Before measurement  After measurement
+            Focus      [point] =      40,272              39,941
+            Stig. X    [point] =         147                 147
+            Stig. Y    [point] =      -1,163              -1,163
+
+    STIG               [point] =           4
+    Beam size X  Y        [nm] =        18.7                16.4
+SFOCUS End Thu Nov  8 16:03:53 2018
+
+[SFOCUS one measurement point result]
+	Measurement item =             SF
+	Number of retries = 0
+	Success flag                  = 1
+	Number of actual measurement points = 21
+	DAC value at measurement FOCUS   = 39948
+	                         STIG  X = 147
+	                         STIG  Y = -1163
+                                                                                       Peak X  Y      Root of square mean [nm]
+    DAC value corresponding to the minimum beam size            [point] =      39,938       39,958       39,948
+    The minimum beam size                                          [nm] =        17.4         15.4         15.7
+
+   Measurement point    Result      SF DAC value       beam size X  Y[nm]       Root of square mean [nm]
+    [ 0]               [Succeeded]       39,441             37.3         43.4         40.5
+    [ 1]               [Succeeded]       39,491             38.8         43.7         41.3
+    [ 2]               [Succeeded]       39,541             33.9         38.4         36.2
+    [ 3]               [Succeeded]       39,591             31.6         36.1         33.9
+    [ 4]               [Succeeded]       39,641             29.0         33.3         31.2
+    [ 5]               [Succeeded]       39,691             24.9         28.3         26.7
+    [ 6]               [Succeeded]       39,741             22.1         26.2         24.3
+    [ 7]               [Succeeded]       39,791             21.0         21.2         21.1
+    [ 8]               [Succeeded]       39,841             17.5         19.2         18.3
+    [ 9]               [Succeeded]       39,891             16.0         16.0         16.0
+    [10]               [Succeeded]       39,941             17.6         15.6         16.6
+    [11]               [Succeeded]       39,991             17.1         16.6         16.9
+    [12]               [Succeeded]       40,041             17.9         17.3         17.6
+    [13]               [Succeeded]       40,091             21.6         20.4         21.0
+    [14]               [Succeeded]       40,141             23.3         22.4         22.9
+    [15]               [Succeeded]       40,191             27.9         28.0         27.9
+    [16]               [Succeeded]       40,241             31.1         30.0         30.5
+    [17]               [Succeeded]       40,291             33.1         34.8         33.9
+    [18]               [Succeeded]       40,341             37.9         37.5         37.7
+    [19]               [Succeeded]       40,391             38.7         39.9         39.3
+    [20]               [Succeeded]       40,441             44.9         45.0         44.9
+[SFOCUS retry result]
+    Measurement item           = SFOCUS
+    Number of retries  [times] = 0
+    Convergence flag           = Yes
+
+    FOCUS DAC value            Before measurement  After measurement
+            Focus      [point] =      39,941              39,948
+            Stig. X    [point] =         147                 147
+            Stig. Y    [point] =      -1,163              -1,163
+
+    STIG               [point] =         -20
+    Beam size X  Y        [nm] =        17.4                15.4
+
+[Measurement information]
+	Linear scaling value X, Y = 1.000000, 1.000000
+	Start time                = Thu Nov  8 16:04:12 2018
+	End time                  = Thu Nov  8 16:04:30 2018
+	EOS Mode                  = 6 Accelerating voltage 100kV Lens 5
+
+    Measurement item           = SFOCUS
+
+    Number of retries  [times] = 0
+    Convergence flag           = Yes
+
+    FOCUS DAC value            Before measurement  After measurement
+            Focus      [point] =      39,941              39,948
+            Stig. X    [point] =         147                 147
+            Stig. Y    [point] =      -1,163              -1,163
+
+    STIG               [point] =         -20
+    Beam size X  Y        [nm] =        17.4                15.4
+SFOCUS End Thu Nov  8 16:04:30 2018
+
+[SFOCUS one measurement point result]
+	Measurement item =             SF
+	Number of retries = 0
+	Success flag                  = 1
+	Number of actual measurement points = 21
+	DAC value at measurement FOCUS   = 39960
+	                         STIG  X = 147
+	                         STIG  Y = -1163
+                                                                                       Peak X  Y      Root of square mean [nm]
+    DAC value corresponding to the minimum beam size            [point] =      39,945       39,976       39,960
+    The minimum beam size                                          [nm] =        14.2         14.0         14.3
+
+   Measurement point    Result      SF DAC value       beam size X  Y[nm]       Root of square mean [nm]
+    [ 0]               [Succeeded]       39,448             38.5         45.0         41.9
+    [ 1]               [Succeeded]       39,498             36.2         43.1         39.8
+    [ 2]               [Succeeded]       39,548             32.7         40.5         36.8
+    [ 3]               [Succeeded]       39,598             30.3         36.4         33.5
+    [ 4]               [Succeeded]       39,648             27.5         33.5         30.6
+    [ 5]               [Succeeded]       39,698             22.8         27.9         25.5
+    [ 6]               [Succeeded]       39,748             20.5         25.8         23.3
+    [ 7]               [Succeeded]       39,798             18.6         22.0         20.4
+    [ 8]               [Succeeded]       39,848             15.3         18.8         17.2
+    [ 9]               [Succeeded]       39,898             14.7         16.6         15.7
+    [10]               [Succeeded]       39,948             14.1         14.5         14.3
+    [11]               [Succeeded]       39,998             14.6         15.6         15.1
+    [12]               [Succeeded]       40,048             17.3         16.5         16.9
+    [13]               [Succeeded]       40,098             17.3         18.6         18.0
+    [14]               [Succeeded]       40,148             23.6         22.0         22.8
+    [15]               [Succeeded]       40,198             24.1         25.7         24.9
+    [16]               [Succeeded]       40,248             27.9         28.4         28.2
+    [17]               [Succeeded]       40,298             30.2         33.9         32.1
+    [18]               [Succeeded]       40,348             34.3         35.9         35.1
+    [19]               [Succeeded]       40,398             36.5         40.4         38.5
+    [20]               [Succeeded]       40,448             43.1         43.3         43.2
+[SFOCUS retry result]
+    Measurement item           = SFOCUS
+    Number of retries  [times] = 0
+    Convergence flag           = Yes
+
+    FOCUS DAC value            Before measurement  After measurement
+            Focus      [point] =      39,948              39,960
+            Stig. X    [point] =         147                 147
+            Stig. Y    [point] =      -1,163              -1,163
+
+    STIG               [point] =         -31
+    Beam size X  Y        [nm] =        14.2                14.0
+
+[Measurement information]
+	Linear scaling value X, Y = 1.000000, 1.000000
+	Start time                = Thu Nov  8 16:05:33 2018
+	End time                  = Thu Nov  8 16:05:51 2018
+	EOS Mode                  = 6 Accelerating voltage 100kV Lens 5
+
+    Measurement item           = SFOCUS
+
+    Number of retries  [times] = 0
+    Convergence flag           = Yes
+
+    FOCUS DAC value            Before measurement  After measurement
+            Focus      [point] =      39,948              39,960
+            Stig. X    [point] =         147                 147
+            Stig. Y    [point] =      -1,163              -1,163
+
+    STIG               [point] =         -31
+    Beam size X  Y        [nm] =        14.2                14.0
+SFOCUS End Thu Nov  8 16:05:51 2018
+
+Parameter editing window
+	    Subprogram: heimap
+	      EOS mode: 6
+	Condition name: EOS6_1000pA_025u
+
+
+========= HEIMAP Final result ==================
+
+[Measurement information]
+	Linear scaling value X, Y = 1.000000, 1.000000
+	Start time                = Thu Nov  8 16:35:07 2018
+	End time                  = Thu Nov  8 16:36:17 2018
+	Measurement result file   = 20181108163507.6.heimap.ic
+	EOS Mode                  = 6 Accelerating voltage 100kV Lens 5
+
+	Material type                               = Wafer
+	Material size                     [0.1inch] = 20
+	Material window                             = 2F
+	Zigzag                                      = X -> Y
+	Number of measurement points  X  Y          =           6            4
+	Measurement pitch             X  Y     [nm] =   1,000,000    1,000,000
+	Offset [nm]  X  Y                           =    -700,000     -100,000
+	Tertiary approximation coefficient a[ 1/10] =          -8.550050E+04
+	Tertiary approximation coefficient a[ 2/10] =           1.671277E-03
+	Tertiary approximation coefficient a[ 3/10] =           7.884208E-06
+	Tertiary approximation coefficient a[ 4/10] =          -1.050062E-11
+	Tertiary approximation coefficient a[ 5/10] =          -2.776673E-12
+	Tertiary approximation coefficient a[ 6/10] =           4.649852E-12
+	Tertiary approximation coefficient a[ 7/10] =           2.190235E-20
+	Tertiary approximation coefficient a[ 8/10] =           8.953405E-21
+	Tertiary approximation coefficient a[ 9/10] =           2.615596E-21
+	Tertiary approximation coefficient a[10/10] =          -4.131688E-20
+	Plate inclination                     [rad] =             0.000008
+	Average plate height                   [um] =           -18.790613
+	Stage center position         X  Y     [nm] =  150,300,000   41,100,000
+	Judgment flag                               = Nomal
+	Height cirrection coefficient   = 0.435090
+	Height offset value        [um] = -138.560000
+
+	Center of gravity X measurement result
+        X[ 0]    X[ 1]    X[ 2]    X[ 3]    X[ 4]    X[ 5] 
+Y[ 0]  286.76   288.87   290.31   290.98   287.78   286.60  
+Y[ 1]  281.54   283.67   285.48   286.34   283.38   282.71  
+Y[ 2]  275.89   278.87   280.61   281.75   279.12   278.99  
+Y[ 3]  270.29   272.91   275.29   276.63   274.59   274.52  
+
+
+
+	Data display  -----   : Ineffective area 
+	Data display  Error   : Abnormal measurement 
+	Data display (xxx.xx) : Abnormal data 
+	Data display  xxx.xx  : Normal data 
+	Data display  ?????   : Ineffective measurement 
+
+	Height measurement result[um]
+        X[ 0]    X[ 1]    X[ 2]    X[ 3]    X[ 4]    X[ 5] 
+Y[ 0]  -16.46   -15.55   -14.92   -14.63   -16.02   -16.53  
+Y[ 1]  -18.73   -17.81   -17.02   -16.65   -17.94   -18.23  
+Y[ 2]  -21.19   -19.90   -19.14   -18.64   -19.79   -19.84  
+Y[ 3]  -23.63   -22.49   -21.45   -20.87   -21.76   -21.79  
+
+
+	Reference height [um]         Before  After =    2.669866     2.645240
+	LBC value threshold                    [nm] =     20000.0
+	YAW value threshold                    [nm] =     20000.0
+	PITCH value threshold                  [nm] =     20000.0
+	Acceleration threshold                  [G] =      20.000
+	Move time threshold                  [msec] =       50000
+	Number of retries threshold         [times] =         100
+
+======================================================
+
+Continuous calibration start Thu Nov  8 16:37:13 2018
+
+
+Continuous calibration start (1/1)
+
+Continuous calibration start CURRNT
+
+========= CURRNT Final result ==================
+
+[Measurement information]
+	Linear scaling value X, Y = 1.000000, 1.000000
+	Start time                = Thu Nov  8 16:37:13 2018
+	End time                  = Thu Nov  8 16:37:27 2018
+	EOS Mode                  = 6 Accelerating voltage 100kV Lens 5
+
+Number of current measurements   = 30
+	Average current value       [pA] = -1006.500000
+current value [  0]         [pA] = -1006.700000
+current value [  1]         [pA] = -1006.500000
+current value [  2]         [pA] = -1006.600000
+current value [  3]         [pA] = -1006.600000
+current value [  4]         [pA] = -1006.300000
+current value [  5]         [pA] = -1006.800000
+current value [  6]         [pA] = -1006.600000
+current value [  7]         [pA] = -1006.600000
+current value [  8]         [pA] = -1006.400000
+current value [  9]         [pA] = -1006.300000
+current value [ 10]         [pA] = -1006.500000
+current value [ 11]         [pA] = -1006.600000
+current value [ 12]         [pA] = -1006.500000
+current value [ 13]         [pA] = -1006.500000
+current value [ 14]         [pA] = -1006.600000
+current value [ 15]         [pA] = -1006.600000
+current value [ 16]         [pA] = -1006.400000
+current value [ 17]         [pA] = -1006.400000
+current value [ 18]         [pA] = -1006.600000
+current value [ 19]         [pA] = -1006.600000
+current value [ 20]         [pA] = -1006.400000
+current value [ 21]         [pA] = -1006.600000
+current value [ 22]         [pA] = -1006.600000
+current value [ 23]         [pA] = -1006.400000
+current value [ 24]         [pA] = -1006.600000
+current value [ 25]         [pA] = -1006.500000
+current value [ 26]         [pA] = -1006.700000
+current value [ 27]         [pA] = -1006.600000
+current value [ 28]         [pA] = -1006.600000
+current value [ 29]         [pA] = -1006.800000
+
+======================================================
+
+Continuous calibration start INITAE
+
+========= INITAE Final result ==================
+
+[Measurement information]
+	Linear scaling value X, Y = 1.000000, 1.000000
+	Start time                = Thu Nov  8 16:37:27 2018
+	End time                  = Thu Nov  8 16:37:33 2018
+	EOS Mode                  = 6 Accelerating voltage 100kV Lens 5
+
+
+AE bottom plane mark measurement
+AE Bottom plane mark stage coordinates position X,Y [nm] = 3305808, 112246797
+Beam position                                      [nm] = 32768, 32768
+Mark position shift                                [nm] = -57.6, -187.2
+Beam size                                          [nm] = 32.7, 34.0
+Number of convergence                     X, Y  [times] = 7, 7
+Remainder square sum                      X, Y  [point] = 0.0, 0.0
+
+======================================================
+
+Continuous calibration start INITAE
+
+========= INITAE Final result ==================
+
+[Measurement information]
+	Linear scaling value X, Y = 1.000000, 1.000000
+	Start time                = Thu Nov  8 16:37:33 2018
+	End time                  = Thu Nov  8 16:37:33 2018
+	EOS Mode                  = 6 Accelerating voltage 100kV Lens 5
+
+
+AE bottom plane mark measurement
+AE Bottom plane mark stage coordinates position X,Y [nm] = 3305826, 112246798
+Beam position                                      [nm] = 32768, 32768
+Mark position shift                                [nm] = 17.9, 1.4
+Beam size                                          [nm] = 34.6, 35.3
+Number of convergence                     X, Y  [times] = 5, 7
+Remainder square sum                      X, Y  [point] = 0.0, 0.0
+
+======================================================
+
+Continuous calibration start SFOCUS
+[SFOCUS one measurement point result]
+	Measurement item =             SF
+	Number of retries = 0
+	Success flag                  = 1
+	Number of actual measurement points = 21
+	DAC value at measurement FOCUS   = 39959
+	                         STIG  X = 147
+	                         STIG  Y = -1163
+                                                                                       Peak X  Y      Root of square mean [nm]
+    DAC value corresponding to the minimum beam size            [point] =      39,951       39,967       39,959
+    The minimum beam size                                          [nm] =        26.1         17.2         20.7
+
+   Measurement point    Result      SF DAC value       beam size X  Y[nm]       Root of square mean [nm]
+    [ 0]               [Succeeded]       39,460             43.3         43.0         43.1
+    [ 1]               [Succeeded]       39,510             44.9         42.7         43.8
+    [ 2]               [Succeeded]       39,560             43.3         37.9         40.7
+    [ 3]               [Succeeded]       39,610             37.0         37.1         37.0
+    [ 4]               [Succeeded]       39,660             37.3         31.7         34.6
+    [ 5]               [Succeeded]       39,710             33.2         30.7         32.0
+    [ 6]               [Succeeded]       39,760             29.6         25.3         27.5
+    [ 7]               [Succeeded]       39,810             28.6         23.1         26.0
+    [ 8]               [Succeeded]       39,860             27.1         19.0         23.4
+    [ 9]               [Succeeded]       39,910             25.2         18.2         22.0
+    [10]               [Succeeded]       39,960             25.2         16.7         21.4
+    [11]               [Succeeded]       40,010             26.9         17.3         22.6
+    [12]               [Succeeded]       40,060             27.8         19.6         24.1
+    [13]               [Succeeded]       40,110             29.3         22.4         26.1
+    [14]               [Succeeded]       40,160             32.5         26.9         29.8
+    [15]               [Succeeded]       40,210             35.6         27.9         32.0
+    [16]               [Succeeded]       40,260             38.2         32.8         35.6
+    [17]               [Succeeded]       40,310             44.0         35.0         39.7
+    [18]               [Succeeded]       40,360             43.5         38.7         41.2
+    [19]               [Succeeded]       40,410             49.2         41.7         45.6
+    [20]               [Succeeded]       40,460             49.3         46.0         47.7
+[SFOCUS retry result]
+    Measurement item           = SFOCUS
+    Number of retries  [times] = 0
+    Convergence flag           = Yes
+
+    FOCUS DAC value            Before measurement  After measurement
+            Focus      [point] =      39,960              39,959
+            Stig. X    [point] =         147                 147
+            Stig. Y    [point] =      -1,163              -1,163
+
+    STIG               [point] =         -16
+    Beam size X  Y        [nm] =        26.1                17.2
+
+[Measurement information]
+	Linear scaling value X, Y = 1.000000, 1.000000
+	Start time                = Thu Nov  8 16:37:33 2018
+	End time                  = Thu Nov  8 16:37:52 2018
+	EOS Mode                  = 6 Accelerating voltage 100kV Lens 5
+
+    Measurement item           = SFOCUS
+
+    Number of retries  [times] = 0
+    Convergence flag           = Yes
+
+    FOCUS DAC value            Before measurement  After measurement
+            Focus      [point] =      39,960              39,959
+            Stig. X    [point] =         147                 147
+            Stig. Y    [point] =      -1,163              -1,163
+
+    STIG               [point] =         -16
+    Beam size X  Y        [nm] =        26.1                17.2
+SFOCUS End Thu Nov  8 16:37:52 2018
+
+
+Continuous calibration start INITBE
+
+========= INITBE Final result ==================
+
+[Measurement information]
+	Linear scaling value X, Y = 1.000000, 1.000000
+	Start time                = Thu Nov  8 16:37:52 2018
+	End time                  = Thu Nov  8 16:38:03 2018
+	EOS Mode                  = 6 Accelerating voltage 100kV Lens 5
+
+	Top plane mark position      X        Y [nm] =   4,371,798   46,203,261
+Top plane mark correlation process result 
+	Mark position shift             [nm] = -138.3, 611.5
+	Mark width                      [nm] = 1150.5, 1140.5
+	Maximum correlation operation result = 21162, 21844
+	Minimum correlation operation result = -28392, -28557
+	S/N ratio                            = 16, 22
+	Amplitude                            = 2168, 2189
+	Rotation                      [deg.] = 0.00000, 0.00000
+	Bottom plane mark position   X        Y [nm] =   1,853,780   20,807,821
+Bottom plane mark correlation process result 
+	Mark position shift             [nm] = -168.5, 660.3
+	Mark width                      [nm] = 1140.5, 1140.5
+	Maximum correlation operation result = 23511, 23474
+	Minimum correlation operation result = -29518, -30049
+	S/N ratio                            = 15, 19
+	Amplitude                            = 2175, 2200
+	Rotation                      [deg.] = 0.00000, 0.00000
+
+======================================================
+
+Continuous calibration start INITBE
+
+========= INITBE Final result ==================
+
+[Measurement information]
+	Linear scaling value X, Y = 1.000000, 1.000000
+	Start time                = Thu Nov  8 16:38:03 2018
+	End time                  = Thu Nov  8 16:38:10 2018
+	EOS Mode                  = 6 Accelerating voltage 100kV Lens 5
+
+	Top plane mark position      X        Y [nm] =   4,371,803   46,203,264
+Top plane mark correlation process result 
+	Mark position shift             [nm] = 4.6, 3.1
+	Mark width                      [nm] = 1140.5, 1140.5
+	Maximum correlation operation result = 21928, 21550
+	Minimum correlation operation result = -28604, -28984
+	S/N ratio                            = 17, 19
+	Amplitude                            = 2172, 2227
+	Rotation                      [deg.] = 0.00000, 0.00000
+	Bottom plane mark position   X        Y [nm] =   1,853,780   20,807,824
+Bottom plane mark correlation process result 
+	Mark position shift             [nm] = -0.3, 2.9
+	Mark width                      [nm] = 1150.5, 1140.5
+	Maximum correlation operation result = 23191, 22522
+	Minimum correlation operation result = -29819, -30347
+	S/N ratio                            = 17, 18
+	Amplitude                            = 2156, 2227
+	Rotation                      [deg.] = 0.00000, 0.00000
+
+======================================================
+
+Continuous calibration start PDEFBE
+
+========= PDEFBE intermediate result 1 (result of to-and-fro measurement)
+
+	Number of top plane retries = 0
+	Number of to-and-fro measurements = 0
+	                                Shift value X    Y[nm]   Average height[um]
+	Mark position  left   (forward)   =      5.2      1.8            0.00
+	Mark position  right  (forward)   =     -5.7      9.2            0.00
+	Mark position  top    (forward)   =      6.9     11.8            0.00
+	Mark position  bottom (forward)   =     -6.1      5.7            0.00
+	                                Shift value X    Y[nm]   Average height[um]
+	Mark position  left   (backward)  =      8.1      0.3            0.00
+	Mark position  right  (backward)  =     -5.3     10.4            0.00
+	Mark position  top    (backward)  =      7.7     13.8            0.00
+	Mark position  bottom (backward)  =     -4.6      6.6            0.00
+
+
+========= PDEFBE intermediate result 2 (result of retry)
+
+	Number of top plane retries = 0
+	                                Shift value X    Y[nm]   Average height[um]
+	Mark position  left   (average)   =      6.6      1.0            0.00
+	Mark position  right  (average)   =     -5.5      9.8            0.00
+	Mark position  top    (average)   =      7.3     12.8            0.00
+	Mark position  bottom (average)   =     -5.3      6.2            0.00
+	               Previous DAC[point]             Shift value[nm]           Corrected DAC[point]
+	GAIN (X  Y) =   2,756    2,629               -12.1         -6.6           2,700    2,598
+	ROT  (X  Y) =   4,469   -4,393                 8.8         12.6           4,389   -4,278
+
+
+
+========= PDEFBE intermediate result 1 (result of to-and-fro measurement)
+
+	Number of top plane retries = 1
+	Number of to-and-fro measurements = 0
+	                                Shift value X    Y[nm]   Average height[um]
+	Mark position  left   (forward)   =      1.0      5.2            0.00
+	Mark position  right  (forward)   =     -0.5      4.0            0.00
+	Mark position  top    (forward)   =      1.4      8.5            0.00
+	Mark position  bottom (forward)   =      1.3      7.8            0.00
+	                                Shift value X    Y[nm]   Average height[um]
+	Mark position  left   (backward)  =      1.6      5.8            0.00
+	Mark position  right  (backward)  =     -0.8      4.8            0.00
+	Mark position  top    (backward)  =      0.2      8.3            0.00
+	Mark position  bottom (backward)  =      1.4      8.5            0.00
+
+
+========= PDEFBE intermediate result 2 (result of retry)
+
+	Number of top plane retries = 1
+	                                Shift value X    Y[nm]   Average height[um]
+	Mark position  left   (average)   =      1.3      5.5            0.00
+	Mark position  right  (average)   =     -0.7      4.4            0.00
+	Mark position  top    (average)   =      0.8      8.4            0.00
+	Mark position  bottom (average)   =      1.4      8.2            0.00
+	               Previous DAC[point]             Shift value[nm]           Corrected DAC[point]
+	GAIN (X  Y) =   2,700    2,598                -2.0         -0.2           2,700    2,598
+	ROT  (X  Y) =   4,389   -4,278                -1.1         -0.6           4,389   -4,278
+
+
+
+========= PDEFBE intermediate result 1 (result of to-and-fro measurement)
+
+	Number of bottom plane retries = 0
+	Number of to-and-fro measurements = 0
+	                                Shift value X    Y[nm]   Average height[um]
+	Mark position  left   (forward)   =      6.6     -2.6            0.00
+	Mark position  right  (forward)   =     -5.3      2.7            0.00
+	Mark position  top    (forward)   =      6.3      4.5            0.00
+	Mark position  bottom (forward)   =     -5.8     -3.2            0.00
+	                                Shift value X    Y[nm]   Average height[um]
+	Mark position  left   (backward)  =      3.7     -6.0            0.00
+	Mark position  right  (backward)  =     -6.4      0.2            0.00
+	Mark position  top    (backward)  =      5.9      4.7            0.00
+	Mark position  bottom (backward)  =     -5.6     -3.6            0.00
+
+
+========= PDEFBE intermediate result 2 (result of retry)
+
+	Number of bottom plane retries = 0
+	                                Shift value X    Y[nm]   Average height[um]
+	Mark position  left   (average)   =      5.2     -4.3            0.00
+	Mark position  right  (average)   =     -5.9      1.4            0.00
+	Mark position  top    (average)   =      6.1      4.6            0.00
+	Mark position  bottom (average)   =     -5.7     -3.4            0.00
+	               Previous DAC[point]             Shift value[nm]           Corrected DAC[point]
+	GAIN (X  Y) =   2,629    2,517               -11.0         -8.0           2,578    2,480
+	ROT  (X  Y) =   4,330   -4,263                 5.7         11.7           4,278   -4,156
+
+
+
+========= PDEFBE intermediate result 1 (result of to-and-fro measurement)
+
+	Number of bottom plane retries = 1
+	Number of to-and-fro measurements = 0
+	                                Shift value X    Y[nm]   Average height[um]
+	Mark position  left   (forward)   =     -0.9     -3.8            0.00
+	Mark position  right  (forward)   =     -1.1     -2.8            0.00
+	Mark position  top    (forward)   =      0.8      0.1            0.00
+	Mark position  bottom (forward)   =     -0.6      0.3            0.00
+	                                Shift value X    Y[nm]   Average height[um]
+	Mark position  left   (backward)  =     -1.8     -3.6            0.00
+	Mark position  right  (backward)  =     -1.6     -3.1            0.00
+	Mark position  top    (backward)  =     -0.2      0.3            0.00
+	Mark position  bottom (backward)  =     -0.6      0.4            0.00
+
+
+========= PDEFBE intermediate result 2 (result of retry)
+
+	Number of bottom plane retries = 1
+	                                Shift value X    Y[nm]   Average height[um]
+	Mark position  left   (average)   =     -1.3     -3.7            0.00
+	Mark position  right  (average)   =     -1.4     -3.0            0.00
+	Mark position  top    (average)   =      0.3      0.2            0.00
+	Mark position  bottom (average)   =     -0.6      0.3            0.00
+	               Previous DAC[point]             Shift value[nm]           Corrected DAC[point]
+	GAIN (X  Y) =   2,578    2,480                 0.0          0.1           2,578    2,480
+	ROT  (X  Y) =   4,278   -4,156                 0.7          0.9           4,278   -4,156
+
+
+
+========= PDEFBE Final result ==================
+
+[Measurement information]
+	Linear scaling value X, Y = 1.000000, 1.000000
+	Start time                = Thu Nov  8 16:38:10 2018
+	End time                  = Thu Nov  8 16:38:58 2018
+	EOS Mode                  = 6 Accelerating voltage 100kV Lens 5
+
+	Field size                [nm] =      55,000
+	Number of bottom plane retries = 1
+
+	               Previous DAC[point]             Shift value[nm]           Corrected DAC[point]
+	GAIN (X  Y) =   2,629    2,517                 0.0          0.1           2,578    2,480
+	ROT  (X  Y) =   4,330   -4,263                 0.7          0.9           4,278   -4,156
+
+
+	Height cirrection coefficient   = 0.435090
+	Height offset value        [um] = -138.560000
+	Height correction coefficient                   X            Y
+		GAIN  X,Y                     = 2.278322e+00  2.203623e+00
+		ROT   X,Y                     = 2.072900e+00  -2.278322e+00
+	Distortion conversion coefficient               X            Y
+		GAIN  X,Y                     = 0.000000e+00  0.000000e+00
+		ROT   X,Y                     = 0.000000e+00  0.000000e+00
+
+	height of the reference face mark [um] =       2.572
+	difference between the lower face mark and the reference face mark [um] =      -0.015
+	difference between the upper face mark and the reference face mark [um] =      53.548
+
+======================================================
+
+Continuous calibration start SUBDEFBE
+
+SUBDEFBE intermediate result
+	Retry count          =           0
+	Mark type            = Top plane
+	Distortion [1/9]      X  Y  =         1.2         -1.0
+	Distortion [2/9]      X  Y  =         0.7         -0.3
+	Distortion [3/9]      X  Y  =         0.8         -1.5
+	Distortion [4/9]      X  Y  =         0.4          1.9
+	Distortion [5/9]      X  Y  =         0.4          0.5
+	Distortion [6/9]      X  Y  =         0.5         -1.8
+	Distortion [7/9]      X  Y  =         0.6          2.4
+	Distortion [8/9]      X  Y  =         0.9          2.1
+	Distortion [9/9]      X  Y  =        -0.5         -0.5
+	                      Previous DAC[point]   Error value[nm]   Corrected DAC[point]
+	SUBDEF SHIFT (X  Y) =        0       0         0.4     0.5           0       0
+	SUBDEF GAIN  (X  Y) =      276     249        -0.5     2.2         276     249
+	SUBDEF ROT   (X  Y) =        4     163        -2.4     0.6           4     163
+
+SUBDEFBE intermediate result
+	Retry count          =           0
+	Mark type            = Bottom plane
+	Distortion [1/9]      X  Y  =        -0.9          0.3
+	Distortion [2/9]      X  Y  =        -0.2         -1.0
+	Distortion [3/9]      X  Y  =        -1.0         -2.1
+	Distortion [4/9]      X  Y  =        -1.1          1.6
+	Distortion [5/9]      X  Y  =        -0.7          0.3
+	Distortion [6/9]      X  Y  =        -1.1         -1.4
+	Distortion [7/9]      X  Y  =        -1.3          1.0
+	Distortion [8/9]      X  Y  =        -1.9         -0.3
+	Distortion [9/9]      X  Y  =        -1.4         -1.4
+	                      Previous DAC[point]   Error value[nm]   Corrected DAC[point]
+	SUBDEF SHIFT (X  Y) =        0       0        -0.7     0.3          -1       0
+	SUBDEF GAIN  (X  Y) =      309     322        -0.1     0.7         309     322
+	SUBDEF ROT   (X  Y) =      -67     143        -2.6     0.8         -67     143
+
+========= SUBDEFBE Final result ==================
+
+[Measurement information]
+	Linear scaling value X, Y = 1.000000, 1.000000
+	Start time                = Thu Nov  8 16:38:58 2018
+	End time                  = Thu Nov  8 16:39:30 2018
+	EOS Mode                  = 6 Accelerating voltage 100kV Lens 5
+
+	Retry count                           =           0
+	Maximum field of sub-deflector   [nm] =         500
+	                      Previous DAC[point]   Error value[nm]   Corrected DAC[point]
+	SUBDEF SHIFT (X  Y) =       -1       1        -0.7     0.3          -1       0
+	SUBDEF GAIN  (X  Y) =      309     322        -0.1     0.7         309     322
+	SUBDEF ROT   (X  Y) =      -67     143        -2.6     0.8         -67     143
+
+	Height cirrection coefficient   = 0.435090
+	Height offset value        [um] = -138.560000
+	Reference height                      =    2.528723
+	Top plane height measurement value    =   56.103965
+	Bottom plane height measurement value =    2.570839
+	Height correction coefficient                   X            Y
+	         SHIFT                        =    0.018680     0.000000
+	         GAIN                         =   -0.616441    -1.363642
+	         ROT                          =    1.326282     0.373600
+
+======================================================
+
+Continuous calibration start SAVE
+Distortion measurement result file name          :  20181104142422.6.distbe.bat.ic
+Dynamic focus measurement result file name       :  20181016031015.6.dfocus.ic
+Dynamic stigmatic X measurement result file name :  20181016031015.6.dfocus.ic
+Dynamic stigmatic Y measurement result file name :  20181016031015.6.dfocus.ic
+EOS DAC value
+Lens 2                 = 16351
+Lens 3                 = 44199
+Lens 4                 = 31190
+Lens 5                 = 39959
+1st alignment value TX = 4495
+1st alignment value TY = -7525
+2nd alignment value TX = 1124
+2nd alignment value TY = -2097
+2nd alignment value SX = -3836
+2nd alignment value SY = 6375
+3rd alignment value  X = 0
+3rd alignment value  Y = 0
+Stigmatism X           = 147
+Stigmatism Y           = -1163
+Lens 4 offset          = 27750
+Lens 5 offset          = 53900
+Ratio X H = -49
+Ratio X V = -279
+Ratio Y H = -200
+Ratio Y V = 55
+Aperture position X,Y [um] = 733.725, 8883.050
+ Calib common memory 
+ Linear scaling value                    X   Y           =    1.000000    1.000000 
+ AE top plane mark position              X   Y [nm]      =     3465073   131153728 
+ AE bottom plane mark position           X   Y [nm]      =     3305826   112246798 
+ Faraday cup position                    X   Y [nm]      =     3355903    61937567 
+ BE top plane mark position              X   Y [nm]      =     4371803    46203264 
+ BE bottom plane mark position           X   Y [nm]      =     1853780    20807824 
+ RG mark position                        X   Y [nm]      =   140892389    40955171 
+ Reference height offset position        X   Y [nm]      =           0           0 
+ Reference height measurement position   X   Y [nm]      =     1853780    20807824 
+ DRIFT average position shift            X   Y [nm]      =         5.3       -12.3 
+ Total value of CHIPAL and DRIFT         X   Y [nm]      =           0           0 
+ Mask center offset position             X   Y [nm]      =           0           0 
+ PDEF DAC value Gain                     X   Y [point]   =        2578        2480 
+ PDEF DAC value Rotation                 X   Y [point]   =        4278       -4156 
+ SUBDEF DAC value Shift                 X   Y [point]   =          -1           0 
+ SUBDEF DAC value Gain                  X   Y [point]   =         309         322 
+ SUBDEF dac value rotation              X   Y [point]   =         -67         143 
+ LBC dac value gain                     X   Y [point]   =        2578        2480 
+ LBC dac value rotation                 X   Y [point]   =        4278       -4156 
+ DF OFFSET                                    [point]   =           0 
+ PDEF weighting coefficient 
+   Gain                    X   Y [1/point] =  3.9615e-06  3.9569e-06 
+   Rotation                X   Y [1/point] = -2.0038e-06  1.9946e-06 
+ SUBDEF weighting coefficient 
+   Shift                   X   Y [1/point] =  1.0000e+00  1.0000e+00 
+   Gain                    X   Y [1/point] =  6.2500e-05  6.2500e-05 
+   Rotation                X   Y [1/point] =  2.3438e-05 -3.9063e-05 
+ PDEF Fine Gain            X   Y [1/point] =  6.4700e-08  6.4100e-08 
+ PDEFBE reference height                   =       2.529 
+ PDEFBE height difference between bottom BE mark and the reference plane        =      -0.015 
+ PDEFBE height difference between top plane BE mark and bottom plane BE mark    =      53.548 
+ PDEF   height difference between bottom plane BE mark and bottom plane AE mark =       3.028 
+
+========= PDEFBE Final result ==================
+
+	Field size                [nm] =      55,000
+	Number of bottom plane retries = 1
+
+	               Previous DAC[point]             Shift value[nm]           Corrected DAC[point]
+	GAIN (X  Y) =   2,629    2,517                 0.0          0.1           2,578    2,480
+	ROT  (X  Y) =   4,330   -4,263                 0.7          0.9           4,278   -4,156
+
+
+	Height cirrection coefficient   = 0.435090
+	Height offset value        [um] = -138.560000
+	Height correction coefficient                   X            Y
+		GAIN  X,Y                     = 2.278322e+00  2.203623e+00
+		ROT   X,Y                     = 2.072900e+00  -2.278322e+00
+	Distortion conversion coefficient               X            Y
+		GAIN  X,Y                     = 0.000000e+00  0.000000e+00
+		ROT   X,Y                     = 0.000000e+00  0.000000e+00
+
+	height of the reference face mark [um] =       2.572
+	difference between the lower face mark and the reference face mark [um] =      -0.015
+	difference between the upper face mark and the reference face mark [um] =      53.548
+
+======================================================
+
+========= SUBDEFBE Final result ==================
+
+	Retry count                           =           0
+	Maximum field of sub-deflector   [nm] =         500
+	                      Previous DAC[point]   Error value[nm]   Corrected DAC[point]
+	SUBDEF SHIFT (X  Y) =       -1       1        -0.7     0.3          -1       0
+	SUBDEF GAIN  (X  Y) =      309     322        -0.1     0.7         309     322
+	SUBDEF ROT   (X  Y) =      -67     143        -2.6     0.8         -67     143
+
+	Height cirrection coefficient   = 0.435090
+	Height offset value        [um] = -138.560000
+	Reference height                      =    2.528723
+	Top plane height measurement value    =   56.103965
+	Bottom plane height measurement value =    2.570839
+	Height correction coefficient                   X            Y
+	         SHIFT                        =    0.018680     0.000000
+	         GAIN                         =   -0.616441    -1.363642
+	         ROT                          =    1.326282     0.373600
+
+======================================================
+
+========= DISTBE Final result ==================
+
+DISTBE measurement condition information 
+	Memory clear mode                  = On
+	Field size                   [nm]  =      53,000
+	Zigzag                             = X -> Y
+	Measurement starting point         = Top left
+	Number of to-and-fro measurements  =           0
+	Number of measurement points in the 1st quadrant =           2
+
+Correction memory after measurement [point]
+     X     |    -26500 |         0 |     26500 |
+-----------+------------------------------------
+     26500 |         0           0           0  
+         0 |         0           0           0  
+    -26500 |         0           0           0  
+
+
+     Y     |    -26500 |         0 |     26500 |
+-----------+------------------------------------
+     26500 |         0           0           0  
+         0 |         0           0           0  
+    -26500 |         0           0           0  
+
+
+
+	Mark detection point X  Y     [nm] =      -2,000       -2,000
+	Height cirrection coefficient   = 0.000000
+	Height offset value        [um] = 0.000000
+
+======================================================
+
+========= DFOCUS Final result ==================
+
+	Memory clear mode = no
+	Zigzag = X -> Y
+	Measurement start point = Top left
+	Measurement item = DSX | DSY | SF
+	Measurement field size = 53000
+[DF approximation coefficient]
+Number of approximation orders               = 2
+Number of terms of the approximation formula = 6
+  a[ 0] = 0.000000e+00  a[ 1] = 0.000000e+00  a[ 2] = 0.000000e+00  a[ 3] = 0.000000e+00
+  a[ 4] = 0.000000e+00  a[ 5] = 0.000000e+00  a[ 6] = 0.000000e+00  a[ 7] = 0.000000e+00
+  a[ 8] = 0.000000e+00  a[ 9] = 0.000000e+00
+[DSX/DSY approximation coefficient]
+Number of approximation orders               = 2
+Number of terms of the approximation formula = 6
+  a[ 0] = 0.000000e+00  a[ 1] = 0.000000e+00  a[ 2] = 0.000000e+00  a[ 3] = 0.000000e+00
+  a[ 4] = 0.000000e+00  a[ 5] = 0.000000e+00  a[ 6] = 0.000000e+00  a[ 7] = 0.000000e+00
+  a[ 8] = 0.000000e+00  a[ 9] = 0.000000e+00
+  b[ 0] = 0.000000e+00  b[ 1] = 0.000000e+00  b[ 2] = 0.000000e+00  b[ 3] = 0.000000e+00
+  b[ 4] = 0.000000e+00  b[ 5] = 0.000000e+00  b[ 6] = 0.000000e+00  b[ 7] = 0.000000e+00
+  b[ 8] = 0.000000e+00  b[ 9] = 0.000000e+00
+	Field center correction DF  [point] = 0
+	                        DSX [point] = 0
+	                        DSY [point] = 0
+Convergence result 
+Convergence flag (1:Convergence flag, 0:Nonconvergence)
+   Y / X   |    -26500 |         0 |     26500 |
+-----------+------------------------------------
+     26500 |         0           0           0  
+         0 |         0           0           0  
+    -26500 |         0           0           0  
+
+
+DF  DAC value  before measurement[point]
+   Y / X   |    -26500 |         0 |     26500 |
+-----------+------------------------------------
+     26500 |      -814       -1044       -1040  
+         0 |      -773       -1003       -1000  
+    -26500 |      -644        -875        -871  
+
+
+DSX DAC value  before measurement[point]
+   Y / X   |    -26500 |         0 |     26500 |
+-----------+------------------------------------
+     26500 |       -63         -23          21  
+         0 |       -17          11          45  
+    -26500 |        32          50          73  
+
+
+DSY DAC value before measurement [point]
+   Y / X   |    -26500 |         0 |     26500 |
+-----------+------------------------------------
+     26500 |         9          43          82  
+         0 |        -3          31          70  
+    -26500 |       -25          10          48  
+
+
+DF  DAC value after measurement [point]
+   Y / X   |    -26500 |         0 |     26500 |
+-----------+------------------------------------
+     26500 |         0           0           0  
+         0 |         0           0           0  
+    -26500 |         0           0           0  
+
+
+DSX DAC value after measurement [point]
+   Y / X   |    -26500 |         0 |     26500 |
+-----------+------------------------------------
+     26500 |         0           0           0  
+         0 |         0           0           0  
+    -26500 |         0           0           0  
+
+
+DSY DAC value after measurement [point]
+   Y / X   |    -26500 |         0 |     26500 |
+-----------+------------------------------------
+     26500 |         0           0           0  
+         0 |         0           0           0  
+    -26500 |         0           0           0  
+
+
+stigmatism [point]
+   Y / X   |    -26500 |         0 |     26500 |
+-----------+------------------------------------
+     26500 |         0           0           0  
+         0 |         0           0           0  
+    -26500 |         0           0           0  
+
+
+Beam size X [nm]
+   Y / X   |    -26500 |         0 |     26500 |
+-----------+------------------------------------
+     26500 |       0.0         0.0         0.0  
+         0 |       0.0         0.0         0.0  
+    -26500 |       0.0         0.0         0.0  
+
+
+Beam size Y [nm]
+   Y / X   |    -26500 |         0 |     26500 |
+-----------+------------------------------------
+     26500 |       0.0         0.0         0.0  
+         0 |       0.0         0.0         0.0  
+    -26500 |       0.0         0.0         0.0  
+
+
+
+======================================================
+
+========= HCOEFFI Final result ==================
+
+	[Objective lens variation coefficient measurement result]
+				                          Bottom plane                Top plane
+		Mark position X,Y           [nm] =   3,313,438   112,245,929      3,464,328   131,152,918
+		Focus value              [point] =       40201                       41749
+		PDEF   GAIN X,Y          [point] =        2653         2565           3160         3059
+		       ROT  X,Y          [point] =        4341        -4292           4962        -4902
+		SUBDEF GAIN X,Y          [point] =         324          336            366          380
+		       ROT  X,Y          [point] =        -168          131           -190          215
+
+		Objective lens value conversion coefficient [DAC/um] =   27.777777
+		PDEFBE   GAIN  coefficient X,Y   =   10.104580     9.845489
+		         ROT   coefficient X,Y   =   12.376616   -12.157385
+		SUBDEFBE GAIN  coefficient X,Y   =    0.837066     0.876926
+		         ROT   coefficient X,Y   =   -0.438463     1.674132
+		Beam shift value conversion coefficient      [um/um] =   -0.001185     0.000305
+
+
+======================================================
+
+========= EOSSET Final result ==================
+
+ Old EOS mode                              =           3 
+ New EOS mode                              =           6 
+ Condition file name                       = EOS6_1000pA_025u 
+ RESTOR execution                          = Exist 
+
+ High-pressure voltage value           [V] =  100000.000 
+ High-pressure current value          [uA] =      91.200 
+ Filament current value               [mA] =    2317.000 
+ A1 voltage value                      [V] =    4524.000 
+ A1 current value                     [uA] =     218.200 
+ A2 voltage value                      [V] =    5890.000 
+ SP voltage value                      [V] =     298.400 
+ Electron gun file meter               [H] =        6947 
+
+========= PRMINZ Final result ==================
+
+
+ Stage correction mode                        = MCOR | MIRROR BOW 
+ Movement in Faraday cup                      = None 
+ State of beam other than MD                  = OFF 
+
+======================================================
+
+========= TEMP Final result ==================
+
+	Measurement point                                Temperature
+	Temperature of the cassette on the stage            :22.483
+	Temperature of the stage top side                   :22.174
+	Temperature of the High-pressure tank top side      :24.360
+	Temperature of the LENS 2/3                         :23.661
+	Temperature of the LENS 4/5                         :23.202
+	Temperature in the vicinity of drawing chamber      :23.241
+	Temperature of the drawing chamber bottom side      :22.585
+	Temperature of the cassette in the ALD              : 0.000
+
+========= HEIMAP Final result ==================
+
+	Tertiary approximation coefficient a[ 1/10] =          -8.550050E+04
+	Tertiary approximation coefficient a[ 2/10] =           1.671277E-03
+	Tertiary approximation coefficient a[ 3/10] =           7.884208E-06
+	Tertiary approximation coefficient a[ 4/10] =          -1.050062E-11
+	Tertiary approximation coefficient a[ 5/10] =          -2.776673E-12
+	Tertiary approximation coefficient a[ 6/10] =           4.649852E-12
+	Tertiary approximation coefficient a[ 7/10] =           2.190235E-20
+	Tertiary approximation coefficient a[ 8/10] =           8.953405E-21
+	Tertiary approximation coefficient a[ 9/10] =           2.615596E-21
+	Tertiary approximation coefficient a[10/10] =          -4.131688E-20
+	Plate inclination                     [rad] =             0.000008
+	Average plate height                   [um] =           -18.790613
+	Stage center position         X  Y     [nm] =  150,300,000   41,100,000
+	Judgment flag                               = Nomal
+	Current result                 =   -1006.500
+
+========= SETWFR Final result ==================
+
+	Material type           = Wafer
+	Material size    [inch] = 2.00
+	Measurement mode        = Cancel
+	AGC execution           = No
+	Height measurement      = No
+		PDEF   GAIN  X,Y           =        2574         2480
+		       ROT   X,Y           =        4271        -4153
+		SUBDEF SHIFT X,Y           =           1           -1
+		       GAIN  X,Y           =         319          336
+		       ROT   X,Y           =         -67          143
+		The Objective lens         =       39996
+		DF offset                  =           0
+
+	Objective lens value Beam shift value after correction [nm] =         0.0          0.0
+	DFOCUS OFFSET value  Beam shift value after correction [nm] =         0.0          0.0
+	Height                        [um] =    0.000000
+
+	[Parameter for pattern writing height correction calculation]
+	PQ GAIN coefficient     [nm/100mm] = 0.000000e+00  0.000000e+00
+
+	[PDEF DAC value calculated from PQ GAIN/ROT]
+		PDEF   GAIN  X,Y           =           0            0
+		       ROT   X,Y           =           0            0
+
+	[SUBDEF DAC value calculated from PQ GAIN/ROT]
+		SUBDEF SHIFT X,Y           =           0            0
+		       GAIN  X,Y           =           0            0
+		       ROT   X,Y           =           0            0
+
+	[PDEF DAC value calculated from lens4 + height]
+		PDEF   GAIN  X,Y           =           0            0
+		       ROT   X,Y           =           0            0
+
+	[SUBDEF DAC value calculated from lens4 + height]
+		SUBDEF SHIFT X,Y           =           0            0
+		       GAIN  X,Y           =           0            0
+		       ROT   X,Y           =           0            0
+
+	[Total component DAC value of PQ correction]
+		PDEF   GAIN  X,Y           =           0            0
+		       ROT   X,Y           =           0            0
+		SUBDEF SHIFT X,Y           =           0            0
+		       GAIN  X,Y           =           0            0
+		       ROT   X,Y           =           0            0
+		The Objective lens         =           0
+		DF offset                  =           0
+
+	Material correction coefficient SHIFT X,Y        [nm] = -784000.000000  2606000.000000
+	                                GAIN  X,Y  [nm/100mm] =    0.000000     0.000000
+	                                ROT   X,Y       [rad] =   -0.000000     0.000000
+	Material center position X,Y                     [nm] =   151000000    129000000
+	Material rotation angle X,Y                   [degree] = -0.0000000000  0.0000000000
+	Reference plane height                                =    0.000000
+	Average height                                        =    0.000000
+	[P-point mark measurement result]
+		Design position (material coordinates)      X,Y[nm] =    -3000000           0
+		Observation position (material coordinates) X,Y[nm] =    -3784000     2606000
+		Offset                                      X,Y[nm] =     -784000     2606000
+		Mark rotation angle(+clockwise) [degree]            = 0.000000e+00
+		Height measurement                                  = No height measurement
+		Height                              [um]            = 0.000000e+00
+
+	[Q-point mark measurement result]
+		Design position (material coordinates)      X,Y[nm] =     3000000           0
+		Observation position (material coordinates) X,Y[nm] =     2216000     2606000
+		Offset                                      X,Y[nm] =     -784000     2606000
+		Mark rotation angle(+clockwise) [degree]            = 0.000000e+00
+		Height measurement                                  = No height measurement
+		Height                              [um]            = 0.000000e+00
+
+	[R-point mark measurement result]
+		Design position (material coordinates)      X,Y[nm] =           0     2000000
+		Observation position (material coordinates) X,Y[nm] =     -784000     4606000
+		Offset                                      X,Y[nm] =     -784000     2606000
+		Mark rotation angle(+clockwise) [degree]            = 0.000000e+00
+		Height measurement                                  = No height measurement
+		Height                              [um]            = 0.000000e+00
+
+	[S-point mark measurement result]
+		Design position (material coordinates)      X,Y[nm] =           0    -2000000
+		Observation position (material coordinates) X,Y[nm] =     -784000      606000
+		Offset                                      X,Y[nm] =     -784000     2606000
+		Mark rotation angle(+clockwise) [degree]            = 0.000000e+00
+		Height measurement                                  = No height measurement
+		Height                              [um]            = 0.000000e+00
+
+	[P-point correction data]
+		PDEF   GAIN  X,Y           =           0            0
+		       ROT   X,Y           =           0            0
+		SUBDEF SHIFT X,Y           =           0            0
+		       GAIN  X,Y           =           0            0
+		       ROT   X,Y           =           0            0
+		The Objective lens         =           0
+		DF offset                  =           0
+
+	Objective lens value Beam shift value after correction [nm] =         0.0          0.0
+	DFOCUS OFFSET value  Beam shift value after correction [nm] =         0.0          0.0
+	Height                        [um] =    0.000000
+
+	P-point mark shift [nm] = 0, 0
+
+======================================================
+
+========= CHIPAL Final result ==================
+
+	Measurement mode                   = Mode V1
+	AGC execution                      = No
+	Execution of height measurement    = Yes
+	DFOCUS height correction           = No
+
+	[Final correction data]
+		PDEF   GAIN  X,Y           =        2516         2423
+		       ROT   X,Y           =        4196        -4082
+		SUBDEF SHIFT X,Y           =           1           -1
+		       GAIN  X,Y           =         309          322
+		       ROT   X,Y           =         -56          133
+		The Objective lens         =       39804
+		DF offset                  =           0
+
+	Beam shift value after objective lens correction [nm] =         8.2         -2.1
+	Beam shift value after DFOCUS OFFSET correction  [nm] =         0.0          0.0
+	Height                        [um] =   -1.047958
+
+	[Parameter for pattern writing height correction calculation]
+	PQ GAIN coefficient     [nm/100mm] = 0.000000e+00  0.000000e+00
+
+	[PDEF DAC value calculated from PQ GAIN/ROT]
+		PDEF   GAIN  X,Y           =           0            0
+		       ROT   X,Y           =           0            0
+
+	[SUBDEF DAC value calculated from PQ GAIN/ROT]
+		SUBDEF SHIFT X,Y           =           0            0
+		       GAIN  X,Y           =           0            0
+		       ROT   X,Y           =           0            0
+
+	[PDEF DAC value calculated from lens4 + height]
+		PDEF   GAIN  X,Y           =         -58          -57
+		       ROT   X,Y           =         -75           71
+
+	[SUBDEF DAC value calculated from lens4 + height]
+		SUBDEF SHIFT X,Y           =           0            0
+		       GAIN  X,Y           =         -10          -14
+		       ROT   X,Y           =          11          -10
+
+	Pattern writing position conversion coefficient
+		Order number of approximation                = 1
+		Number of terms of the approximation formula = 4
+		Two dimensional primary approximation coefficient a, b [ 1/10] = 0.000000e+00  0.000000e+00
+		                                                       [ 2/10] = 1.000000e+00  0.000000e+00
+		                                                       [ 3/10] = 0.000000e+00  1.000000e+00
+		                                                       [ 4/10] = 0.000000e+00  0.000000e+00
+	Pattern writing height conversion coefficient
+		Order number of approximation                = 1
+		Number of terms of the approximation formula = 4
+		Two dimensional primary approximation coefficient a, b [ 1/10] = 0.000000e+00  0.000000e+00
+		                                                       [ 2/10] = 0.000000e+00  0.000000e+00
+		                                                       [ 3/10] = 0.000000e+00  0.000000e+00
+		                                                       [ 4/10] = 0.000000e+00  0.000000e+00
+	M1 - M4 Average shift value   [nm] =         0.0          0.0
+	Shift value at re-measurement [nm] =         0.0          0.0
+
+
+======================================================
+
+========= WFR3M Final result ==================
+
+ Correction infomation for drawing 
+ Measurement mode                               = No mark (Use SETWFR result) 
+ AGCRG execution                                = Exist 
+ HEIGHT measurement execution                   = None 
+ SUBDEF execution                               = None 
+		PDEF   GAIN  X,Y           =       -3321        -3298
+		       ROT   X,Y           =          -7         -107
+		SUBDEF SHIFT X,Y           =           2            1
+		       GAIN  X,Y           =         -73            9
+		       ROT   X,Y           =        -117          112
+		The Objective lens         =       31720
+		DF offset                  =           0
+
+	Objective lens value Beam shift value after correction [nm] =         0.0          0.0
+	DFOCUS OFFSET value  Beam shift value after correction [nm] =         0.0          0.0
+	Height                        [um] =    0.000000
+
+	[Parameter for pattern writing height correction calculation]
+	PQ GAIN coefficient     [nm/100mm] = 1.586433e+01  1.533346e+02
+
+	[PDEF DAC value calculated from PQ GAIN/ROT]
+		PDEF   GAIN  X,Y           =           0            0
+		       ROT   X,Y           =        -239          239
+
+	[SUBDEF DAC value calculated from PQ GAIN/ROT]
+		SUBDEF SHIFT X,Y           =           0            0
+		       GAIN  X,Y           =           0            0
+		       ROT   X,Y           =          15          -15
+
+	[PDEF DAC value calculated from lens4 + height]
+		PDEF   GAIN  X,Y           =           0            0
+		       ROT   X,Y           =           0            0
+
+	[SUBDEF DAC value calculated from lens4 + height]
+		SUBDEF SHIFT X,Y           =           0            0
+		       GAIN  X,Y           =           0            0
+		       ROT   X,Y           =           0            0
+
+ Material center position         X   Y [nm]      =   105000000    85000000 
+ Average shift amount             X   Y [nm]      =         0.0         0.0 
+ M1 position (stage coordinate)   X   Y [nm]      =    74657184    83970464 
+ Correction of gain and rotation for workpiece. 
+		PDEF   GAIN  X,Y           =           0            0
+		       ROT   X,Y           =           0            0
+		SUBDEF SHIFT X,Y           =           0            0
+		       GAIN  X,Y           =           0            0
+		       ROT   X,Y           =           0            0
+
+
+======================================================
+	[AGCAE result ]
+	Coarse Gain            [point] =         100
+	Middle Gain            [point] =           2
+	Fine Gain              [point] =         128
+	Wave Offset            [point] =         146
+	Current value             [pA] =   -1924.900
+	Number of retries              = 2
+	Amplitude adjustment range [%] = 61
+	Standard signal level adjustment range   [%] = 15
+
+	[AGCBE result ]
+	Coarse Gain            [point] =           1
+	Middle Gain            [point] =           5
+	Fine Gain              [point] =         115
+	Wave Offset            [point] =         128
+	BE Offset              [point] =        1843
+	Current value             [pA] =  -22553.000
+	Number of retries              = 5
+	Amplitude adjustment range [%] = 65
+	Standard signal level adjustment range   [%] = 14
+
+	[AGCRG result ]
+	Coarse Gain            [point] =          60
+	Middle Gain            [point] =           0
+	Fine Gain              [point] =         128
+	Wave Offset            [point] =         128
+	BE Offset              [point] =        2048
+	Current value             [pA] =    -884.700
+	Number of retries              = 4
+	Amplitude adjustment range [%] = 4
+	Standard signal level adjustment range   [%] = 58
+
+ Current change allowance value  [%]       =        10.0 
+ SAVE measurement current value  [pA]      =   -1006.600 
+
+Continuous calibration finish (1/1)
+
+Continuous calibration finish Thu Nov  8 16:39:40 2018
+
+
+========= SETSCL Final result ==================
+
+[Measurement information]
+	Linear scaling value X, Y = 1.000000, 1.000000
+	Start time                = Thu Nov  8 16:40:58 2018
+	End time                  = Thu Nov  8 16:40:59 2018
+	EOS Mode                  = 6 Accelerating voltage 100kV Lens 5
+
+	Linear scaling value X, Y =    1.000000,    1.000000
+
+======================================================
+
+========= SETSCL Final result ==================
+
+[Measurement information]
+	Linear scaling value X, Y = 1.000000, 1.000000
+	Start time                = Thu Nov  8 16:48:45 2018
+	End time                  = Thu Nov  8 16:48:46 2018
+	EOS Mode                  = 6 Accelerating voltage 100kV Lens 5
+
+	Linear scaling value X, Y =    1.000000,    1.000000
+
+======================================================
+

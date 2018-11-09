@@ -31,6 +31,7 @@ fprintf('Generating LNTvsDx...\n');
 tic;
 LNTvsDx_passive = genPatternAry(params_passive, xs1, ys1, @genTvsDx_noZZ_three_devs);
 LNTvsDx_active = genPatternAry(params_active, xs2, ys2, @genTvsDx_withZZ);
+
 toc;
 LNTvsDx_row = gpack.Group(0,0,{});
 LNTvsDx_row.addelement(LNTvsDx_passive);

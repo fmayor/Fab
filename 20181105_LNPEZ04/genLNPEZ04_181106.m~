@@ -20,9 +20,9 @@ config.mkrPixelSize = 0.5;
 isnoGC = true;
 %% generate LNNB
 %  devices in total
-[LNNBZZ_Row, L_NBZZ] = genLNZNB_row_181106();
-LNNBZZ_Row.translate(0,1700);
-devMap.addelement(LNNBZZ_Row);
+%[LNNBZZ_Row, L_NBZZ] = genLNZNB_row_181106();
+%LNNBZZ_Row.translate(0,1700);
+%devMap.addelement(LNNBZZ_Row);
 
 %% generate PEZZS devices
 [LNTvsDx_row, L_NBZZ] = genLNTvsDx_row_181106();
@@ -38,16 +38,16 @@ w_pad = 300;
 %bonding pad from chip to PCB
 %right
 v_pad = [3000;-1100];
-w1 = Wire({[2627;-587],v_pad},w_wire);
+w1 = Wire({[2627;-737],v_pad},w_wire);
 v_pad2 = [3000; -636];
-w2 = Wire({[2500;-330],v_pad2},w_wire);
+w2 = Wire({[2500;-530],v_pad2},w_wire);
 g_pad1 = genBondPad(v_pad(1),v_pad(2), w_pad);
 g_pad2 = genBondPad(v_pad2(1),v_pad2(2), w_pad);
 %left
-v_pad3 = [-3000;-1100];
-w3 = Wire({[-2627;-587],v_pad3},w_wire);
-v_pad4 = [-3000; -636];
-w4 = Wire({[-2500;-330],v_pad4},w_wire);
+v_pad3 = [-3616;762+223];
+w3 = Wire({[-3316;762],v_pad3},w_wire);
+v_pad4 = [-3616; 519.6];
+w4 = Wire({[-3316;519.6],v_pad4},w_wire);
 g_pad3 = genBondPad(v_pad3(1),v_pad3(2), w_pad);
 g_pad4 = genBondPad(v_pad4(1),v_pad4(2), w_pad);
  
@@ -96,7 +96,7 @@ devMap.addelement(dm4);
 
 %% to dxf
 
-fname = 'LNPEZ04_181108_M3';
+fname = 'LNPEZ04_181108_M2';
 if config.isfast
     fname = [fname '_fast'];
 end

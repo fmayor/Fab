@@ -40,13 +40,6 @@ dev.addelement(cc);
 dev_left = dev.copy();
 dev_right = dev_left.copy();
 
-% tmp_dev_left=dev_left.elements{1}.elements;
-% dev_left.elements{1}.elements=[];
-% dev_left.elements{1}.elements{1}=tmp_dev_left{1};
-% dev_left.elements{1}.elements{2}=tmp_dev_left{2};
-% dev_left.elements{1}.elements{3}=tmp_dev_left{4};
-
-
 dev_left.translate([-d;0]);
 dev_right.translate([d;0]);
 dev.addelement(dev_left);
@@ -60,6 +53,13 @@ r_tetherArm = Rect(0,y_tetherCenter1, d_tetherCenter2ZZEnd1*2, P_tether.w_tether
 r_tetherArm.translate([-dx;0]);
 r_tetherArm.layer = layer_LN;
 dev.addelement(r_tetherArm);
+%mask
+w_mask=6;
+r_tetherMsk = Rect(0,y_tetherCenter1, d_tetherCenter2ZZEnd1*2+4, w_mask,...
+    'base','center');
+r_tetherMsk.translate([-dx;0]);
+r_tetherMsk.layer = 'M2_undercutMsk';
+dev.addelement(r_tetherMsk);
 %% add upper long tether
 d_tetherCenter2ZZEnd = 2*d;
 y_tetherCenter =  g_mid+L_tetherEnd2Edge + P_tether.L;
@@ -68,6 +68,12 @@ l_tetherArm = Rect(0,y_tetherCenter, d_tetherCenter2ZZEnd*2, P_tether.w_tether,.
 l_tetherArm.layer = layer_LN;
 dev.addelement(l_tetherArm);
 
+w_mask=6;
+l_tetherMsk = Rect(0,y_tetherCenter, d_tetherCenter2ZZEnd*2+4, w_mask,...
+    'base','center');
+l_tetherMsk.translate([-dx;0]);
+l_tetherMsk.layer = 'M2_undercutMsk';
+dev.addelement(l_tetherMsk);
 %% generate writefield box
 w_wf = 62.5;
 rect_wf = Rect(0,-3,w_wf,w_wf,'base','center');
@@ -260,6 +266,13 @@ dev.addelement(ind);
         'base','center');
     rect_cure.layer = 'cure';
     dev.addelement(rect_cure);
+    
+    w_mask = 10;
+    h_mask = 66;
+    rect_msk = Rect(0, h_mask/2 - P_mirror.a/2 - 4, w_mask, h_mask,...
+        'base','center');
+    rect_msk.layer = 'M2_undercutMsk';
+    dev.addelement(rect_msk);
     
     % now the whole structure is vertical and the lowest points are at y = 0
     % going to translate the structure so that the coupler end is at (0,0)

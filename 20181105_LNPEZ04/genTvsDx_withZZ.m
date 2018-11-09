@@ -15,6 +15,7 @@ L2 = param.L2;      % typically 10 um
 L = param.L;        % typically 10 um
 g = param.g;        % gap between zigzag arms
 dx = param.offset; % offset of both waveguides wrt each other in x direction
+g_metal = param.g_metal;
 %%
 dev = gpack.Group(0,0,{});
 layer_LN = 'M1_Neg';
@@ -45,11 +46,38 @@ dev.addelement(r_tetherArm);
 zz = genSingleZZBender_181002(struct('w',zz_w,'g', g ,'L2', L2,'w_joint',0.1,'L',L));
 zz.translate([-dx;y_tetherCenter]);
 dev.addelement(zz); %pair near reflector
+
+
 %%
 w_end = P_coupler.w_end;
 [cc, ys] = genCouplerCoupler_noTether();
 cc.translate([0; g_mid]);
 dev.addelement(cc);
+
+%% generate small electrodes on anchor
+%extract ports
+port_RL=zz.elements{1}.elements{2}.port1+[zz.x+zz.elements{1}.x;zz.y+zz.elements{1}.y];
+port_RR=zz.elements{1}.elements{3}.port1+[zz.x+zz.elements{1}.x;zz.y+zz.elements{1}.y];
+port_LL=[zz.elements{2}.elements{2}.port2(1,:);zz.elements{2}.elements{2}.port1(2,:)]+[zz.elements{2}.x;zz.elements{2}.y];
+port_LR=[zz.elements{2}.elements{3}.port2(1,:);zz.elements{2}.elements{3}.port1(2,:)]+[zz.elements{2}.x;zz.elements{2}.y];
+
+%right zigzag electrodes
+param_elec.dy=6;
+param_elec.w_pad=4;
+param_elec.zz_w=zz_w;
+param_elec.port_L=port_RL;
+param_elec.port_R=port_RR;
+[small_R_elec,port_B_RL,port_B_RR]=genSmallAnchorElectrodes(param_elec);
+%small_R_elec.translate([-2*dx;0]);
+dev.addelement(small_R_elec);
+
+%left zigzag electrodes
+param_elec.port_L=port_RL; %need to mirror electrodes later
+param_elec.port_R=port_RR;
+[small_L_elec,port_B_LL,port_B_LR]=genSmallAnchorElectrodes(param_elec);
+small_L_elec.mirror([0;0],[0;1]);
+small_L_elec.translate([-2*dx;0]);
+dev.addelement(small_L_elec);
 
 %% generate second pair of zigzag for symmetry
 zz2 = genSingleZZBender_181002(struct('w',zz_w,'g', g ,'L2', L2,'w_joint',0.1,'L',L));
@@ -63,9 +91,83 @@ l_tetherArm = Rect(0,y_tetherCenter, d_tetherCenter2ZZEnd*2, P_tether.w_tether,.
     'base','center');
 l_tetherArm.layer = layer_LN;
 dev.addelement(l_tetherArm);
+
+
 %% make end coupler at (0,0)
 dev.translate(0,-ys(end)-g_mid);
 
+%% Add bonding pads
+w_pad = 200;
+w_pad_big = 260;
+y_pad1 = -200-w_pad/2;
+d_pad = 525;
+y_pad2 = y_pad1-d_pad;
+y_pad3 = y_pad2-d_pad;
+pad1 = genBondPad(0,y_pad1,w_pad);
+pad2 = genBondPad(0,y_pad2,w_pad);
+pad3 = genBondPad(0,y_pad3,w_pad_big);
+dev.addelement(gpack.Group(0,0,{pad1,pad2,pad3}));
+
+
+
+%% Add big wires
+w_wire=5;
+d_wire2pad=10;
+thin_feed=Rect([0;(y_pad2+y_pad3)/2+w_wire/2],w_pad_big,w_wire);
+thin_feed.layer='metal_BB';
+dev.addelement(thin_feed);
+
+%right wires
+v_endEL=port_B_RL;
+v_endER=port_B_RR;
+v1 = v_endEL; v2 = [0;y_pad1]; x1 = v1(1);
+wire_ZZ2EL = Wire({v1,v2},w_wire);
+% wire from ZZ2ER to line1
+x2 = w_pad/2 + d_wire2pad;
+v1 = v_endER; v2= [v_endER(1)+5;v_endER(2)];
+v3=[v_endER(1)+5;y_pad1/2];
+v4 = [x2; y_pad1/2];
+v5 = [x2; (y_pad2+y_pad3)/2]; %v3 = [x2; (y_pad1+y_pad2)/2];
+%v4 = [-w_pad/2 - d_wire2pad, (y_pad1+y_pad2)/2];
+%v5 = [-w_pad/2 - d_wire2pad, y_line1];
+wire_ZZ2ER = Wire({v1,v2,v3,v4,v5},w_wire);%wire_ZZ2ER = Wire({v1,v2,v3,v4,v5},w_wire);
+g_wires = gpack.Group(0,0,{wire_ZZ2EL, wire_ZZ2ER});%wire_ZZ1EL, wire_ZZ1ER, rect_line1, rect_line2
+g_wires.layer = 'metal_BB';
+g_BB = gpack.Group(0,0,{g_wires});
+dev.addelement(g_BB);
+
+%left wires
+v_endEL=port_B_LL;
+v_endER=port_B_LR;
+%wire from ZZ2EL to pad1
+v1 = v_endEL+[2*dx;0]; v2 = [v_endEL(1)+2*dx;y_pad1/2]; x1 = v1(1);
+x2 = w_pad/2 + d_wire2pad;
+v3 = [x2;y_pad1/2];
+v4 = [x2;(y_pad1+y_pad2)/2];
+v5 = [-x2-w_wire/2;(y_pad1+y_pad2)/2];
+wire_ZZ2EL = Wire({v1,v2,v3,v4,v5},w_wire);
+% wire from ZZ2ER to line1
+x2 = max(x1+ d_wire2pad,w_pad/2 + d_wire2pad);
+x3=x2+10;
+v1 = v_endER+[2*dx;0]; v2 = [v_endER(1)+2*dx+4; v1(2)];
+v3 = [v_endER(1)+2*dx+4;y_pad1/4];
+v4 = [x3;y_pad1/4];
+v5 = [x3; y_pad2]; %v3 = [x2; (y_pad1+y_pad2)/2];
+v6 = [0; y_pad2];
+%v5 = [-w_pad/2 - d_wire2pad, y_line1];
+wire_ZZ2ER = Wire({v1,v2,v3,v4,v5,v6},w_wire);%wire_ZZ2ER = Wire({v1,v2,v3,v4,v5},w_wire);
+
+g_wires = gpack.Group(0,0,{wire_ZZ2EL, wire_ZZ2ER});%wire_ZZ1EL, wire_ZZ1ER
+g_wires.layer = 'metal_BB';
+g_wires.mirror([0;0],[0;1]);
+g_BBL = gpack.Group(0,0,{g_wires});
+dev.addelement(g_BBL);
+
+%% add undercut mask
+edge_mask = Rect([0;10],w_pad_big,20);
+edge_mask.layer = 'M2_undercutMsk';
+edge_mask.translate(0,ys(end)+g_mid);
+dev.addelement(edge_mask);
 %% add label
 [ind_pos, ind_neg] = genStringPolygon(sprintf('A%d',param.ind),...
         0.4);
@@ -157,11 +259,16 @@ dev.addelement(ind);
     
     % generate curing region
     w_cure = 6;
-    h_cure = 62;
+    h_cure = 66;
     rect_cure = Rect(0, h_cure/2 - P_mirror.a/2, w_cure, h_cure,...
         'base','center');
     rect_cure.layer = 'cure';
     dev.addelement(rect_cure);
+    
+    w_mask=10;
+    optics_mask = Rect([0;h_cure/2 - P_mirror.a/2-4],w_mask,h_cure);
+    optics_mask.layer = 'M2_undercutMsk';
+    dev.addelement(optics_mask);
     
     % now the whole structure is vertical and the lowest points are at y = 0
     % going to translate the structure so that the coupler end is at (0,0)
@@ -213,7 +320,5 @@ dev.addelement(ind);
         devLD.layer = 'M1_LD';
         dev = gpack.Group(0,0,{devHD, devLD});
     end
-
-
 
 end
