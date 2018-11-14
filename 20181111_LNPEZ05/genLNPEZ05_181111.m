@@ -20,44 +20,44 @@ config.mkrPixelSize = 0.5;
 isnoGC = true;
 %% generate LNNB
 %  devices in total
-%[LNNBZZ_Row, L_NBZZ] = genLNZNB_row_181106();
-%LNNBZZ_Row.translate(0,1700);
-%devMap.addelement(LNNBZZ_Row);
+[LNZNB_ZZ_X_Row, L_NBZZ] = genLNZNB_row_181111();
+LNZNB_ZZ_X_Row.translate(0,1700);
+devMap.addelement(LNZNB_ZZ_X_Row);
 
 %% generate PEZZS devices
-[LNTvsDx_row, L_NBZZ] = genLNTvsDx_row_181106();
-LNTvsDx_row.translate(0,1700);
-LNTvsDx_row.rotate(180);
-devMap.addelement(LNTvsDx_row);
+ [LNPEZ_ZNB_Z_Row, L_NBZZ2] = genLNPEZ_ZNB_Z_row_181111();
+ LNPEZ_ZNB_Z_Row.translate(0,1700);
+ LNPEZ_ZNB_Z_Row.rotate(180);
+ devMap.addelement(LNPEZ_ZNB_Z_Row);
 
 
 %% manually add BB wire
-w_wire = 7;
-w_pad = 300;
-
-%bonding pad from chip to PCB
-%right
-v_pad = [3000;-1100];
-w1 = Wire({[2627;-737],v_pad},w_wire);
-v_pad2 = [3000; -636];
-w2 = Wire({[2500;-530],v_pad2},w_wire);
-g_pad1 = genBondPad(v_pad(1),v_pad(2), w_pad);
-g_pad2 = genBondPad(v_pad2(1),v_pad2(2), w_pad);
-%left
-v_pad3 = [-3616;762+223];
-w3 = Wire({[-3316;762],v_pad3},w_wire);
-v_pad4 = [-3616; 519.6];
-w4 = Wire({[-3316;519.6],v_pad4},w_wire);
-g_pad3 = genBondPad(v_pad3(1),v_pad3(2), w_pad);
-g_pad4 = genBondPad(v_pad4(1),v_pad4(2), w_pad);
- 
-g_wire_BB = gpack.Group(0,0,{w1,w2,w3,w4});
-g_wire_BB.layer = 'metal_BB';
-devMap.addelement(g_pad1);
-devMap.addelement(g_pad2);
-devMap.addelement(g_pad3);
-devMap.addelement(g_pad4);
-devMap.addelement(g_wire_BB);
+% w_wire = 7;
+% w_pad = 300;
+% 
+% %bonding pad from chip to PCB
+% %right
+% v_pad = [3000;-1100];
+% w1 = Wire({[2627;-587],v_pad},w_wire);
+% v_pad2 = [3000; -636];
+% w2 = Wire({[2500;-330],v_pad2},w_wire);
+% g_pad1 = genBondPad(v_pad(1),v_pad(2), w_pad);
+% g_pad2 = genBondPad(v_pad2(1),v_pad2(2), w_pad);
+% %left
+% v_pad3 = [-3000;-1100];
+% w3 = Wire({[-2627;-587],v_pad3},w_wire);
+% v_pad4 = [-3000; -636];
+% w4 = Wire({[-2500;-330],v_pad4},w_wire);
+% g_pad3 = genBondPad(v_pad3(1),v_pad3(2), w_pad);
+% g_pad4 = genBondPad(v_pad4(1),v_pad4(2), w_pad);
+%  
+% g_wire_BB = gpack.Group(0,0,{w1,w2,w3,w4});
+% g_wire_BB.layer = 'metal_BB';
+% devMap.addelement(g_pad1);
+% devMap.addelement(g_pad2);
+% devMap.addelement(g_pad3);
+% devMap.addelement(g_pad4);
+% devMap.addelement(g_wire_BB);
 %% bot row, 
 
 
@@ -79,8 +79,8 @@ devMap.addelement(dm3);
 devMap.addelement(dm4);
 
 % add dektak marks
-dx = 2000;
-dy = 1000;
+dx = 2140;
+dy = 1035;
 % dm1 = Rect(0,0,w_DM, w_DM,'base','center');
 dm1 = genTurkey_1801106(50);
 dm1.layer = 'M1_LD';
@@ -96,7 +96,7 @@ devMap.addelement(dm4);
 
 %% to dxf
 
-fname = 'LNPEZ04_181108_M2';
+fname = 'LNPEZ05_181113_M1';
 if config.isfast
     fname = [fname '_fast'];
 end

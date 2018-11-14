@@ -100,7 +100,7 @@ dev.translate(0,-ys(end)-g_mid);
 w_pad = 200;
 w_pad_big = 260;
 y_pad1 = -200-w_pad/2;
-d_pad = 425;
+d_pad = 525;
 y_pad2 = y_pad1-d_pad;
 y_pad3 = y_pad2-d_pad;
 pad1 = genBondPad(0,y_pad1,w_pad);
@@ -148,7 +148,7 @@ v5 = [-x2-w_wire/2;(y_pad1+y_pad2)/2];
 wire_ZZ2EL = Wire({v1,v2,v3,v4,v5},w_wire);
 % wire from ZZ2ER to line1
 x2 = max(x1+ d_wire2pad,w_pad/2 + d_wire2pad);
-x3=x2+7;
+x3=x2+10;
 v1 = v_endER+[2*dx;0]; v2 = [v_endER(1)+2*dx+4; v1(2)];
 v3 = [v_endER(1)+2*dx+4;y_pad1/4];
 v4 = [x3;y_pad1/4];
@@ -167,6 +167,7 @@ dev.addelement(g_BBL);
 edge_mask = Rect([0;10],w_pad_big,20);
 edge_mask.layer = 'M2_undercutMsk';
 edge_mask.translate(0,ys(end)+g_mid);
+dev.addelement(edge_mask);
 %% add label
 [ind_pos, ind_neg] = genStringPolygon(sprintf('A%d',param.ind),...
         0.4);
@@ -251,22 +252,22 @@ dev.addelement(ind);
     dev.addelement(coupler);
     
     % generate writefield box
-    w_wf = 62;
+    w_wf = 62.5;
     rect_wf = Rect(0,w_wf/2 - P_mirror.a/2,w_wf,w_wf,'base','center');
     rect_wf.layer = 'M1_Field';
     dev.addelement(rect_wf);
     
     % generate curing region
     w_cure = 6;
-    h_cure = 62;
+    h_cure = 66;
     rect_cure = Rect(0, h_cure/2 - P_mirror.a/2, w_cure, h_cure,...
         'base','center');
     rect_cure.layer = 'cure';
     dev.addelement(rect_cure);
     
-    optics_mask = Rect([0;h_cure/2 - P_mirror.a/2],w_cure,h_cure);
+    w_mask=10;
+    optics_mask = Rect([0;h_cure/2 - P_mirror.a/2-4],w_mask,h_cure);
     optics_mask.layer = 'M2_undercutMsk';
-    dev.addelement(edge_mask);
     dev.addelement(optics_mask);
     
     % now the whole structure is vertical and the lowest points are at y = 0
