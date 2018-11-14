@@ -45,6 +45,8 @@ properties
     ind_coupler
     ind_gtether
     ind_expoBox
+    indZZ1
+    indZZ2
     l_NB_unscaled
     layer_pos   % layer name of area to expose (no resist, to etch)
     layer_holes
@@ -53,6 +55,7 @@ properties
     layer_cure  % layer for HSQ curing
     layer_anchor  % layer name for large area anchor
     layer_medium % layer name for medium dose zigzags
+    isSB
     h_link
     w_link
     w %zizag arm width
@@ -397,26 +400,80 @@ methods (Access = private)
         x_pos_ZZ=x_pos_link-obj.w_link/2-obj.L2/2-obj.g/2-obj.w/2;
         y_pos_ZZ=y_pos_link+obj.L/2;%+obj.g/2+obj.w/2;
         zz_TL = genZZBender_longArm_181002(obj);
-        zz_TL.mirror([0;0],[1;0]);
-        zz_TL.rotate(90);
-        zz_TL.translate([x_pos_ZZ;y_pos_ZZ]);
-        %zz_TR = genZZBender_longArm_181002(obj);
-        %zz_TR.mirror([0;0],[1;0]);
-        %zz_TR.translate([-x_pos_ZZ;y_pos_ZZ]);
+        port_RL=zz_TL.elements{2}.port1+[zz_TL.x;zz_TL.y];
+        port_RR=zz_TL.elements{3}.port1+[zz_TL.x;zz_TL.y];
+        %right zigzag electrodes
+        %param_elec.dy=6;
+        param_elec.coeff_x=0;
+        param_elec.coeff_y=19;
+        param_elec.coeff_x2=8.5;
+        param_elec.coeff_y2=10;
+        param_elec.w_pad=5;
+        param_elec.zz_w=obj.w;
+        param_elec.port_L=port_RL;
+        param_elec.port_R=port_RR;
+        param_elec.is_mirrored=false;
+        param_elec.zz_g_metal=obj.g_metal;
+        [small_R_elec,port_B_RL,port_B_RR]=genSmallAnchorElectrodes(param_elec);
+        %small_R_elec.mirror([0;0],[0;1]);
+        if obj.isSB
+            ZZ_left = gpack.Group(0,0,{zz_TL,small_R_elec});
+        else
+            ZZ_left = gpack.Group(0,0,{zz_TL});
+        end
+        ZZ_left.mirror([0;0],[1;0]);
+        ZZ_left.rotate(90);
+        ZZ_left.translate([x_pos_ZZ;y_pos_ZZ]);
+        
+%         zz_TL.mirror([0;0],[1;0]);
+%         zz_TL.rotate(90);
+%         zz_TL.translate([x_pos_ZZ;y_pos_ZZ]);
+
+
+        
+        %gZZT = gpack.Group(0, (obj.l_NB_unscaled + 2*obj.P_mirror.a/3) * obj.scale_NB/2,...
+            %{link_TL,zz_TL});
         gZZT = gpack.Group(0, (obj.l_NB_unscaled + 2*obj.P_mirror.a/3) * obj.scale_NB/2,...
-            {link_TL,zz_TL});
+            {link_TL,ZZ_left});
         gZZT.layer = 'M1_MD';
         obj.addelement(gZZT);
+        obj.indZZ1=length(obj.elements);
         zz_BL = genZZBender_longArm_181002(obj);
-        %zz_BL.mirror([0;0],[1;0]);
-        zz_BL.rotate(90);
-        zz_BL.translate([x_pos_ZZ;-y_pos_ZZ]);
-        %zz_BR = genZZBender_longArm_181002(obj);
-        %zz_BR.translate([-x_pos_ZZ;-y_pos_ZZ]);
+        port_BL=zz_TL.elements{2}.port2+[zz_TL.x;zz_TL.y];
+        port_BR=zz_TL.elements{3}.port2+[zz_TL.x;zz_TL.y];
+        %right zigzag electrodes
+        %param_elec.dy=6;
+        param_elec.coeff_x=0;
+        param_elec.coeff_y=19;
+        param_elec.coeff_x2=9.3;
+        param_elec.coeff_y2=10;
+        param_elec.w_pad=5;
+        param_elec.zz_w=obj.w;
+        param_elec.port_L=port_BL;
+        param_elec.port_R=port_BR;
+        param_elec.is_mirrored=true;
+        param_elec.zz_g_metal=obj.g_metal;
+        [small_L_elec,port_B_BL,port_B_BR]=genSmallAnchorElectrodes(param_elec);
+        %small_L_elec.mirror([0;0],[1;0]);
+        if obj.isSB
+            ZZ_right = gpack.Group(0,0,{zz_BL,small_L_elec});
+        else
+            ZZ_right = gpack.Group(0,0,{zz_BL});
+        end
+        ZZ_right.rotate(90);
+        ZZ_right.translate([x_pos_ZZ;-y_pos_ZZ]);
+        
+       
+        %%zz_BL.mirror([0;0],[1;0]);
+        %zz_BL.rotate(90);
+        %zz_BL.translate([x_pos_ZZ;-y_pos_ZZ]);
+        %%zz_BR = genZZBender_longArm_181002(obj);
+        %%zz_BR.translate([-x_pos_ZZ;-y_pos_ZZ]);
         gZZB = gpack.Group(0, - (obj.l_NB_unscaled + 2*obj.P_mirror.a/3) * obj.scale_NB/2,...
-        {link_BL,zz_BL});
+        {link_BL,ZZ_right});
         gZZB.layer = 'M1_MD';
         obj.addelement(gZZB);
+        obj.indZZ2=length(obj.elements);
     end
     function g_rhm = genRhombusAry(obj, rs)
         % generate rhombus array on multiple straight lines

@@ -143,9 +143,8 @@ dev.addelement(g_BB);
 v_endEL=port_B_LL;
 v_endER=port_B_LR;
 %wire from ZZ2EL to pad1
-v1 = v_endEL+[2*dx;0];  x1 = v1(1);
+v1 = v_endEL+[2*dx;0]; v2 = [v_endEL(1)+2*dx;y_pad1/2]; x1 = v1(1);
 x2 = w_pad/2 + d_wire2pad;
-v2 = [v_endEL(1)+2*dx;y_pad1/2];
 v3 = [x2;y_pad1/2];
 v4 = [x2;(y_pad1+y_pad2)/2];
 v5 = [-x2-w_wire/2;(y_pad1+y_pad2)/2];
@@ -153,7 +152,7 @@ wire_ZZ2EL = Wire({v1,v2,v3,v4,v5},w_wire);
 % wire from ZZ2ER to line1
 x2 = max(x1+ d_wire2pad,w_pad/2 + d_wire2pad);
 x3=x2+10;
-v1 = v_endER+[2*dx;0]; v2 = [v_endER(1)+2*dx; y_pad1/4];
+v1 = v_endER+[2*dx;0]; v2 = [v_endER(1)+2*dx+4; v1(2)];
 v3 = [v_endER(1)+2*dx+4;y_pad1/4];
 v4 = [x3;y_pad1/4];
 v5 = [x3; y_pad2]; %v3 = [x2; (y_pad1+y_pad2)/2];

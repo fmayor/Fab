@@ -35,6 +35,7 @@ function [dev,v_endEL,v_endER] = genSmallAnchorElectrodes(param)
     v4 = [v_endER(1); v_endER(2) + zz_w/2];
     %p_ER = Polygon({v0,v1,v2,v3,v4});
     p_ER = Wire({v1+[zz_g_metal/2;0.1],v_endER},zz_g_metal);
+    w_pad = 4;
     r_ER = Rect(v_endER(1), v_endER(2), w_pad, w_pad,'base','center');
     g_ER = gpack.Group(0,0,{p_ER,r_ER});
     g_ER.layer = layer_metalSB;
@@ -43,6 +44,7 @@ function [dev,v_endEL,v_endER] = genSmallAnchorElectrodes(param)
     r_ER_BB.layer = layer_metalBB;
     dev.addelement(r_ER_BB);
     if param.is_mirrored
-        dev.mirror([0;v1(2)],[1;0]);
+        dev.mirror([0;0],[1;0]);
+        dev.translate
     end
 end

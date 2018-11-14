@@ -65,7 +65,11 @@ dev.P_tether.w2 = tether_w2;
 dev.P_tether.L = tether_L;
 dev.P_tether.w_tether = tether_w_tether;
 dev.P_tether.w_tetherArm = 2*(d_nb2refl+P_mirror.gap/2+P_mirror.w/2+P_mirror.amp/2+dev.w_link);%10;
-
+if mod(param.ind,2)==0
+    dev.isSB = true;
+else
+    dev.isSB = false;
+end
 
 dev.layer_anchor = 'M1_LD';
 if param.isGenPS
@@ -89,6 +93,26 @@ dev=addBendedEdgeCoupler(dev,param);
 
 % make M1_LD within M1_Field
 dev.elements{1}.elements{dev.elements{1}.ind_expoBox}.translate([13.5-7;0]);
+
+%make small electrodes
+% port_RL=dev.elements{1}.elements{dev.elements{1}.indZZ1}.elements{2}.elements{2}.port1;
+% port_RL = port_RL+[dev.x+dev.elements{1}.x+dev.elements{1}.elements{dev.elements{1}.indZZ1}.x+dev.elements{1}.elements{dev.elements{1}.indZZ1}.elements{2}.x+dev.elements{1}.elements{dev.elements{1}.indZZ1}.elements{2}.elements{2}.x;dev.y+dev.elements{1}.y+dev.elements{1}.elements{dev.elements{1}.indZZ1}.y+dev.elements{1}.elements{dev.elements{1}.indZZ1}.elements{2}.y+dev.elements{1}.elements{dev.elements{1}.indZZ1}.elements{2}.elements{2}.y];
+% port_RR=dev.elements{1}.elements{dev.elements{1}.indZZ1}.elements{2}.elements{3}.port1;
+% port_RR = port_RR+[dev.x+dev.elements{1}.x+dev.elements{1}.elements{dev.elements{1}.indZZ1}.x+dev.elements{1}.elements{dev.elements{1}.indZZ1}.elements{2}.x+dev.elements{1}.elements{dev.elements{1}.indZZ1}.elements{2}.elements{3}.x;dev.y+dev.elements{1}.y+dev.elements{1}.elements{dev.elements{1}.indZZ1}.y+dev.elements{1}.elements{dev.elements{1}.indZZ1}.elements{2}.y+dev.elements{1}.elements{dev.elements{1}.indZZ1}.elements{2}.elements{3}.y];
+% 
+% %right zigzag electrodes
+% param_elec.dy=6;
+% param_elec.w_pad=4;
+% param_elec.zz_w=param.w;
+% param_elec.port_L=port_RL;
+% param_elec.port_R=port_RR;
+% [small_R_elec,port_B_RL,port_B_RR]=genSmallAnchorElectrodes(param_elec);
+% %small_R_elec.translate([-2*dx;0]);
+% dev.addelement(small_R_elec);
+
+
+
+
 % add index
 g_ind = genLNNB_DS_EC_ind(ind);
 dev.addelement(g_ind);

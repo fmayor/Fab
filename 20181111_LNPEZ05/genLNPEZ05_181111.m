@@ -25,10 +25,10 @@ LNZNB_ZZ_X_Row.translate(0,1700);
 devMap.addelement(LNZNB_ZZ_X_Row);
 
 %% generate PEZZS devices
- [LNPEZ_ZNB_Z_Row, L_NBZZ2] = genLNPEZ_ZNB_Z_row_181111();
- LNPEZ_ZNB_Z_Row.translate(0,1700);
- LNPEZ_ZNB_Z_Row.rotate(180);
- devMap.addelement(LNPEZ_ZNB_Z_Row);
+%  [LNPEZ_ZNB_Z_Row, L_NBZZ2] = genLNPEZ_ZNB_Z_row_181111();
+%  LNPEZ_ZNB_Z_Row.translate(0,1700);
+%  LNPEZ_ZNB_Z_Row.rotate(180);
+%  devMap.addelement(LNPEZ_ZNB_Z_Row);
 
 
 %% manually add BB wire
@@ -96,7 +96,7 @@ devMap.addelement(dm4);
 
 %% to dxf
 
-fname = 'LNPEZ05_181113_M1';
+fname = 'LNPEZ05_181113_M2';
 if config.isfast
     fname = [fname '_fast'];
 end

@@ -42,7 +42,7 @@ dev.g_metal=param.g_metal;
 dev.P_defect = P_defect;
 dev.P_mirror = P_mirror;
 dev.N_trans = 12;
-dev.N_mirror = 15+round(dev.L/P_mirror.a);
+dev.N_mirror = 16+round(dev.L/P_mirror.a);
 dev.d_tether2edge = 10+7;
 dev.P_coupler.l_extra = 0;    % coupler end at buffer box edge
 dev.P_tether.L = 3.5;
@@ -88,7 +88,16 @@ dev.run(config.isfast);
 dev=addBendedEdgeCoupler(dev,param);
 
 % make M1_LD within M1_Field
-dev.elements{1}.elements{dev.ind_expoBox}.translate([0;-200]);
+dev.elements{1}.elements{dev.elements{1}.ind_expoBox}.translate([13.5-7;0]);
+
+%make small electrodes
+port_RL=dev.elements{1}.elements{dev.elements{1}.indZZ1}.elements{2}.elements{2}.port1;
+port_RL = port_RL;
+port_RR=dev.elements{1}.elements{dev.elements{1}.indZZ1}.elements{2}.elements{3}.port1;
+
+[dev.x+dev.elements{1}.x;dev.y+dev.elements{1}.y];
+
+
 % add index
 g_ind = genLNNB_DS_EC_ind(ind);
 dev.addelement(g_ind);
