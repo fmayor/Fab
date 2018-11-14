@@ -67,6 +67,13 @@ dev.P_tether.w_tetherArm = 2*(d_nb2refl+dev.L-1.05);%10;
 dev.h_link = 0.3;
 dev.w_link = 0.075;
 
+if mod(param.ind,2)==0
+    dev.isSB = true;
+else
+    dev.isSB = false;
+end
+
+
 dev.layer_anchor = 'M1_LD';
 if param.isGenPS
     dev.P_1DPS.isGen = true;
