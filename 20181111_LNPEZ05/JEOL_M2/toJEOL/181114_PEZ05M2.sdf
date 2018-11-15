@@ -1,0 +1,65 @@
+
+MAGAZIN	'TEST'
+;
+#1
+;%2E          ; Holder position - to zero coordinate system
+;%2F          ; Holder position - to zero coordinate system
+;%2G          ; Holder position - to zero coordinate system
+;%2H          ; Holder position - to zero coordinate system
+
+ JDF	'181114_PEZ05M2',1  ; JDF name, WITHOUT .jdf,  NO .JDF    1 = LAYER #
+
+; EOS 3, 'EOS3_0500pA_060uM'		; for 500 pA (4 nm shot size and fracturing)
+; EOS 3, 'EOS3_1000pA_060uM'
+; EOS 3, 'EOS3_2000pA_060uM' ;       
+; EOS 3, 'EOS3_9000pA_130uM'
+; EOS 3, 'EOS3_9999pA_130uM'
+; EOS 3, 'EOS3_9999pA_300uM'
+
+
+; EOS 6, 'EOS6_0500pA_025u'
+ EOS 6, 'EOS6_1000pA_025u'  
+
+; ======== PQRS  GLOBAL MARK DETECTION OPTIONS ============   
+GLMDET	  M		     		;Global alignment ( M is for Manual)
+;GLMDET   A				;Global alignment ( A is for Auto)
+;GLMDET   C				;Global alignment ( C is for None) 
+
+; ======== HEIGHT MEASUREMENT  OPTIONS ============   
+;HSWITCH  ON,ON			;Global and Chip Height Correction
+;HSWITCH  ON,OFF			;Global Height Correction Only
+ HSWITCH  OFF,ON			;Chip Height Correction Only
+;HSWITCH  OFF,OFF	        ;No Global or Chip Height Correction
+
+; ======== M1 CHIP MARK DETECTION OPTIONS ============  
+;    THIS WAS COMMENTTED OUT<  NOW ACTIVE
+  CHMDET	  A,1,5	             	; Auto , Error Stop , Chip 
+; CHIPAL   0				;Chip alignment ( 0 is for None)
+; CHIPAL   S				;Chip alignment ( S is for SEM mode (ie Manual))
+;  CHIPAL   0				;Chip alignment ( 0 is for None)
+ ; CHIPAL   1				;Chip alignment ( 1 is for M1 only,  XY Shift only)
+; CHIPAL   4				;Chip alignment ( 4 is for M1,M2,M3,M4,   )
+;    V is for Virtual Mark,  No Physical Alignment Mark,  Measure Height Only
+ CHIPAL   V1				;Chip alignment ( V1 is for height measurement at M1)
+; CHIPAL   V4				;Chip alignment ( V4 is for height measurement at M1,M2,M3,M4)
+
+; ======== M1 CHIP MARK DETECTION OPTIONS ============  
+
+
+; RICH NOTE  25 MHz   LIMIT   (  (4000 x I nA )   /  (shot pitch)*2   )   = LOWEST DOSE
+;                                                (  (4000 x 2 nA )   /  100  )   =    80 uC  LOWEST DOSE
+
+ SHOT A,32		; 32*0.125 nm =  4nm - for EOS6   32 / 8  = 4nm
+;SHOT A,10              ; based on our 160210_JJT02_BB jdf 
+
+
+;;;;;;MMA/PMMA DOSE     ===== 
+RESIST	300,1,L     ;  ; JUNE 15  Area dose(uC/cm^2), Line Dose(nC/cm), L = LINE DOSE
+
+; ======== OFFSET WILL SHIFT THE ENTIRE COORDINATE SYSTEM ============           85,000
+OFFSET (0,0)         ;  IN MICRONS, Cartesean so + is UP, - is Down                  ;    CENTER of STAGE = 105,000  
+; ======================================================
+
+END	
+END
+END   
