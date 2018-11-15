@@ -398,17 +398,17 @@ methods (Access = private)
         port_BR=zz_TL.elements{3}.port2+[zz_TL.x;zz_TL.y];
         %right zigzag electrodes
         %param_elec.dy=6;
-        param_elec.coeff_x=0;
-        param_elec.coeff_y=19;
-        param_elec.coeff_x2=9.3;
-        param_elec.coeff_y2=10;
+        param_elec.coeff_x=-11;
+        param_elec.coeff_y=5.2;
+        param_elec.coeff_x2=-3;
+        param_elec.coeff_y2=5.2;
         param_elec.w_pad=5;
         param_elec.zz_w=obj.w;
         param_elec.port_L=port_BL;
         param_elec.port_R=port_BR;
         param_elec.is_mirrored=true;
         param_elec.zz_g_metal=obj.g_metal;
-        [small_L_elec,port_B_BL,port_B_BR]=genSmallAnchorElectrodes2(param_elec);
+        [small_L_elec,port_B_BL,port_B_BR]=genSmallAnchorElectrodes3(param_elec);
         %small_L_elec.mirror([0;0],[1;0]);
         if obj.isSB
             ZZ_right = gpack.Group(0,0,{zz_BL,small_L_elec});

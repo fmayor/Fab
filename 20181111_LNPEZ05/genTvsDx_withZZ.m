@@ -55,7 +55,7 @@ cc.translate([0; g_mid]);
 dev.addelement(cc);
 
 %% generate small electrodes on anchor
-if mod(param.ind,4)==0
+if 0 %mod(param.ind,4)==0
 %extract ports
 port_RL=zz.elements{1}.elements{2}.port1+[zz.x+zz.elements{1}.x;zz.y+zz.elements{1}.y];
 port_RR=zz.elements{1}.elements{3}.port1+[zz.x+zz.elements{1}.x;zz.y+zz.elements{1}.y];
@@ -69,8 +69,8 @@ param_elec.zz_w=zz_w;
 param_elec.port_L=port_RL;
 param_elec.port_R=port_RR;
 [small_R_elec,port_B_RL,port_B_RR]=genSmallAnchorElectrodes(param_elec);
-%small_R_elec.translate([-2*dx;0]);
-dev.addelement(small_R_elec);
+small_R_elec.translate([-2*dx;0]);
+%dev.addelement(small_R_elec);
 
 %left zigzag electrodes
 param_elec.port_L=port_RL; %need to mirror electrodes later
@@ -98,7 +98,7 @@ dev.addelement(l_tetherArm);
 dev.translate(0,-ys(end)-g_mid);
 
 %% Add bonding pads
-if mod(param.ind,4)==0
+if 0 %mod(param.ind,4)==0
 
 w_pad = 200;
 w_pad_big = 260;
