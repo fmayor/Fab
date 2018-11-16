@@ -51,6 +51,7 @@ dev.layer_neg = 'M1_Neg';
 dev.layer_wf = 'M1_Field';
 dev.layer_holes = 'M1_Pos_holes';
 dev.layer_medium = 'M1_MD';
+dev.layer_metal_BB = 'metal_BB';
 dev.w_end = w_end;
 dev.P_undercutMsk.isGen = 1;
 dev.P_undercutMsk.layer = 'M2_undercutMsk';
@@ -73,6 +74,11 @@ else
     dev.isSB = false;
 end
 
+if mod(param.ind,4)==0
+    dev.isBB = true;
+else
+    dev.isBB = false;
+end
 
 dev.layer_anchor = 'M1_LD';
 if param.isGenPS

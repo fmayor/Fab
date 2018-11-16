@@ -55,6 +55,7 @@ dev.layer_neg = 'M1_Neg';
 dev.layer_wf = 'M1_Field';
 dev.layer_holes = 'M1_Pos_holes';
 dev.layer_medium = 'M1_MD';
+dev.layer_metal_BB = 'metal_BB';
 dev.w_end = w_end;
 dev.P_undercutMsk.isGen = 1;
 dev.P_undercutMsk.layer = 'M2_undercutMsk';
@@ -67,8 +68,10 @@ dev.P_tether.w_tether = tether_w_tether;
 dev.P_tether.w_tetherArm = 2*(d_nb2refl+P_mirror.gap/2+P_mirror.w/2+P_mirror.amp/2+dev.w_link);%10;
 if mod(param.ind,2)==0
     dev.isSB = true;
+    dev.isBB = true;
 else
     dev.isSB = false;
+    dev.isBB = false;
 end
 
 dev.layer_anchor = 'M1_LD';
@@ -116,6 +119,11 @@ dev.elements{1}.elements{dev.elements{1}.ind_expoBox}.translate([13.5-7;0]);
 % add index
 g_ind = genLNNB_DS_EC_ind(ind);
 dev.addelement(g_ind);
+
+%add UC mask
+UC_mask=Rect(55.5,-34,20,260,'base','center');
+UC_mask.layer='M2_undercutMsk';
+dev.addelement(UC_mask);
 end
 
 

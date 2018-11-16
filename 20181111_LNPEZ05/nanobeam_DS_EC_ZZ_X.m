@@ -55,7 +55,9 @@ properties
     layer_cure  % layer for HSQ curing
     layer_anchor  % layer name for large area anchor
     layer_medium % layer name for medium dose zigzags
+    layer_metal_BB
     isSB
+    isBB
     h_link
     w_link
     w %zizag arm width
@@ -132,10 +134,10 @@ methods
     end
     function P = getDefaultUndercutMskParams(obj)
         P.d = 3;      % mask edge to NB edge distance
-        P.w = 62.5;     % width of region above coupler
-        P.h = 20;       % height of region above coupler
+        P.w = 0;     % width of region above coupler
+        P.h = 0;       % height of region above coupler
         P.isGen = false;
-        P.layer = 'undercutMsk';
+        P.layer = 'trash';%'undercutMsk';
     end
     function P = getDefaultTetherParams(obj)
         P.w1 = 0.8;         % waveguide width, in um
@@ -336,6 +338,7 @@ methods (Access = private)
         c4 = Circ([-x_anchor2-2;1],r_anchor2);
         c4.layer = obj.layer_anchor;
         
+        
         gtether = gpack.Group(0, (obj.l_NB_unscaled + 2*obj.P_mirror.a/3) * obj.scale_NB/2,...
             {wg_taper, tether, tri1, tri2, tether_cure, c1, c2});
         gtether_rects = gpack.Group(0, (obj.l_NB_unscaled + 2*obj.P_mirror.a/3) * obj.scale_NB/2,...
@@ -396,6 +399,31 @@ methods (Access = private)
         link_BL = Rect(x_pos_link,-y_pos_link,obj.w_link,obj.h_link, 'base','center');
         %link_BR = Rect(-x_pos_link,-y_pos_link,obj.w_link,obj.h_link, 'base','center');
         
+        
+        %make pads
+        w_pad = 200;
+        w_pad_big = 280;
+        d_pad=490;
+        xpad1 = -200-w_pad/2;
+        xpad3=xpad1-d_pad;
+        pad1=genBondPad(xpad1,0,w_pad);
+        pad3=genBondPad(xpad3,0,w_pad_big);
+        pads = gpack.Group(0,0,{pad1,pad3});
+        pads.layer = obj.layer_metal_BB;
+        if obj.isBB
+            obj.addelement(pads);
+        end
+        
+        %make feeder
+        w_feed=6;
+        feeder=Rect((xpad1+xpad3)/2,0,w_feed,w_pad_big,'base','center');
+        feeder.layer=obj.layer_metal_BB;
+        if obj.isBB
+            obj.addelement(feeder);
+        end
+        
+
+        
         %make zigzags
         x_pos_ZZ=x_pos_link-obj.w_link/2-obj.L2/2-obj.g/2-obj.w/2;
         y_pos_ZZ=y_pos_link+obj.L/2;%+obj.g/2+obj.w/2;
@@ -424,6 +452,28 @@ methods (Access = private)
         ZZ_left.mirror([0;0],[1;0]);
         ZZ_left.rotate(90);
         ZZ_left.translate([x_pos_ZZ;y_pos_ZZ]);
+        
+        %make BB wires
+        R = [cosd(90) -sind(90); sind(90) cosd(90)];
+        port_B_RL = [port_B_RL(1);-port_B_RL(2)]; %mirror
+        port_B_RL=R*port_B_RL; %rotate
+        port_B_RL=port_B_RL+[x_pos_ZZ;y_pos_ZZ+(obj.l_NB_unscaled + 2*obj.P_mirror.a/3) * obj.scale_NB/2];%translate
+        port_B_RR = [port_B_RR(1);-port_B_RR(2)]; %mirror
+        port_B_RR=R*port_B_RR; %rotate
+        port_B_RR=port_B_RR+[x_pos_ZZ;y_pos_ZZ+(obj.l_NB_unscaled + 2*obj.P_mirror.a/3) * obj.scale_NB/2];%translate
+        
+        w_wire = 7;
+        d2pad=14;
+        v1=port_B_RL; v2 = [xpad1;0];
+        w2=Wire({v1,v2},w_wire);  %to pad
+        v1=port_B_RR; v2 = v1+[0;20]; v3=v2+[-30;0]; v4=[v3(1);w_pad/2+d2pad];v5=[(xpad1+xpad3)/2-w_feed/2;v4(2)];
+        w1=Wire({v1,v2,v3,v4,v5},w_wire); %to feeder
+        wires_L=gpack.Group(0,0,{w2,w1});
+        wires_L.layer=obj.layer_metal_BB;
+        if obj.isBB
+            obj.addelement(wires_L);
+        end
+
         
 %         zz_TL.mirror([0;0],[1;0]);
 %         zz_TL.rotate(90);
@@ -454,7 +504,6 @@ methods (Access = private)
         param_elec.is_mirrored=true;
         param_elec.zz_g_metal=obj.g_metal;
         [small_L_elec,port_B_BL,port_B_BR]=genSmallAnchorElectrodes(param_elec);
-        %small_L_elec.mirror([0;0],[1;0]);
         if obj.isSB
             ZZ_right = gpack.Group(0,0,{zz_BL,small_L_elec});
         else
@@ -463,6 +512,33 @@ methods (Access = private)
         ZZ_right.rotate(90);
         ZZ_right.translate([x_pos_ZZ;-y_pos_ZZ]);
         
+        %make BB wires
+%         R = [cosd(90) -sind(90); sind(90) cosd(90)];
+%         port_B_BL=R*port_B_RL; %rotate
+%         %port_B_BL = [port_B_BL(1);-port_B_BL(2)]; %mirror
+%         port_B_BL=port_B_BL+[x_pos_ZZ;-y_pos_ZZ];%translate
+%         port_B_BR=R*port_B_R; %rotate
+%         %port_B_BR = [port_B_BR(1);-port_B_BR(2)]; %mirror
+%         port_B_BR=port_B_BR+[x_pos_ZZ;-y_pos_ZZ];%translate
+        port_B_BL = port_B_RL+[0;2.4-(obj.l_NB_unscaled + 2*obj.P_mirror.a/3) * obj.scale_NB];%translate;
+        port_B_BR = port_B_RR+[0;2.7-(obj.l_NB_unscaled + 2*obj.P_mirror.a/3) * obj.scale_NB];%translate;
+        v1=port_B_BR; v2 = [xpad1;0];
+        w3=Wire({v1,v2},w_wire); 
+        v1=port_B_BL; v2 = v1+[0;-20]; v3=v2+[-30;0]; v4=[v3(1);-w_pad/2-d2pad];v5=[(xpad1+xpad3)/2-w_feed/2;v4(2)];
+        %v1=port_B_BL; v2=[port_B_BL(1);-w_pad/2-d2pad];v3=[(xpad1+xpad3)/2-w_feed/2;v2(2)];
+        w4=Wire({v1,v2,v3,v4,v5},w_wire); %to feeder
+        wires_R=gpack.Group(0,0,{w3,w4});
+        wires_R.layer=obj.layer_metal_BB;
+        if obj.isBB
+            obj.addelement(wires_R);
+        end
+        
+%         test2=Rect(port_B_BL(1),port_B_BL(2),10,'base','center');
+%         test2.layer='metal_BB';
+%         obj.addelement(test2);
+%         test3=Rect(port_B_BR(1),port_B_BR(2),10,'base','center');
+%         test3.layer='metal_BB';
+%         obj.addelement(test3);
        
         %%zz_BL.mirror([0;0],[1;0]);
         %zz_BL.rotate(90);
