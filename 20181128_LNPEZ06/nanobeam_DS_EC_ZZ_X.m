@@ -419,7 +419,7 @@ methods (Access = private)
         end
         
         %make feeder
-        w_feed=6;
+        w_feed=8;
         feeder_x = (xpad2-w_pad/2+xpad3+w_pad_big/2)/2;
         feeder=Rect(feeder_x,0,w_feed,w_pad_big,'base','center');
         feeder.layer=obj.layer_metal_BB;
@@ -503,13 +503,13 @@ methods (Access = private)
         
         w_wire = 7;
         d2pad=9;
-        v1=port_B_RL; v2 = [xpad1;0];
-        w2=Wire({v1,v2},w_wire);  %to pad
+        v1=port_B_RL; v2=v1+[0;-10]; v3 =[xpad1;0];
+        w2=Wire({v1,v2,v3},w_wire+2);  %to pad
         v1=port_B_RR; v2 = v1+[-20;20]; v3=v2+[-30;0]; v4=[v3(1);w_pad/2+d2pad];
         v5=[(xpad1+xpad2)/2;v4(2)];v6=[v5(1);-v5(2)-w_wire/2];
         %v5=[feeder_x-w_feed/2;v4(2)];
         w1=Wire({v1,v2,v3,v4,v5,v6},w_wire); %to feeder
-        v1=port_B_RL+[0;18];v2=v1+[0;30];v3=v2+[-20;0];v4=[v3(1);w_pad/2+2*d2pad];
+        v1=port_B_RL+[0;param_elec.coeff_x3-param_elec.coeff_x];v2=v1+[0;30];v3=v2+[-20;0];v4=[v3(1);w_pad/2+2*d2pad];
         v5=[xpad2+w_pad/4;v4(2)];v6=[v5(1);0];
         w3=Wire({v1,v2,v3,v4,v5,v6},w_wire);
         wires_L=gpack.Group(0,0,{w2,w1,w3});
@@ -553,7 +553,7 @@ methods (Access = private)
         
         %right zigzag electrodes
         %param_elec.dy=6;
-        param_elec.coeff_x=-8;
+        param_elec.coeff_x=-9;
         param_elec.coeff_y=13;
         param_elec.coeff_x2=0;
         param_elec.coeff_y2=19;
@@ -587,12 +587,12 @@ methods (Access = private)
         
 
         port_B_BL = port_B_RL+[0;2.4-(obj.l_NB_unscaled + 2*obj.P_mirror.a/3) * obj.scale_NB];%translate;
-        port_B_BR = port_B_RR+[0;2.7-(obj.l_NB_unscaled + 2*obj.P_mirror.a/3) * obj.scale_NB];%translate;
+        port_B_BR = port_B_RR+[1.5;2.7-(obj.l_NB_unscaled + 2*obj.P_mirror.a/3) * obj.scale_NB];%translate;
         port_B_BN = port_B_RN+[-25.5;1.75];%+[0;2.7-(obj.l_NB_unscaled + 2*obj.P_mirror.a/3) * obj.scale_NB];%translate;
-        v1=port_B_BN; v2 = [xpad1;0];
-        w3=Wire({v1,v2},w_wire); 
+        v1=port_B_BL+[0;param_elec.coeff_x3-param_elec.coeff_x]; 
+        v2=v1+[0;10];v3 = [xpad1;0];
+        w3=Wire({v1,v2,v3},w_wire+2); 
         v1=port_B_BR; v2 = v1+[-20;-20]; v3=v2+[-30;0]; v4=[v3(1);-w_pad/2-d2pad];v5=[feeder_x-w_feed/2;v4(2)];
-        %v1=port_B_BL; v2=[port_B_BL(1);-w_pad/2-d2pad];v3=[(xpad1+xpad3)/2-w_feed/2;v2(2)];
         w4=Wire({v1,v2,v3,v4,v5},w_wire); %to feeder
         v1=port_B_BL;v2=v1+[0;-30];v3=v2+[-20;0];v4=[v3(1);-w_pad/2-2*d2pad-w_wire/2];
         v5=[xpad2-w_pad/4;v4(2)];v6=v5+[0;-w_pad_big/2-20];
