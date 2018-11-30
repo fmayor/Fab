@@ -24,13 +24,16 @@ function [dev,v_endEL,v_endER,v_endELN] = genSmallAnchorElectrodes(param)
     v2=v1+[0;-0.3];v3=v_endEL;v4=v3+[-0.3;0];
     p_EL = Polygon({v1,v2,v3,v4,v5});
 
-    r_EL = Rect(v_endEL(1), v_endEL(2), w_pad, w_pad,'base','center');
-    g_EL = gpack.Group(0,0,{p_EL,r_EL});
+%     r_EL = Rect(v_endEL(1), v_endEL(2), w_pad, w_pad,'base','center');
+    c_EL = Circ(v_endEL(1), v_endEL(2), w_pad);
+    g_EL = gpack.Group(0,0,{p_EL,c_EL});
     g_EL.layer = layer_metalSB;
     dev.addelement(g_EL);
-    r_EL_BB = Rect(v_endEL(1), v_endEL(2), w_pad, w_pad,'base','center');
-    r_EL_BB.layer = layer_metalBB;
-    dev.addelement(r_EL_BB);
+%     r_EL_BB = Rect(v_endEL(1), v_endEL(2), w_pad, w_pad,'base','center');
+%     r_EL_BB.layer = layer_metalBB;
+    c_EL_BB = Circ(v_endEL(1), v_endEL(2), w_pad);
+    c_EL_BB.layer = layer_metalBB;
+    dev.addelement(c_EL_BB);
     
     % right electrode extension
     v1 = port_R(:,1);
@@ -40,13 +43,16 @@ function [dev,v_endEL,v_endER,v_endELN] = genSmallAnchorElectrodes(param)
     v12=[v11(1);v8(2)];
     p_ER = Polygon({v6,v7,v9,v8,v12,v11});
     
-    r_ER = Rect(v_endER(1), v_endER(2), w_pad, w_pad,'base','center');
-    g_ER = gpack.Group(0,0,{p_ER,r_ER});
+    %r_ER = Rect(v_endER(1), v_endER(2), w_pad, w_pad,'base','center');
+    c_ER = Circ(v_endER(1), v_endER(2),w_pad);
+    g_ER = gpack.Group(0,0,{p_ER,c_ER});
     g_ER.layer = layer_metalSB;
     dev.addelement(g_ER);
-    r_ER_BB = Rect(v_endER(1), v_endER(2), w_pad, w_pad,'base','center');
-    r_ER_BB.layer = layer_metalBB;
-    dev.addelement(r_ER_BB);
+    %r_ER_BB = Rect(v_endER(1), v_endER(2), w_pad, w_pad,'base','center');
+    %r_ER_BB.layer = layer_metalBB;
+    c_ER_BB = Circ(v_endER(1), v_endER(2), w_pad);
+    c_ER_BB.layer = layer_metalBB;
+    dev.addelement(c_ER_BB);
     
     % left electrode extension
     v13 = port_R(:,1)+[zz_g_metal+(zz_w-zz_g_metal)/2;h_elec_link+zz_w+g/2];
@@ -56,17 +62,20 @@ function [dev,v_endEL,v_endER,v_endELN] = genSmallAnchorElectrodes(param)
     v15=v_endELN;v16=v15+[0.3;0];v17=v14+[0.3;0];
     p_ELN = Polygon({v13,v14,v15,v16,v17,v18});
 
-    r_ELN = Rect(v_endELN(1), v_endELN(2), w_pad, w_pad,'base','center');
-    g_ELN = gpack.Group(0,0,{p_ELN,r_ELN});
+    %r_ELN = Rect(v_endELN(1), v_endELN(2), w_pad, w_pad,'base','center');
+    c_ELN = Circ(v_endELN(1), v_endELN(2), w_pad);
+    g_ELN = gpack.Group(0,0,{p_ELN,c_ELN});
     g_ELN.layer = layer_metalSB;
     dev.addelement(g_ELN);
-    r_EL_BBN = Rect(v_endELN(1), v_endELN(2), w_pad, w_pad,'base','center');
-    r_EL_BBN.layer = layer_metalBB;
-    dev.addelement(r_EL_BBN);
+%     r_EL_BBN = Rect(v_endELN(1), v_endELN(2), w_pad, w_pad,'base','center');
+%     r_EL_BBN.layer = layer_metalBB;
+    c_EL_BBN = Circ(v_endELN(1), v_endELN(2), w_pad);
+    c_EL_BBN.layer = layer_metalBB;
+    dev.addelement(c_EL_BBN);
     
     if param.is_mirrored
         dev.mirror([0;v1(2)],[1;0]);
         dev.mirror([v1(1);0],[0;1]);
-        dev.translate([-(zz_w-zz_g_metal)/2;0])
+        dev.translate([-(zz_w-zz_g_metal)/2;0]);
     end
 end

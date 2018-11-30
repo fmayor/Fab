@@ -6,7 +6,7 @@ devMap = gpack.Group(0,0,{});
 
 %% generate global marks
 dx = 3000;
-dy = 1500; %2000
+dy = 2000; %2000
 layers.pos = 'M1_Neg'; layers.neg = 'M1_Pos'; layers.M2 = 'M2_Neg';
 GMs = genGlobalMarks(dx, dy, 3, 200, layers);
 devMap.addelement(GMs);
@@ -21,12 +21,12 @@ isnoGC = true;
 %% generate LNNB
 %  devices in total
 [LNZNB_ZZ_X_Row, L_NBZZ] = genLNZNB_row_181128();
-LNZNB_ZZ_X_Row.translate(0,1200);
+LNZNB_ZZ_X_Row.translate(0,1700);
 devMap.addelement(LNZNB_ZZ_X_Row);
 
 %% generate PEZZS devices
  [LNPEZ_ZNB_Z_Row, L_NBZZ2] = genLNPEZ_ZNB_Z_row_181128();
- LNPEZ_ZNB_Z_Row.translate(0,1200);
+ LNPEZ_ZNB_Z_Row.translate(0,1700);
  LNPEZ_ZNB_Z_Row.rotate(180);
  devMap.addelement(LNPEZ_ZNB_Z_Row);
 
