@@ -1,4 +1,4 @@
-function [LNPEZ_ZNB_Z_Row, L_ZNBX] = genLNPEZ_ZNB_Z_row_181128()
+function [LNPEZ_ZNB_Z_Row, L_ZNB] = genLNPEZ_ZNB_Z_row_181128()
 
 
 % center the scaling to be 96% since the fundamental mode is at 184.5 THz
@@ -43,22 +43,22 @@ gaps = num2cell(repmat(gaps, 1, 40));
 [paramsZNBX.gap] = gaps{1:length(paramsZNBX)};
 %%
 
-dx = 62.5;
-nx = length(paramsPEZ);
+dx = 2*62.5;
+nx = length(paramsZNBX);
 xs = linspace(-dx*(nx-1)/2,dx*(nx-1)/2, nx);
 ys = [0];
-L_PEZ = dx*nx;
-dx2 = 2*62.5;
-nx2 = length(paramsZNBX);
+L_ZNB = dx*nx;
+dx2 = 62.5;
+nx2 = length(paramsPEZ);
 xs2 = linspace(-dx2*(nx2-1)/2,dx2*(nx2-1)/2, nx2);
 ys2 = [0];
-L_ZNBX = dx2*nx2;
+L_PEZ = dx2*nx2;
 fprintf('Generating LNZNBs...\n');
 tic;
-LNPEZ_Row = genPatternAry(paramsPEZ, xs, ys, @genTvsDx_withZZ);
-LNPEZ_Row.translate([-L_ZNBX/4-L_PEZ/4;0]);
-LNZNB_X_Row = genPatternAry(paramsZNBX, xs2, ys2, @genLNZNB_DS_EC_ZZ_X);
-LNZNB_X_Row.translate([L_ZNBX/4+L_PEZ/4;0]);
+LNPEZ_Row = genPatternAry(paramsZNBX, xs, ys, @genTvsDx_withZZ);
+LNPEZ_Row.translate([-L_ZNB/4-L_PEZ/4;0]);
+LNZNB_X_Row = genPatternAry(paramsPEZ, xs2, ys2, @genLNZNB_DS_EC_ZZ_X);
+LNZNB_X_Row.translate([L_ZNB/4+L_PEZ/4;0]);
 toc;
 LNPEZ_ZNB_Z_Row=gpack.Group(0,0,{LNPEZ_Row,LNZNB_X_Row});
 

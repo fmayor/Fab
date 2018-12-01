@@ -404,13 +404,14 @@ methods (Access = private)
         
         %make pads
         w_pad = 180;
-        w_pad_big = 280;
-        d_pad=300;
-        xpad1 = -200-w_pad/2;
+        h_pad = 300;
+        w_pad_big = 300;
+        d_pad=h_pad+60;
+        xpad1 = -200-h_pad/2;
         xpad2 = xpad1-d_pad;
         xpad3=xpad2-d_pad;
-        pad1=genBondPad(xpad1,0,w_pad);
-        pad2=genBondPad(xpad2,0,w_pad);
+        pad1=genBondPad(xpad1,0,h_pad,w_pad);
+        pad2=genBondPad(xpad2,0,h_pad,w_pad);
         pad3=genBondPad(xpad3,0,w_pad_big);
         pads = gpack.Group(0,0,{pad1,pad2,pad3});
         pads.layer = obj.layer_metal_BB;
@@ -420,7 +421,7 @@ methods (Access = private)
         
         %make feeder
         w_feed=8;
-        feeder_x = (xpad2-w_pad/2+xpad3+w_pad_big/2)/2;
+        feeder_x = (xpad2-h_pad/2+xpad3+w_pad_big/2)/2;
         feeder=Rect(feeder_x,0,w_feed,w_pad_big,'base','center');
         feeder.layer=obj.layer_metal_BB;
         if obj.isBB
@@ -502,7 +503,7 @@ methods (Access = private)
         port_B_RR=port_B_RR+[x_pos_ZZ;y_pos_ZZ+(obj.l_NB_unscaled + 2*obj.P_mirror.a/3) * obj.scale_NB/2];%translate
         
         w_wire = 7;
-        d2pad=9;
+        d2pad=12;
         v1=port_B_RL; v2=v1+[0;-10]; v3 =[xpad1;0];
         w2=Wire({v1,v2,v3},w_wire+2);  %to pad
         v1=port_B_RR; v2 = v1+[-20;20]; v3=v2+[-30;0]; v4=[v3(1);w_pad/2+d2pad];
@@ -510,7 +511,7 @@ methods (Access = private)
         %v5=[feeder_x-w_feed/2;v4(2)];
         w1=Wire({v1,v2,v3,v4,v5,v6},w_wire); %to feeder
         v1=port_B_RL+[0;param_elec.coeff_x3-param_elec.coeff_x];v2=v1+[0;30];v3=v2+[-20;0];v4=[v3(1);w_pad/2+2*d2pad];
-        v5=[xpad2+w_pad/4;v4(2)];v6=[v5(1);0];
+        v5=[xpad2+h_pad/4;v4(2)];v6=[v5(1);0];
         w3=Wire({v1,v2,v3,v4,v5,v6},w_wire);
         wires_L=gpack.Group(0,0,{w2,w1,w3});
         wires_L.layer=obj.layer_metal_BB;
@@ -595,7 +596,7 @@ methods (Access = private)
         v1=port_B_BR; v2 = v1+[-20;-20]; v3=v2+[-30;0]; v4=[v3(1);-w_pad/2-d2pad];v5=[feeder_x-w_feed/2;v4(2)];
         w4=Wire({v1,v2,v3,v4,v5},w_wire); %to feeder
         v1=port_B_BL;v2=v1+[0;-30];v3=v2+[-20;0];v4=[v3(1);-w_pad/2-2*d2pad-w_wire/2];
-        v5=[xpad2-w_pad/4;v4(2)];v6=v5+[0;-w_pad_big/2-20];
+        v5=[xpad2-h_pad/4;v4(2)];v6=v5+[0;-w_pad_big/2-20];
         w5=Wire({v1,v2,v3,v4,v5,v6},w_wire);
         wires_R=gpack.Group(0,0,{w3,w4,w5});
         wires_R.layer=obj.layer_metal_BB;

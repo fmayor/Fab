@@ -55,7 +55,7 @@ cc.translate([0; g_mid]);
 dev.addelement(cc);
 
 %% generate small electrodes on anchor
-if 0 %mod(param.ind,4)==0
+if mod(param.ind,4)==0
 %extract ports
 port_RL=zz.elements{1}.elements{2}.port1+[zz.x+zz.elements{1}.x;zz.y+zz.elements{1}.y];
 port_RR=zz.elements{1}.elements{3}.port1+[zz.x+zz.elements{1}.x;zz.y+zz.elements{1}.y];
@@ -68,14 +68,14 @@ param_elec.w_pad=4;
 param_elec.zz_w=zz_w;
 param_elec.port_L=port_RL;
 param_elec.port_R=port_RR;
-[small_R_elec,port_B_RL,port_B_RR]=genSmallAnchorElectrodes(param_elec);
-small_R_elec.translate([-2*dx;0]);
-%dev.addelement(small_R_elec);
+[small_R_elec,port_B_RL,port_B_RR]=genSmallAnchorElectrodes4(param_elec);
+%small_R_elec.translate([-2*dx;0]);
+dev.addelement(small_R_elec);
 
 %left zigzag electrodes
 param_elec.port_L=port_RL; %need to mirror electrodes later
 param_elec.port_R=port_RR;
-[small_L_elec,port_B_LL,port_B_LR]=genSmallAnchorElectrodes(param_elec);
+[small_L_elec,port_B_LL,port_B_LR]=genSmallAnchorElectrodes4(param_elec);
 small_L_elec.mirror([0;0],[0;1]);
 small_L_elec.translate([-2*dx;0]);
 dev.addelement(small_L_elec);
@@ -98,24 +98,25 @@ dev.addelement(l_tetherArm);
 dev.translate(0,-ys(end)-g_mid);
 
 %% Add bonding pads
-if 0 %mod(param.ind,4)==0
+if mod(param.ind,4)==0
 
 w_pad = 200;
-w_pad_big = 260;
-y_pad1 = -200-w_pad/2;
-d_pad = 525;
+h_pad = 300;
+w_pad_big = 300;
+y_pad1 = -200-22.35-h_pad/2;
+d_pad = h_pad+60;
 y_pad2 = y_pad1-d_pad;
 y_pad3 = y_pad2-d_pad;
-pad1 = genBondPad(0,y_pad1,w_pad);
-pad2 = genBondPad(0,y_pad2,w_pad);
+pad1 = genBondPad(0,y_pad1,w_pad,h_pad);
+pad2 = genBondPad(0,y_pad2,w_pad,h_pad);
 pad3 = genBondPad(0,y_pad3,w_pad_big);
 dev.addelement(gpack.Group(0,0,{pad1,pad2,pad3}));
 
 
 
 %% Add big wires
-w_wire=5;
-d_wire2pad=10;
+w_wire=8;
+d_wire2pad=12;
 thin_feed=Rect([0;(y_pad2+y_pad3)/2+w_wire/2],w_pad_big,w_wire);
 thin_feed.layer='metal_BB';
 dev.addelement(thin_feed);
@@ -128,7 +129,7 @@ wire_ZZ2EL = Wire({v1,v2},w_wire);
 % wire from ZZ2ER to line1
 x2 = w_pad/2 + d_wire2pad;
 v1 = v_endER; %v2= [v_endER(1)+5;v_endER(2)];
-v3=[v_endER(1);y_pad1/2];
+v3=[v_endER(1)+30;y_pad1/2];
 v4 = [x2; y_pad1/2];
 v5 = [x2; (y_pad2+y_pad3)/2]; %v3 = [x2; (y_pad1+y_pad2)/2];
 %v4 = [-w_pad/2 - d_wire2pad, (y_pad1+y_pad2)/2];
@@ -153,13 +154,13 @@ wire_ZZ2EL = Wire({v1,v2,v3,v4,v5},w_wire);
 % wire from ZZ2ER to line1
 x2 = max(x1+ d_wire2pad,w_pad/2 + d_wire2pad);
 x3=x2+10;
-v1 = v_endER+[2*dx;0]; v2 = [v_endER(1)+2*dx; y_pad1/4];
-v3 = [v_endER(1)+2*dx+4;y_pad1/4];
+v1 = v_endER+[2*dx;0]; v2 = [v_endER(1)+2*dx+25; y_pad1/4];
+%v3 = [v2(1);y_pad1/4];
 v4 = [x3;y_pad1/4];
 v5 = [x3; y_pad2]; %v3 = [x2; (y_pad1+y_pad2)/2];
 v6 = [0; y_pad2];
 %v5 = [-w_pad/2 - d_wire2pad, y_line1];
-wire_ZZ2ER = Wire({v1,v2,v3,v4,v5,v6},w_wire);%wire_ZZ2ER = Wire({v1,v2,v3,v4,v5},w_wire);
+wire_ZZ2ER = Wire({v1,v2,v4,v5,v6},w_wire);%wire_ZZ2ER = Wire({v1,v2,v3,v4,v5},w_wire);
 
 g_wires = gpack.Group(0,0,{wire_ZZ2EL, wire_ZZ2ER});%wire_ZZ1EL, wire_ZZ1ER
 g_wires.layer = 'metal_BB';

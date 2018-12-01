@@ -135,8 +135,8 @@ global config;
 ind_pos.layer = 'M1_Neg';
 ind_neg.layer = 'M1_Pos_ind';
 ind = gpack.Group(0,0,{ind_pos, ind_neg});
-dx = -5-8-5;
-dy = -12 - 20-8+15;
+dx = 5+8+5;
+dy = -12 - 20-8+15+2;
 ind.rotate(180);
 ind.translate(dx,dy);
 
