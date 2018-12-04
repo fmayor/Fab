@@ -98,15 +98,19 @@ dev.addelement(l_tetherArm);
 dev.translate(0,-ys(end)-g_mid);
 
 %% Add bonding pads
-if mod(param.ind,4)==0
+
 
 w_pad = 200;
 h_pad = 300;
 w_pad_big = 300;
-y_pad1 = -200-22.35-h_pad/2;
-d_pad = h_pad+60;
+y_pad1 = -200-22.35-18.5-h_pad/2;
+d_pad = h_pad+130;
 y_pad2 = y_pad1-d_pad;
 y_pad3 = y_pad2-d_pad;
+
+if mod(param.ind,4)==0
+
+
 pad1 = genBondPad(0,y_pad1,w_pad,h_pad);
 pad2 = genBondPad(0,y_pad2,w_pad,h_pad);
 pad3 = genBondPad(0,y_pad3,w_pad_big);
@@ -167,13 +171,13 @@ g_wires.layer = 'metal_BB';
 g_wires.mirror([0;0],[0;1]);
 g_BBL = gpack.Group(0,0,{g_wires});
 dev.addelement(g_BBL);
-
+end
 %% add undercut mask
 edge_mask = Rect([0;10],w_pad_big,20);
 edge_mask.layer = 'M2_undercutMsk';
 edge_mask.translate(0,ys(end)+g_mid);
 dev.addelement(edge_mask);
-end
+
 %% add label
 [ind_pos, ind_neg] = genStringPolygon(sprintf('A%d',param.ind),...
         0.4);
@@ -261,6 +265,7 @@ dev.addelement(ind);
     w_wf = 62.5;
     rect_wf = Rect(0,w_wf/2 - P_mirror.a/2,w_wf,w_wf,'base','center');
     rect_wf.layer = 'M1_Field';
+    rect_wf.translate([dx;0]); %don't want to translate writefield box, so compensate here
     dev.addelement(rect_wf);
     
     % generate curing region

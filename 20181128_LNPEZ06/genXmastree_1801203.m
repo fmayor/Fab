@@ -1,10 +1,10 @@
-function [g_pos_out, g_neg_out] = genTurkey_1801106(w_tot)
+function [g_pos_out, g_neg_out] = genXmastree_1801203(w_tot)
 
 if nargin < 1
     w_tot = 450;
 end
 
-load('coord_turkey.mat');
+load('coord_xmastree.mat');
 
 coords = charBoundaries;
 coord_pos = coords.pos;
