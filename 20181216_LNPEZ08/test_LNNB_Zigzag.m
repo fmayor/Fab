@@ -121,7 +121,7 @@ if param.isGenBB
     d12 = [70/sqrt(3);-70];
     x2 = max(x1+ d_wire2pad,w_pad/2 + d_wire2pad);
     v1 = dev.vs_ER(:,2); 
-    v12 = v1 + d12;
+    v12 = v1 + d12+[0;-10];
     v2 = [x2; v12(2)];
     v3 = [x2; (y_pad1+y_pad2)/2]; v4 = [-w_pad/2 - d_wire2pad, (y_pad1+y_pad2)/2];
     v5 = [-w_pad/2 - d_wire2pad, y_line1];
@@ -129,13 +129,13 @@ if param.isGenBB
     % wire from ZZ1EL to pad2
     x3 = x2 + d_wire2pad;
     v1 = dev.vs_EL(:,1); 
-    v12 = v1 + d12;
+    v12 = v1 + d12+[0;+10];
     v2 = [x3; v12(2)]; v3 = [x3; y_pad2]; v4 = [0;y_pad2];
     wire_ZZ1EL = Wire({v1,v12,v2,v3,v4},w_wire);
     % wire from ZZ1ER to line1
     x4 = x3 + d_wire2pad;
     v1 = dev.vs_ER(:,1);
-    v12 = v1 + d12;
+    v12 = v1 + d12+[0;+10];
     v2 = [x4; v12(2)]; v3 = [x4; y_line1];
     wire_ZZ1ER = Wire({v1,v12,v2,v3},w_wire);
 

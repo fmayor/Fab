@@ -132,7 +132,7 @@ methods
         P.l_extra = 10;     % extra coupler length into the buffer region
     end
     function P = getDefaultZigzagParams(obj)
-        P.w_tether = 0.1;
+        P.w_tether = 0.075;
         P.w = 0.4;      % zigzag width
         P.g = 0.3;      % zigzag gap
         P.g_metal = 0.1;% gap between metal
@@ -321,7 +321,8 @@ methods (Access = private)
         x4 = x1 - dy;
         y1 = y0 - dy;
         y2 = y1 - dy;
-        p_tether = Polygon({[x2;y0],[x3;y1],[x3;y2],[x4;y2],[x4;y1],[x1;y0]});
+%         p_tether = Polygon({[x2;y0],[x3;y1],[x3;y2],[x4;y2],[x4;y1],[x1;y0]});
+        p_tether = Polygon({[x2;y0+0.15],[x3;y1],[x3;y2],[x4;y2],[x4;y1],[x1;y0+0.15]});
         p_tether.layer = obj.P_zigzag.layer;
         r_rotCenter = [(x1+x2)/2;y0];
         p_tether.translate(-zzp.w/2, zzp.w/2);

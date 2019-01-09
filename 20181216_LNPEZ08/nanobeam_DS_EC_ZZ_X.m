@@ -280,7 +280,7 @@ methods (Access = private)
             tether = Rect(0,0,w_tetherArm, w_tether,'base','center');
             %Make rectangle to be substracted to unlink outer zipper edge from tether so it can be
             %attached to zigzag
-            w_rect_sub=(obj.P_mirror.w+obj.P_mirror.amp-0.3*obj.P_mirror.gap)/2;
+            w_rect_sub=(obj.P_mirror.w+obj.P_mirror.amp-0.2*obj.P_mirror.gap)/2;
             h_rect_sub=((round(obj.L/obj.P_mirror.a)+1.9)*obj.P_mirror.a*obj.scale_NB);%(obj.N_mirror-15)*obj.P_mirror.a;
             x_pos=-obj.d_nb2refl-w_rect_sub/2-obj.P_mirror.gap/2;
             y_pos=-w_tether/2-h_rect_sub/2+obj.P_mirror.a/4*1.45;

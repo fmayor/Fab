@@ -81,7 +81,7 @@ small_L_elec.translate([-2*dx;0]);
 dev.addelement(small_L_elec);
 end
 %% generate second pair of zigzag for symmetry
-zz2 = genSingleZZBender_181002_2(struct('w',zz_w,'g', g ,'L2', L2,'w_joint',0.1,'L',L));
+zz2 = genSingleZZBender_181002_2(struct('w',zz_w,'g', g ,'L2', L2,'w_joint',0.075,'L',L));
 %zz2.rotate(180);
 zz2.translate([0;g_mid+L_tetherEnd2Edge+P_tether.L]);
 dev.addelement(zz2); %pair near edge coupler
