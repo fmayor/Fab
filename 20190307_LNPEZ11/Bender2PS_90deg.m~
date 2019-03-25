@@ -16,7 +16,6 @@ classdef Bender2PS_90deg < gpack.Group
        layer_MT         % layer name for metal
        layer_MT_PL      % layer name for photolitho metal
        layer_cure
-       w                % bender width
        w_RM             % width of release mask
        r_metal          % radius of overlapping region between M2 and M3 metal
        cfg_wiring       % wiring config, 'T' for mid and top, 'B' for mid and bottom
@@ -39,7 +38,6 @@ classdef Bender2PS_90deg < gpack.Group
             obj.layer_RM = 'M4';       % layer name of release mask    
             obj.layer_cure = 'M1_cure';  
             obj.w_RM = 5;
-            obj.w = 0.45;
             obj.r_anchor = 8;
             obj.r_metal = 3;
             obj.cfg_wiring = 'T';
@@ -76,6 +74,14 @@ classdef Bender2PS_90deg < gpack.Group
                g_1DPS.addelement(...
                     Rect(x, 0, obj.P_1DPS.w1l, obj.P_1DPS.w1w, 'base','center'));
            end
+           
+%                       a = obj.P_1DPS.a;
+%            l_1DPS = obj.get1DPSLength();
+%            x_1DPS = - (l_1DPS - a)/2;
+           t_tether = Rect(x_1DPS, 0, 0.175, obj.P_1DPS.w2, 'base','center');
+           t_tether.layer = obj.layer_HD;
+           obj.addelement(t_tether);
+           
            if obj.cfg_wiring == 'T'
                g_1DPS.rotate(90);
                g_1DPS.translate([0;-0.725]);
@@ -91,7 +97,7 @@ classdef Bender2PS_90deg < gpack.Group
            x_BenderRightEnd = obj.P_1DPS.w1w/4;%-obj.get1DPSLength() + obj.P_1DPS.a/2 ;
            
            L = obj.P_bender.L;
-           w = obj.w;
+           w = obj.P_bender.w;
            w_metal = obj.P_bender.w_metal;
            g_metal = obj.P_bender.g_metal;
            
@@ -201,6 +207,7 @@ classdef Bender2PS_90deg < gpack.Group
                    obj.P_bender.w/2+obj.l_tip/2]);
            end
            obj.addelement(r_tip);
+
        end
        
        function addProbePads(obj)
@@ -275,9 +282,9 @@ classdef Bender2PS_90deg < gpack.Group
             l = 100;
             dy = 100;
             if obj.cfg_wiring == 'T'
-                y0 = -dy/2;
+                y0 = -dy/2+30;
             else
-                y0 = dy/2 - 2*dy;
+                y0 = dy/2 - 2*dy - 30;
             end
             ys = [y0:dy:(y0+2*dy)];
             g_pads = gpack.Group(0,0,{});
@@ -297,7 +304,12 @@ classdef Bender2PS_90deg < gpack.Group
             xL = l/2;       % right end of pads, left end of shrink region
             l_shrink = 40;
             xR = xL + l_shrink;
-            y1 = dy/2; y2 = -dy/2;
+            if obj.cfg_wiring == 'T'
+                y1 = dy/2+30; y2 = -dy/2+30;
+            else
+                y1 = dy/2-30; y2 = -dy/2-30;
+            end
+            
             y1s = dy_shrinked/2; 
             y2s = -dy_shrinked/2;
             p1 = Polygon({[xL; y1 + w/2], [xR; y1s + w_shrink/2],...

@@ -201,7 +201,7 @@ classdef PNC < gpack.Group
             P.layer_MT_PL = 'M3';       % layer name of metal
             P.layer_RM = 'M4';       % layer name of release mask     
             P.layer_cure = 'M1_cure';       % layer name of release mask     
-            P.w_arm = 0.45;
+            P.w_arm = 1.5;
             P.l_arm = 1;              % short by default
             P.dy_port = 0;
         end

@@ -12,7 +12,7 @@ ny = 3;
 xs = linspace(-dx*(nx-1)/2,dx*(nx-1)/2, nx);
 ys = linspace(-dy*(ny-1)/2,dy*(ny-1)/2, ny);
 %meshgrid is done within genPatternAry
-params = genParamStructs('L_Bender',[5, 15, 25], 'g_PS2PNC', [0.2, 0.3],...
+params = genParamStructs('L_Bender',[5, 15, 25], 'g_PS2PNC', [0.25, 0.35],...
     'w_def', linspace(1.1, 1.2, 5));
 
 tic;

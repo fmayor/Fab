@@ -65,8 +65,8 @@ classdef TPNC < gpack.Group
             obj.layer_Field2 = 'M2_Field';
             
             obj.L_Bender = 10;
-            obj.x_tip_L = -1.2;
-            obj.x_tip_R = 2.2;
+            obj.x_tip_L = -0.3; %-1.2
+            obj.x_tip_R = 1.2; %2.2
             
             
         end
@@ -83,21 +83,24 @@ classdef TPNC < gpack.Group
                 obj.elements{obj.inds_PNC(ii)}.translate(0, -(ii-1)*obj.dy_PNC);
             end
             % remove one cell from 1DPS of the bender if the touchpoint is two cells away
-            N_rem = round(abs(obj.x_tip_L /( 2 * obj.P_PNC.a)));
-            obj.elements{obj.ind_BenderL}.P_1DPS.N = obj.P_PNC.N_mirror - N_rem;
-            N_rem = round(abs(obj.x_tip_R /( 2 * obj.P_PNC.a)));
-            obj.elements{obj.ind_BenderR}.P_1DPS.N = obj.P_PNC.N_mirror - N_rem;
+%             N_rem = round(abs(obj.x_tip_L /( 2 * obj.P_PNC.a)));
+%             obj.elements{obj.ind_BenderL}.P_1DPS.N = obj.P_PNC.N_mirror - N_rem;
+%             N_rem = round(abs(obj.x_tip_R /( 2 * obj.P_PNC.a)));
+%             obj.elements{obj.ind_BenderR}.P_1DPS.N = obj.P_PNC.N_mirror - N_rem;
             
             obj.elements{obj.ind_BenderL}.run();
             obj.elements{obj.ind_BenderR}.run();
             obj.elements{obj.ind_BenderR}.rotate(180);
             %dy = obj.P_PNC.w1w/2 + obj.g_PS2PNC +...
                 %obj.P_Bender2PS_90deg.l_tip/2;
-            dy = obj.g_PS2PNC+obj.P_Bender2PS_90deg.l_tip+0.45/2+...
-                5*obj.P_Bender2PS_90deg.P_1DPS.a+obj.P_PNC.w1w/2;
+            w_defs=[obj.Ps_PNC_def.w1w_def];
+            dyL = obj.g_PS2PNC+obj.P_Bender2PS_90deg.l_tip+0.175+0.45/2+...
+                obj.P_Bender2PS_90deg.P_1DPS.N*obj.P_Bender2PS_90deg.P_1DPS.a+w_defs(1)/2;
+            dyR = obj.g_PS2PNC+obj.P_Bender2PS_90deg.l_tip+0.175+0.45/2+...
+                obj.P_Bender2PS_90deg.P_1DPS.N*obj.P_Bender2PS_90deg.P_1DPS.a+obj.P_PNC.w1w/2;
             
-            obj.elements{obj.ind_BenderL}.translate(obj.x_tip_L, dy);
-            obj.elements{obj.ind_BenderR}.translate(obj.x_tip_R, dy);
+            obj.elements{obj.ind_BenderL}.translate(obj.x_tip_L, dyL);
+            obj.elements{obj.ind_BenderR}.translate(obj.x_tip_R, dyR);
             
             obj.addWriteField();
             obj.addProbePads();
@@ -114,7 +117,7 @@ classdef TPNC < gpack.Group
             end
             obj.P_PNC.l_arm = obj.L_Bender;
             obj.P_Bender2PS_90deg.P_1DPS = obj.P_PNC;
-            obj.P_Bender2PS_90deg.P_1DPS.N = obj.P_PNC.N_mirror;
+            obj.P_Bender2PS_90deg.P_1DPS.N = 4;%obj.P_PNC.N_mirror;
         end
         
         function setN_PNC(obj, N)
@@ -278,8 +281,8 @@ classdef TPNC < gpack.Group
             P.w_RM = 4;
             P.r_anchor = 8;
             P.r_metal = 3;
-            P.w_tip = 0.05;
-            P.l_tip = 1.2;
+            P.w_tip = 0.15; %0.05
+            P.l_tip = 0.4; %1.2
             P.dx_tip = 0;
         end
     end
