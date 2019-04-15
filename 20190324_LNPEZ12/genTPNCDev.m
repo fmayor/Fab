@@ -8,11 +8,13 @@ tpnc.P_PNC.w2 = 0.075;
 tpnc.setN_PNC(3);
 tpnc.P_PNC.N_mirror = 6;
 tpnc.L_Bender = param.L_Bender;
-tpnc.g_PS2PNC = param.g_PS2PNC;
+tpnc.g_PS2PNCL = param.g_PS2PNCL;
+tpnc.g_PS2PNCR = param.g_PS2PNCR;
+tpnc.dy_PNC=8;
 w_def = param.w_def;
 
 d_w_def = w_def - 1.2;
-ws_def = [1.2, 1.1, 1.15, 1.21, 1.25, 1.3]+d_w_def;
+ws_def = [1.2, 1.1, 1.3, 1.21, 1.25, 1.3]+d_w_def;
 ws_def = num2cell(ws_def);
 [tpnc.Ps_PNC_def.w1w_def] = ws_def{:};
 

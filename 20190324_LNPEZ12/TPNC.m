@@ -19,8 +19,8 @@ classdef TPNC < gpack.Group
         x_tip_L         % left bender tip position
         x_tip_R         % right bender tip position
         
-        g_PS2PNC        % gap between PS and PNC
-        
+        g_PS2PNCL        % gap between PS and PNC for left tip
+        g_PS2PNCR       % gap between PS and PNC for right tip
         layer_HD        % layer name of high dose
         layer_LD        % layer name of low dose
         layer_MT        % layer name of metal
@@ -53,8 +53,8 @@ classdef TPNC < gpack.Group
             obj.inds_PNC = [];
             obj.ind_BenderL = [];
             obj.ind_BenderR = [];
-            obj.g_PS2PNC = 0.25;
-            
+            obj.g_PS2PNCL = 0.25;
+            obj.g_PS2PNCR = 0.25;
             obj.layer_HD = 'M1_HD';       % layer name of high dose
             obj.layer_LD = 'M1_LD';       % layer name of low dose
             obj.layer_MT = 'M2';       % layer name of metal
@@ -65,8 +65,8 @@ classdef TPNC < gpack.Group
             obj.layer_Field2 = 'M2_Field';
             
             obj.L_Bender = 10;
-            obj.x_tip_L = -0.3; %-1.2
-            obj.x_tip_R = 1.; %2.2
+            obj.x_tip_L = -0.1; %-1.2
+            obj.x_tip_R = 1.25; %2.2
             
             
         end
@@ -94,9 +94,9 @@ classdef TPNC < gpack.Group
             %dy = obj.P_PNC.w1w/2 + obj.g_PS2PNC +...
                 %obj.P_Bender2PS_90deg.l_tip/2;
             w_defs=[obj.Ps_PNC_def.w1w_def];
-            dyL = obj.g_PS2PNC+obj.P_Bender2PS_90deg.l_tip+0.45/2+...
+            dyL = obj.g_PS2PNCL+obj.P_Bender2PS_90deg.l_tip+0.175+0.45/2+...
                 obj.P_Bender2PS_90deg.P_1DPS.N*obj.P_Bender2PS_90deg.P_1DPS.a+w_defs(1)/2;
-            dyR = obj.g_PS2PNC+obj.P_Bender2PS_90deg.l_tip+0.45/2+...
+            dyR = obj.g_PS2PNCR+obj.P_Bender2PS_90deg.l_tip+0.175+0.45/2+...
                 obj.P_Bender2PS_90deg.P_1DPS.N*obj.P_Bender2PS_90deg.P_1DPS.a+obj.P_PNC.w1w/2;
             
             obj.elements{obj.ind_BenderL}.translate(obj.x_tip_L, dyL);
@@ -281,7 +281,7 @@ classdef TPNC < gpack.Group
             P.w_RM = 4;
             P.r_anchor = 8;
             P.r_metal = 3;
-            P.w_tip = 0.15; %0.05
+            P.w_tip = 0.3; %0.05
             P.l_tip = 0.4; %1.2
             P.dx_tip = 0;
         end

@@ -78,18 +78,20 @@ classdef Bender2PS_90deg < gpack.Group
 %                       a = obj.P_1DPS.a;
 %            l_1DPS = obj.get1DPSLength();
 %            x_1DPS = - (l_1DPS - a)/2;
-           t_tether = Rect(x_1DPS, 0, 0.175, obj.P_1DPS.w2, 'base','center');
+           tether_l=0.175;
+           t_tether = Rect(x_1DPS, 0, tether_l, obj.P_1DPS.w2, 'base','center');
            t_tether.layer = obj.layer_HD;
-           obj.addelement(t_tether);
+           t_tether.translate([-2;0]);
+           g_1DPS.addelement(t_tether);
            
            if obj.cfg_wiring == 'T'
                g_1DPS.rotate(90);
-               g_1DPS.translate([0;-0.725]);
+               g_1DPS.translate([0;-0.725-0.175]);
            else
                g_1DPS.rotate(-90);
-               g_1DPS.translate([0;0.725]);
+               g_1DPS.translate([0;0.725+0.175]);
            end
-           
+           g_1DPS.elements{end}.translate([l_1DPS+tether_l/2;0]);
            obj.addelement(g_1DPS);
        end
        
@@ -201,10 +203,10 @@ classdef Bender2PS_90deg < gpack.Group
            r_tip.layer = obj.layer_HD;
            if obj.cfg_wiring == 'T'
                r_tip.translate([0;-obj.get1DPSLength()-...
-                   obj.P_bender.w/2-obj.l_tip/2]);
+                   obj.P_bender.w/2-obj.l_tip/2-0.175]);
            else
                r_tip.translate([0;obj.get1DPSLength()+...
-                   obj.P_bender.w/2+obj.l_tip/2]);
+                   obj.P_bender.w/2+obj.l_tip/2+0.175]);
            end
            obj.addelement(r_tip);
 
